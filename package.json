@@ -1,0 +1,11 @@
+{
+  "name": "programmify-ai-builders-toolkit",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "update-readme": "node scripts/update-readme.js",
+    "validate": "node scripts/validate-data.js",
+    "ci": "npm run validate && npm run update-readme"
+  },
+  "dependencies": {}
+}

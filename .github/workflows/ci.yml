@@ -1,0 +1,28 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate-and-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install
+        run: npm ci || npm i
+      - name: Validate data
+        run: npm run validate
+      - name: Update README
+        run: npm run update-readme
+      - name: Git diff
+        run: |
+          if ! git diff --quiet; then
+            echo "README changed. Commit in a follow-up PR or push.";
+          fi
+

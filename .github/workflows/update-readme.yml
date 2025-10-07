@@ -1,0 +1,20 @@
+name: Update README
+on:
+  push:
+    paths:
+      - "data/**"
+      - "scripts/**"
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - run: npm ci
+      - run: node scripts/update-readme.js
+      - name: Commit files
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "auto: update README from data"

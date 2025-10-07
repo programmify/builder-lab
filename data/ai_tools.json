@@ -1,0 +1,153 @@
+[
+  {
+    "name": "OpenRouter",
+    "description": "Unified API gateway for many frontier and open models with routing and pricing controls.",
+    "link": "https://openrouter.ai",
+    "type": "Freemium",
+    "category": "AI & LLM APIs",
+    "tags": ["AI", "LLM", "router"],
+    "popularity": "Popular among indie builders for model choice",
+    "tutorial": "https://openrouter.ai/docs"
+  },
+  {
+    "name": "Hugging Face Inference API",
+    "description": "Hosted inference for thousands of models across NLP, vision, and audio.",
+    "link": "https://huggingface.co/inference-api",
+    "type": "Freemium",
+    "category": "AI & LLM APIs",
+    "tags": ["AI", "Open Source", "inference"],
+    "popularity": "Backed by the largest open ML community",
+    "tutorial": "https://huggingface.co/docs/api-inference/index"
+  },
+  {
+    "name": "Replicate",
+    "description": "Run open-source models in the cloud with simple APIs and deployments.",
+    "link": "https://replicate.com",
+    "type": "Paid",
+    "category": "AI & LLM APIs",
+    "tags": ["models", "images", "video"],
+    "popularity": "Strong creator ecosystem and examples",
+    "tutorial": "https://replicate.com/docs"
+  },
+  {
+    "name": "Ollama",
+    "description": "Run and manage LLMs locally with one-line model pulls.",
+    "link": "https://ollama.ai",
+    "type": "Free",
+    "category": "AI & LLM APIs",
+    "tags": ["local", "privacy", "LLM"],
+    "popularity": "Widely used for local dev",
+    "tutorial": "https://ollama.ai/library"
+  },
+  {
+    "name": "Mistral API",
+    "description": "High-performance open-weight and commercial LLMs with competitive pricing.",
+    "link": "https://mistral.ai",
+    "type": "Freemium",
+    "category": "AI & LLM APIs",
+    "tags": ["LLM", "text-generation"],
+    "popularity": "Growing quickly in EU and startups",
+    "tutorial": "https://docs.mistral.ai"
+  },
+  {
+    "name": "Gemini API",
+    "description": "Google's multimodal models for text, image, and tooling.",
+    "link": "https://ai.google.dev",
+    "type": "Freemium",
+    "category": "AI & LLM APIs",
+    "tags": ["multimodal", "text", "vision"],
+    "popularity": "Mainstream availability via Google Cloud",
+    "tutorial": "https://ai.google.dev/tutorials"
+  },
+  {
+    "name": "Together AI",
+    "description": "Inference and fine-tuning platform for open models with competitive throughput.",
+    "link": "https://www.together.ai",
+    "type": "Paid",
+    "category": "AI & LLM APIs",
+    "tags": ["LLM", "inference", "finetune"],
+    "popularity": "Used in production for cost/perf",
+    "tutorial": "https://docs.together.ai"
+  },
+  {
+    "name": "Groq API",
+    "description": "Ultra-low-latency LPU inference for Llama and Mixtral models.",
+    "link": "https://groq.com",
+    "type": "Freemium",
+    "category": "AI & LLM APIs",
+    "tags": ["latency", "LLM"],
+    "popularity": "Popular for blazing-fast chat UIs",
+    "tutorial": "https://console.groq.com/docs"
+  },
+  {
+    "name": "Fireworks AI",
+    "description": "High-throughput inference and fine-tuning for open-source models.",
+    "link": "https://fireworks.ai",
+    "type": "Paid",
+    "category": "AI & LLM APIs",
+    "tags": ["inference", "LLM"],
+    "popularity": "Adopted by startups needing scale",
+    "tutorial": "https://docs.fireworks.ai"
+  },
+  {
+    "name": "LM Studio (local)",
+    "description": "Desktop app to run, compare, and serve local LLMs.",
+    "link": "https://lmstudio.ai",
+    "type": "Free",
+    "category": "AI & LLM APIs",
+    "tags": ["local", "desktop"],
+    "popularity": "Friendly GUI for local models",
+    "tutorial": "https://lmstudio.ai/docs"
+  },
+  {
+    "name": "GPT4All (local)",
+    "description": "Open-source local LLM ecosystem with desktop apps and SDKs.",
+    "link": "https://gpt4all.io",
+    "type": "Open Source",
+    "category": "AI & LLM APIs",
+    "tags": ["local", "open source"],
+    "popularity": "Popular with privacy-conscious users",
+    "tutorial": "https://docs.gpt4all.io"
+  },
+  {
+    "name": "KoboldCpp",
+    "description": "Fast CPU/GPU backend for running LLMs locally with UI integrations.",
+    "link": "https://github.com/LostRuins/koboldcpp",
+    "type": "Open Source",
+    "category": "AI & LLM APIs",
+    "tags": ["local", "cpp", "open source"],
+    "popularity": "Active OSS community",
+    "tutorial": "https://github.com/LostRuins/koboldcpp"
+  },
+  {
+    "name": "LMQL",
+    "description": "Query language for LLMs enabling constrained and structured generation.",
+    "link": "https://lmql.ai",
+    "type": "Open Source",
+    "category": "AI & LLM APIs",
+    "tags": ["programming", "LLM"],
+    "popularity": "Niche but powerful for control",
+    "tutorial": "https://docs.lmql.ai"
+  },
+  {
+    "name": "Text Generation Web UI",
+    "description": "Popular web UI for running and chatting with local text-generation models.",
+    "link": "https://github.com/oobabooga/text-generation-webui",
+    "type": "Open Source",
+    "category": "AI & LLM APIs",
+    "tags": ["local", "UI", "open source"],
+    "popularity": "Large OSS user base",
+    "tutorial": "https://github.com/oobabooga/text-generation-webui"
+  },
+  {
+    "name": "Perplexity API",
+    "description": "Answer engine API combining retrieval with strong model responses.",
+    "link": "https://docs.perplexity.ai",
+    "type": "Paid",
+    "category": "AI & LLM APIs",
+    "tags": ["RAG", "search"],
+    "popularity": "Emerging API for QA apps",
+    "tutorial": "https://docs.perplexity.ai"
+  }
+]
+

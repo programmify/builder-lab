@@ -1,0 +1,12 @@
+[
+  {"name": "React", "description": "Declarative UI library for building components.", "link": "https://react.dev", "type": "Open Source", "category": "Frontend Frameworks", "tags": ["ui", "library"], "popularity": "Dominant in web", "tutorial": "https://react.dev/learn"},
+  {"name": "Vite", "description": "Fast dev server and build tool.", "link": "https://vitejs.dev", "type": "Open Source", "category": "Frontend Frameworks", "tags": ["bundler", "dev"], "popularity": "Standard for modern apps", "tutorial": "https://vitejs.dev/guide"},
+  {"name": "Next.js", "description": "React framework with routing, SSR/SSG, and edge.", "link": "https://nextjs.org", "type": "Open Source", "category": "Frontend Frameworks", "tags": ["react", "ssr"], "popularity": "Very popular", "tutorial": "https://nextjs.org/learn"},
+  {"name": "Svelte", "description": "Compile-time framework for minimal runtime.", "link": "https://svelte.dev", "type": "Open Source", "category": "Frontend Frameworks", "tags": ["components"], "popularity": "Loved for DX", "tutorial": "https://learn.svelte.dev"},
+  {"name": "Vue", "description": "Progressive framework for building UIs.", "link": "https://vuejs.org", "type": "Open Source", "category": "Frontend Frameworks", "tags": ["ui", "spa"], "popularity": "Huge community", "tutorial": "https://vuejs.org/guide/introduction.html"},
+  {"name": "Astro", "description": "Content-focused web framework with islands architecture.", "link": "https://astro.build", "type": "Open Source", "category": "Frontend Frameworks", "tags": ["static", "content"], "popularity": "Rising fast", "tutorial": "https://docs.astro.build/en/getting-started"},
+  {"name": "Remix", "description": "Full stack web framework focusing on web fundamentals.", "link": "https://remix.run", "type": "Open Source", "category": "Frontend Frameworks", "tags": ["routing", "forms"], "popularity": "Used in production", "tutorial": "https://remix.run/docs"},
+  {"name": "Qwik", "description": "Resumable framework for instant loading.", "link": "https://qwik.builder.io", "type": "Open Source", "category": "Frontend Frameworks", "tags": ["performance", "islands"], "popularity": "Innovative", "tutorial": "https://qwik.builder.io/docs"},
+  {"name": "SolidJS", "description": "Fine-grained reactivity for performant UIs.", "link": "https://www.solidjs.com", "type": "Open Source", "category": "Frontend Frameworks", "tags": ["reactivity", "ui"], "popularity": "Niche but fast", "tutorial": "https://docs.solidjs.com"}
+]
+
