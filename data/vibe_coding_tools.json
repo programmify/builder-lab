@@ -1,0 +1,18 @@
+[
+  {"name": "VibeCode", "description": "AI-powered app builder that creates native apps in seconds.", "link": "https://www.vibecodeapp.com", "type": "Freemium", "category": "Vibe Coding Tools", "tags": ["ai", "mobile", "native"], "popularity": "New but promising", "tutorial": "https://www.vibecodeapp.com"},
+  {"name": "Rork", "description": "AI coding assistant and development platform.", "link": "https://rork.com", "type": "Freemium", "category": "Vibe Coding Tools", "tags": ["ai", "coding", "assistant"], "popularity": "Emerging", "tutorial": "https://rork.com"},
+  {"name": "Lovable.dev", "description": "AI full‑stack builder that iterates on your repo.", "link": "https://lovable.dev", "type": "Freemium", "category": "Vibe Coding Tools", "tags": ["ai", "full-stack"], "popularity": "Growing among indie hackers", "tutorial": "https://docs.lovable.dev"},
+  {"name": "Dyad.sh", "description": "Pair programming with AI agents on your codebase.", "link": "https://dyad.sh", "type": "Freemium", "category": "Vibe Coding Tools", "tags": ["pair-programming", "ai"], "popularity": "New but promising", "tutorial": "https://dyad.sh"},
+  {"name": "Cursor.sh", "description": "AI-native code editor built on VS Code.", "link": "https://cursor.sh", "type": "Freemium", "category": "Vibe Coding Tools", "tags": ["editor", "ai"], "popularity": "Widely used by AI builders", "tutorial": "https://cursor.sh/docs"},
+  {"name": "Vibe Coder", "description": "AI React UI builder from prompts.", "link": "https://vibecoder.ai", "type": "Freemium", "category": "Vibe Coding Tools", "tags": ["react", "builder", "ai"], "popularity": "Early-stage but useful for UI", "tutorial": "https://vibecoder.ai"},
+  {"name": "Bolt.sh", "description": "AI code builder that scaffolds full-stack apps from prompts.", "link": "https://bolt.new", "type": "Freemium", "category": "Vibe Coding Tools", "tags": ["ai", "codegen"], "popularity": "Used for rapid prototyping", "tutorial": "https://bolt.new/docs"},
+  {"name": "Warp (AI terminal)", "description": "Modern, team-aware terminal with AI and blocks.", "link": "https://www.warp.dev", "type": "Freemium", "category": "Vibe Coding Tools", "tags": ["terminal", "productivity"], "popularity": "Popular with macOS developers", "tutorial": "https://docs.warp.dev"},
+  {"name": "Replit", "description": "In-browser IDE and deployments with AI features.", "link": "https://replit.com", "type": "Freemium", "category": "Vibe Coding Tools", "tags": ["ide", "hosting"], "popularity": "Large student and indie base", "tutorial": "https://docs.replit.com"},
+  {"name": "GitHub Codespaces", "description": "Cloud dev environments powered by VS Code.", "link": "https://github.com/features/codespaces", "type": "Paid", "category": "Vibe Coding Tools", "tags": ["cloud", "ide"], "popularity": "Enterprise friendly", "tutorial": "https://docs.github.com/codespaces"},
+  {"name": "StackBlitz", "description": "Instant web IDE running in the browser.", "link": "https://stackblitz.com", "type": "Free", "category": "Vibe Coding Tools", "tags": ["ide", "web"], "popularity": "Great for web demos", "tutorial": "https://developer.stackblitz.com"},
+  {"name": "CodeSandbox", "description": "Cloud development for frontends and containers.", "link": "https://codesandbox.io", "type": "Freemium", "category": "Vibe Coding Tools", "tags": ["ide", "cloud"], "popularity": "Popular for sandboxes", "tutorial": "https://codesandbox.io/docs"}
+]
+
+
+
+

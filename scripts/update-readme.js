@@ -4,21 +4,25 @@ import path from "path";
 // Title map for all categories we support in /data
 const categories = {
   "ai_tools.json": "🧠 AI & LLM APIs",
+  "vibe_coding_tools.json": "⚡ Vibe Coding Tools",
   "dev_tools.json": "🧰 Developer Tools",
   "mobile_builders.json": "📱 Mobile App Builders",
   "design_tools.json": "🎨 Design, Video & Demo Creation",
   "frontend_frameworks.json": "🧩 Frontend Frameworks",
   "backend_tools.json": "⚙️ Backend & Databases",
+  "hosting.json": "☁️ Hosting & Deployment",
+  "automation.json": "🤖 Automation & Workflows",
   "payments.json": "💸 Payments & Monetization",
   "analytics.json": "📈 Analytics & Tracking",
   "communication_email.json": "📧 Communication & Email",
   "privacy.json": "🔐 Security & Privacy",
   "productivity.json": "🧭 Project Management & Productivity",
   "launch_community.json": "🚀 Launch & Community Platforms",
-  "learning.json": "🧠 Learning Resources"
+  "articles_research.json": "📝 Articles & Research",
+  "learning.json": "📚 Learning Resources"
 };
 
-let readme = `# 🌍 Programmify AI Builders Toolkit\n\n`;
+let readme = `# 🌍 Builders Lab by Programmify\n\n`;
 readme += `Automatically generated from the data files in \`/data/\`.\n\n`;
 
 for (const [file, title] of Object.entries(categories)) {

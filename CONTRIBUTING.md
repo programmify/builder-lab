@@ -1,6 +1,6 @@
 # 🤝 Contributing Guide
 
-Thank you for helping improve the **Programmify AI Builders Toolkit**!
+Thank you for helping improve **Builders Lab by Programmify**!
 
 ### 💡 Add a Tool
 1. Open the `/data` folder and find the relevant category (e.g. `ai_tools.json`).

@@ -12,7 +12,6 @@
   {"name": "Anytype", "description": "Local-first knowledge base.", "link": "https://anytype.io", "type": "Free", "category": "Project Management & Productivity", "tags": ["notes", "local-first"], "popularity": "Privacy-focused", "tutorial": "https://manual.anytype.io"},
   {"name": "AppFlowy", "description": "Open-source Notion alternative.", "link": "https://www.appflowy.io", "type": "Open Source", "category": "Project Management & Productivity", "tags": ["notes", "open source"], "popularity": "Active OSS", "tutorial": "https://docs.appflowy.io"},
   {"name": "Obsidian", "description": "Knowledge base on local Markdown files.", "link": "https://obsidian.md", "type": "Freemium", "category": "Project Management & Productivity", "tags": ["notes", "markdown"], "popularity": "Huge community", "tutorial": "https://help.obsidian.md"},
-  {"name": "Logseq", "description": "Open-source outliner and knowledge graph.", "link": "https://logseq.com", "type": "Open Source", "category": "Project Management & Productivity", "tags": ["notes", "graph"], "popularity": "Loved by researchers", "tutorial": "https://docs.logseq.com"},
-  {"name": "Polar.sh", "description": "Sponsorships and project funding.", "link": "https://polar.sh", "type": "Freemium", "category": "Project Management & Productivity", "tags": ["funding", "open source"], "popularity": "Growing in OSS", "tutorial": "https://docs.polar.sh"}
+  {"name": "Logseq", "description": "Open-source outliner and knowledge graph.", "link": "https://logseq.com", "type": "Open Source", "category": "Project Management & Productivity", "tags": ["notes", "graph"], "popularity": "Loved by researchers", "tutorial": "https://docs.logseq.com"}
 ]
 

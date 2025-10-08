@@ -1,0 +1,16 @@
+# Supabase Configuration
+# Get these from your Supabase project settings
+VITE_SUPABASE_URL=your_supabase_project_url
+VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+
+# OpenAI API Key (Optional - for AI chat functionality)
+# Get this from https://platform.openai.com/api-keys
+VITE_OPENAI_API_KEY=your_openai_api_key
+
+# Development Configuration
+VITE_APP_ENV=development
+VITE_APP_VERSION=1.0.0
+
+
+
+

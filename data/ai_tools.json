@@ -6,7 +6,7 @@
     "type": "Freemium",
     "category": "AI & LLM APIs",
     "tags": ["AI", "LLM", "router"],
-    "popularity": "Popular among indie builders for model choice",
+    "popularity": "Indie favorite",
     "tutorial": "https://openrouter.ai/docs"
   },
   {
@@ -16,7 +16,7 @@
     "type": "Freemium",
     "category": "AI & LLM APIs",
     "tags": ["AI", "Open Source", "inference"],
-    "popularity": "Backed by the largest open ML community",
+    "popularity": "Largest community",
     "tutorial": "https://huggingface.co/docs/api-inference/index"
   },
   {
@@ -26,7 +26,7 @@
     "type": "Paid",
     "category": "AI & LLM APIs",
     "tags": ["models", "images", "video"],
-    "popularity": "Strong creator ecosystem and examples",
+    "popularity": "Creator ecosystem",
     "tutorial": "https://replicate.com/docs"
   },
   {
@@ -36,7 +36,7 @@
     "type": "Free",
     "category": "AI & LLM APIs",
     "tags": ["local", "privacy", "LLM"],
-    "popularity": "Widely used for local dev",
+    "popularity": "Local dev",
     "tutorial": "https://ollama.ai/library"
   },
   {
@@ -46,7 +46,7 @@
     "type": "Freemium",
     "category": "AI & LLM APIs",
     "tags": ["LLM", "text-generation"],
-    "popularity": "Growing quickly in EU and startups",
+    "popularity": "EU favorite",
     "tutorial": "https://docs.mistral.ai"
   },
   {
@@ -56,7 +56,7 @@
     "type": "Freemium",
     "category": "AI & LLM APIs",
     "tags": ["multimodal", "text", "vision"],
-    "popularity": "Mainstream availability via Google Cloud",
+    "popularity": "Google scale",
     "tutorial": "https://ai.google.dev/tutorials"
   },
   {
@@ -66,7 +66,7 @@
     "type": "Paid",
     "category": "AI & LLM APIs",
     "tags": ["LLM", "inference", "finetune"],
-    "popularity": "Used in production for cost/perf",
+    "popularity": "Production ready",
     "tutorial": "https://docs.together.ai"
   },
   {
@@ -76,7 +76,7 @@
     "type": "Freemium",
     "category": "AI & LLM APIs",
     "tags": ["latency", "LLM"],
-    "popularity": "Popular for blazing-fast chat UIs",
+    "popularity": "Blazing fast",
     "tutorial": "https://console.groq.com/docs"
   },
   {
@@ -86,7 +86,7 @@
     "type": "Paid",
     "category": "AI & LLM APIs",
     "tags": ["inference", "LLM"],
-    "popularity": "Adopted by startups needing scale",
+    "popularity": "Startup scale",
     "tutorial": "https://docs.fireworks.ai"
   },
   {
@@ -96,7 +96,7 @@
     "type": "Free",
     "category": "AI & LLM APIs",
     "tags": ["local", "desktop"],
-    "popularity": "Friendly GUI for local models",
+    "popularity": "User friendly",
     "tutorial": "https://lmstudio.ai/docs"
   },
   {
@@ -106,7 +106,7 @@
     "type": "Open Source",
     "category": "AI & LLM APIs",
     "tags": ["local", "open source"],
-    "popularity": "Popular with privacy-conscious users",
+    "popularity": "Privacy focused",
     "tutorial": "https://docs.gpt4all.io"
   },
   {
@@ -116,7 +116,7 @@
     "type": "Open Source",
     "category": "AI & LLM APIs",
     "tags": ["local", "cpp", "open source"],
-    "popularity": "Active OSS community",
+    "popularity": "Active OSS",
     "tutorial": "https://github.com/LostRuins/koboldcpp"
   },
   {
@@ -126,7 +126,7 @@
     "type": "Open Source",
     "category": "AI & LLM APIs",
     "tags": ["programming", "LLM"],
-    "popularity": "Niche but powerful for control",
+    "popularity": "Niche powerful",
     "tutorial": "https://docs.lmql.ai"
   },
   {
@@ -136,7 +136,7 @@
     "type": "Open Source",
     "category": "AI & LLM APIs",
     "tags": ["local", "UI", "open source"],
-    "popularity": "Large OSS user base",
+    "popularity": "Large community",
     "tutorial": "https://github.com/oobabooga/text-generation-webui"
   },
   {
@@ -146,8 +146,18 @@
     "type": "Paid",
     "category": "AI & LLM APIs",
     "tags": ["RAG", "search"],
-    "popularity": "Emerging API for QA apps",
+    "popularity": "Emerging API",
     "tutorial": "https://docs.perplexity.ai"
+  },
+  {
+    "name": "Google Colab",
+    "description": "Hosted Jupyter notebooks with free GPUs for ML.",
+    "link": "https://colab.research.google.com",
+    "type": "Free",
+    "category": "AI & LLM APIs",
+    "tags": ["notebooks", "gpu", "ml"],
+    "popularity": "Widely used",
+    "tutorial": "https://colab.research.google.com"
   }
 ]
 

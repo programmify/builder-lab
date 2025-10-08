@@ -1,0 +1,16 @@
+[
+  {"name": "Vercel", "description": "Frontend cloud platform with edge functions.", "link": "https://vercel.com", "type": "Freemium", "category": "Hosting", "tags": ["frontend", "edge"], "popularity": "Very popular for Next.js", "tutorial": "https://vercel.com/docs"},
+  {"name": "Netlify", "description": "JAMstack hosting with forms and functions.", "link": "https://www.netlify.com", "type": "Freemium", "category": "Hosting", "tags": ["jamstack", "static"], "popularity": "Popular for static sites", "tutorial": "https://docs.netlify.com"},
+  {"name": "Railway.app", "description": "Instant deployments for databases and services.", "link": "https://railway.app", "type": "Freemium", "category": "Hosting", "tags": ["hosting", "db"], "popularity": "Indie friendly", "tutorial": "https://docs.railway.app"},
+  {"name": "Render", "description": "Cloud for apps and databases with simple pricing.", "link": "https://render.com", "type": "Freemium", "category": "Hosting", "tags": ["hosting"], "popularity": "Common Heroku alternative", "tutorial": "https://render.com/docs"},
+  {"name": "Fly.io", "description": "Run full-stack apps close to users.", "link": "https://fly.io", "type": "Freemium", "category": "Hosting", "tags": ["hosting", "edge"], "popularity": "Great DX", "tutorial": "https://fly.io/docs"},
+  {"name": "Cloudflare Workers", "description": "Global serverless runtime at the edge.", "link": "https://workers.cloudflare.com", "type": "Freemium", "category": "Hosting", "tags": ["serverless", "edge"], "popularity": "Massive network", "tutorial": "https://developers.cloudflare.com/workers"},
+  {"name": "AWS Amplify", "description": "Full-stack hosting with auth and storage.", "link": "https://aws.amazon.com/amplify", "type": "Paid", "category": "Hosting", "tags": ["aws", "full-stack"], "popularity": "Enterprise scale", "tutorial": "https://docs.amplify.aws"},
+  {"name": "DigitalOcean App Platform", "description": "Simple app deployment and scaling.", "link": "https://www.digitalocean.com/products/app-platform", "type": "Paid", "category": "Hosting", "tags": ["hosting", "scaling"], "popularity": "Developer friendly", "tutorial": "https://docs.digitalocean.com/products/app-platform"},
+  {"name": "Heroku", "description": "Platform as a service for web apps.", "link": "https://www.heroku.com", "type": "Paid", "category": "Hosting", "tags": ["paas", "deployment"], "popularity": "Classic PaaS", "tutorial": "https://devcenter.heroku.com"},
+  {"name": "Supabase", "description": "Open-source backend: Postgres, auth, storage, edge.", "link": "https://supabase.com", "type": "Freemium", "category": "Hosting", "tags": ["database", "auth", "storage"], "popularity": "Very popular", "tutorial": "https://supabase.com/docs"}
+]
+
+
+
+

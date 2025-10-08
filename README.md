@@ -1,54 +1,68 @@
-# 🌍 Programmify AI Builders Toolkit
+# 🌍 Builders Lab by Programmify
 
 Automatically generated from the data files in `/data/`.
 
-## 🧠 AI & LLM APIs (15)
+## 🧠 AI & LLM APIs (16)
 
 | Name | Description | Type | Learn | Tags | Popularity |
 |------|--------------|------|-------|------|------------|
-| [OpenRouter](https://openrouter.ai) | Unified API gateway for many frontier and open models with routing and pricing controls. | Freemium | [Docs](https://openrouter.ai/docs) | AI, LLM, router | Popular among indie builders for model choice |
-| [Hugging Face Inference API](https://huggingface.co/inference-api) | Hosted inference for thousands of models across NLP, vision, and audio. | Freemium | [Docs](https://huggingface.co/docs/api-inference/index) | AI, Open Source, inference | Backed by the largest open ML community |
-| [Replicate](https://replicate.com) | Run open-source models in the cloud with simple APIs and deployments. | Paid | [Docs](https://replicate.com/docs) | models, images, video | Strong creator ecosystem and examples |
-| [Ollama](https://ollama.ai) | Run and manage LLMs locally with one-line model pulls. | Free | [Docs](https://ollama.ai/library) | local, privacy, LLM | Widely used for local dev |
-| [Mistral API](https://mistral.ai) | High-performance open-weight and commercial LLMs with competitive pricing. | Freemium | [Docs](https://docs.mistral.ai) | LLM, text-generation | Growing quickly in EU and startups |
-| [Gemini API](https://ai.google.dev) | Google's multimodal models for text, image, and tooling. | Freemium | [Docs](https://ai.google.dev/tutorials) | multimodal, text, vision | Mainstream availability via Google Cloud |
-| [Together AI](https://www.together.ai) | Inference and fine-tuning platform for open models with competitive throughput. | Paid | [Docs](https://docs.together.ai) | LLM, inference, finetune | Used in production for cost/perf |
-| [Groq API](https://groq.com) | Ultra-low-latency LPU inference for Llama and Mixtral models. | Freemium | [Docs](https://console.groq.com/docs) | latency, LLM | Popular for blazing-fast chat UIs |
-| [Fireworks AI](https://fireworks.ai) | High-throughput inference and fine-tuning for open-source models. | Paid | [Docs](https://docs.fireworks.ai) | inference, LLM | Adopted by startups needing scale |
-| [LM Studio (local)](https://lmstudio.ai) | Desktop app to run, compare, and serve local LLMs. | Free | [Docs](https://lmstudio.ai/docs) | local, desktop | Friendly GUI for local models |
-| [GPT4All (local)](https://gpt4all.io) | Open-source local LLM ecosystem with desktop apps and SDKs. | Open Source | [Docs](https://docs.gpt4all.io) | local, open source | Popular with privacy-conscious users |
-| [KoboldCpp](https://github.com/LostRuins/koboldcpp) | Fast CPU/GPU backend for running LLMs locally with UI integrations. | Open Source | [Docs](https://github.com/LostRuins/koboldcpp) | local, cpp, open source | Active OSS community |
-| [LMQL](https://lmql.ai) | Query language for LLMs enabling constrained and structured generation. | Open Source | [Docs](https://docs.lmql.ai) | programming, LLM | Niche but powerful for control |
-| [Text Generation Web UI](https://github.com/oobabooga/text-generation-webui) | Popular web UI for running and chatting with local text-generation models. | Open Source | [Docs](https://github.com/oobabooga/text-generation-webui) | local, UI, open source | Large OSS user base |
-| [Perplexity API](https://docs.perplexity.ai) | Answer engine API combining retrieval with strong model responses. | Paid | [Docs](https://docs.perplexity.ai) | RAG, search | Emerging API for QA apps |
+| [OpenRouter](https://openrouter.ai) | Unified API gateway for many frontier and open models with routing and pricing controls. | Freemium | [Docs](https://openrouter.ai/docs) | AI, LLM, router | Indie favorite |
+| [Hugging Face Inference API](https://huggingface.co/inference-api) | Hosted inference for thousands of models across NLP, vision, and audio. | Freemium | [Docs](https://huggingface.co/docs/api-inference/index) | AI, Open Source, inference | Largest community |
+| [Replicate](https://replicate.com) | Run open-source models in the cloud with simple APIs and deployments. | Paid | [Docs](https://replicate.com/docs) | models, images, video | Creator ecosystem |
+| [Ollama](https://ollama.ai) | Run and manage LLMs locally with one-line model pulls. | Free | [Docs](https://ollama.ai/library) | local, privacy, LLM | Local dev |
+| [Mistral API](https://mistral.ai) | High-performance open-weight and commercial LLMs with competitive pricing. | Freemium | [Docs](https://docs.mistral.ai) | LLM, text-generation | EU favorite |
+| [Gemini API](https://ai.google.dev) | Google's multimodal models for text, image, and tooling. | Freemium | [Docs](https://ai.google.dev/tutorials) | multimodal, text, vision | Google scale |
+| [Together AI](https://www.together.ai) | Inference and fine-tuning platform for open models with competitive throughput. | Paid | [Docs](https://docs.together.ai) | LLM, inference, finetune | Production ready |
+| [Groq API](https://groq.com) | Ultra-low-latency LPU inference for Llama and Mixtral models. | Freemium | [Docs](https://console.groq.com/docs) | latency, LLM | Blazing fast |
+| [Fireworks AI](https://fireworks.ai) | High-throughput inference and fine-tuning for open-source models. | Paid | [Docs](https://docs.fireworks.ai) | inference, LLM | Startup scale |
+| [LM Studio (local)](https://lmstudio.ai) | Desktop app to run, compare, and serve local LLMs. | Free | [Docs](https://lmstudio.ai/docs) | local, desktop | User friendly |
+| [GPT4All (local)](https://gpt4all.io) | Open-source local LLM ecosystem with desktop apps and SDKs. | Open Source | [Docs](https://docs.gpt4all.io) | local, open source | Privacy focused |
+| [KoboldCpp](https://github.com/LostRuins/koboldcpp) | Fast CPU/GPU backend for running LLMs locally with UI integrations. | Open Source | [Docs](https://github.com/LostRuins/koboldcpp) | local, cpp, open source | Active OSS |
+| [LMQL](https://lmql.ai) | Query language for LLMs enabling constrained and structured generation. | Open Source | [Docs](https://docs.lmql.ai) | programming, LLM | Niche powerful |
+| [Text Generation Web UI](https://github.com/oobabooga/text-generation-webui) | Popular web UI for running and chatting with local text-generation models. | Open Source | [Docs](https://github.com/oobabooga/text-generation-webui) | local, UI, open source | Large community |
+| [Perplexity API](https://docs.perplexity.ai) | Answer engine API combining retrieval with strong model responses. | Paid | [Docs](https://docs.perplexity.ai) | RAG, search | Emerging API |
+| [Google Colab](https://colab.research.google.com) | Hosted Jupyter notebooks with free GPUs for ML. | Free | [Docs](https://colab.research.google.com) | notebooks, gpu, ml | Widely used |
 
 ---
 
-## 🧰 Developer Tools (21)
+## ⚡ Vibe Coding Tools (12)
 
 | Name | Description | Type | Learn | Tags | Popularity |
 |------|--------------|------|-------|------|------------|
-| [Warp (AI terminal)](https://www.warp.dev) | Modern, team-aware terminal with AI and blocks. | Freemium | [Docs](https://docs.warp.dev) | terminal, productivity | Popular with macOS developers |
-| [Bolt.sh](https://bolt.new) | AI code builder that scaffolds full-stack apps from prompts. | Freemium | [Docs](https://bolt.new/docs) | ai, codegen | Used for rapid prototyping |
+| [VibeCode](https://www.vibecodeapp.com) | AI-powered app builder that creates native apps in seconds. | Freemium | [Docs](https://www.vibecodeapp.com) | ai, mobile, native | New but promising |
+| [Rork](https://rork.com) | AI coding assistant and development platform. | Freemium | [Docs](https://rork.com) | ai, coding, assistant | Emerging |
 | [Lovable.dev](https://lovable.dev) | AI full‑stack builder that iterates on your repo. | Freemium | [Docs](https://docs.lovable.dev) | ai, full-stack | Growing among indie hackers |
 | [Dyad.sh](https://dyad.sh) | Pair programming with AI agents on your codebase. | Freemium | [Docs](https://dyad.sh) | pair-programming, ai | New but promising |
 | [Cursor.sh](https://cursor.sh) | AI-native code editor built on VS Code. | Freemium | [Docs](https://cursor.sh/docs) | editor, ai | Widely used by AI builders |
 | [Vibe Coder](https://vibecoder.ai) | AI React UI builder from prompts. | Freemium | [Docs](https://vibecoder.ai) | react, builder, ai | Early-stage but useful for UI |
+| [Bolt.sh](https://bolt.new) | AI code builder that scaffolds full-stack apps from prompts. | Freemium | [Docs](https://bolt.new/docs) | ai, codegen | Used for rapid prototyping |
+| [Warp (AI terminal)](https://www.warp.dev) | Modern, team-aware terminal with AI and blocks. | Freemium | [Docs](https://docs.warp.dev) | terminal, productivity | Popular with macOS developers |
 | [Replit](https://replit.com) | In-browser IDE and deployments with AI features. | Freemium | [Docs](https://docs.replit.com) | ide, hosting | Large student and indie base |
 | [GitHub Codespaces](https://github.com/features/codespaces) | Cloud dev environments powered by VS Code. | Paid | [Docs](https://docs.github.com/codespaces) | cloud, ide | Enterprise friendly |
 | [StackBlitz](https://stackblitz.com) | Instant web IDE running in the browser. | Free | [Docs](https://developer.stackblitz.com) | ide, web | Great for web demos |
 | [CodeSandbox](https://codesandbox.io) | Cloud development for frontends and containers. | Freemium | [Docs](https://codesandbox.io/docs) | ide, cloud | Popular for sandboxes |
-| [Polar.sh](https://polar.sh) | Open-source sponsorship and contributor platform. | Freemium | [Docs](https://docs.polar.sh) | open source, funding | Growing fast in OSS |
+
+---
+
+## 🧰 Developer Tools (15)
+
+| Name | Description | Type | Learn | Tags | Popularity |
+|------|--------------|------|-------|------|------------|
+| [VS Code](https://code.visualstudio.com) | Extensible code editor with rich ecosystem. | Free | [Docs](https://code.visualstudio.com/docs) | editor, ide | Industry standard |
+| [Vercel AI SDK](https://sdk.vercel.ai) | AI SDK for building AI-powered applications. | Open Source | [Docs](https://sdk.vercel.ai/docs) | ai, sdk | Growing adoption |
+| [Cloudflare AI SDK](https://developers.cloudflare.com/ai) | AI SDK for Cloudflare Workers and Pages. | Freemium | [Docs](https://developers.cloudflare.com/ai) | ai, edge | Edge-first AI |
+| [OpenAI SDK](https://platform.openai.com/docs/api-reference) | Official SDK for OpenAI APIs. | Paid | [Docs](https://platform.openai.com/docs) | ai, openai | Most common |
 | [Supabase](https://supabase.com) | Open-source backend: Postgres, auth, storage, edge. | Freemium | [Docs](https://supabase.com/docs) | database, auth, storage | Very popular |
 | [Neon](https://neon.tech) | Serverless Postgres with branching. | Freemium | [Docs](https://neon.tech/docs) | postgres, serverless | Loved for DX |
 | [Clerk](https://clerk.com) | Full-stack auth and user management. | Freemium | [Docs](https://clerk.com/docs) | auth, users | Common in Next.js apps |
 | [Convex](https://www.convex.dev) | Serverless database and reactive backend. | Freemium | [Docs](https://docs.convex.dev) | database, serverless | Rising |
 | [UploadThing](https://uploadthing.com) | Simple file uploads for web apps. | Freemium | [Docs](https://docs.uploadthing.com) | uploads, storage | Common in Next.js |
 | [EdgeStore](https://edgestore.dev) | Edge-first file storage layer. | Freemium | [Docs](https://docs.edgestore.dev) | storage, edge | New but useful |
-| [Cloudflare Workers](https://workers.cloudflare.com) | Global serverless runtime at the edge. | Freemium | [Docs](https://developers.cloudflare.com/workers) | serverless, edge | Massive network |
-| [Railway.app](https://railway.app) | Instant deployments for databases and services. | Freemium | [Docs](https://docs.railway.app) | hosting, db | Indie friendly |
-| [Render](https://render.com) | Cloud for apps and databases with simple pricing. | Freemium | [Docs](https://render.com/docs) | hosting | Common Heroku alternative |
-| [Fly.io](https://fly.io) | Run full-stack apps close to users. | Freemium | [Docs](https://fly.io/docs) | hosting, edge | Great DX |
+| [Prisma](https://www.prisma.io) | Type-safe ORM for Node.js and TypeScript. | Open Source | [Docs](https://www.prisma.io/docs) | orm, typescript | De facto standard |
+| [Drizzle ORM](https://orm.drizzle.team) | Lightweight TypeScript-first SQL ORM. | Open Source | [Docs](https://orm.drizzle.team/docs) | orm, sql | Rapidly growing |
+| [GitHub](https://github.com) | Version control and collaboration platform. | Freemium | [Docs](https://docs.github.com) | git, collaboration | Industry standard |
+| [GitLab](https://gitlab.com) | DevOps platform with Git repository management. | Freemium | [Docs](https://docs.gitlab.com) | git, devops | Enterprise alternative |
+| [Docker](https://www.docker.com) | Containerization platform for applications. | Freemium | [Docs](https://docs.docker.com) | containers, devops | Standard for deployment |
 
 ---
 
@@ -136,7 +150,41 @@ Automatically generated from the data files in `/data/`.
 
 ---
 
-## 💸 Payments & Monetization (11)
+## ☁️ Hosting & Deployment (10)
+
+| Name | Description | Type | Learn | Tags | Popularity |
+|------|--------------|------|-------|------|------------|
+| [Vercel](https://vercel.com) | Frontend cloud platform with edge functions. | Freemium | [Docs](https://vercel.com/docs) | frontend, edge | Very popular for Next.js |
+| [Netlify](https://www.netlify.com) | JAMstack hosting with forms and functions. | Freemium | [Docs](https://docs.netlify.com) | jamstack, static | Popular for static sites |
+| [Railway.app](https://railway.app) | Instant deployments for databases and services. | Freemium | [Docs](https://docs.railway.app) | hosting, db | Indie friendly |
+| [Render](https://render.com) | Cloud for apps and databases with simple pricing. | Freemium | [Docs](https://render.com/docs) | hosting | Common Heroku alternative |
+| [Fly.io](https://fly.io) | Run full-stack apps close to users. | Freemium | [Docs](https://fly.io/docs) | hosting, edge | Great DX |
+| [Cloudflare Workers](https://workers.cloudflare.com) | Global serverless runtime at the edge. | Freemium | [Docs](https://developers.cloudflare.com/workers) | serverless, edge | Massive network |
+| [AWS Amplify](https://aws.amazon.com/amplify) | Full-stack hosting with auth and storage. | Paid | [Docs](https://docs.amplify.aws) | aws, full-stack | Enterprise scale |
+| [DigitalOcean App Platform](https://www.digitalocean.com/products/app-platform) | Simple app deployment and scaling. | Paid | [Docs](https://docs.digitalocean.com/products/app-platform) | hosting, scaling | Developer friendly |
+| [Heroku](https://www.heroku.com) | Platform as a service for web apps. | Paid | [Docs](https://devcenter.heroku.com) | paas, deployment | Classic PaaS |
+| [Supabase](https://supabase.com) | Open-source backend: Postgres, auth, storage, edge. | Freemium | [Docs](https://supabase.com/docs) | database, auth, storage | Very popular |
+
+---
+
+## 🤖 Automation & Workflows (10)
+
+| Name | Description | Type | Learn | Tags | Popularity |
+|------|--------------|------|-------|------|------------|
+| [n8n](https://n8n.io) | Open-source workflow automation platform. | Open Source | [Docs](https://docs.n8n.io) | workflow, open source | Growing OSS community |
+| [Zapier](https://zapier.com) | Connect apps and automate workflows. | Freemium | [Docs](https://zapier.com/learn) | workflow, integrations | Industry standard |
+| [Lindly](https://lindly.com) | AI-powered workflow automation. | Freemium | [Docs](https://lindly.com) | ai, workflow | Emerging |
+| [OpenAI Agent Builder](https://platform.openai.com/docs/assistants/overview) | Build AI agents with OpenAI's platform. | Paid | [Docs](https://platform.openai.com/docs/assistants/overview) | ai, agents | Cutting edge |
+| [Make (Integromat)](https://www.make.com) | Visual workflow automation platform. | Freemium | [Docs](https://www.make.com/help) | workflow, visual | Popular alternative |
+| [Microsoft Power Automate](https://powerautomate.microsoft.com) | Automate business processes. | Freemium | [Docs](https://docs.microsoft.com/power-automate) | microsoft, business | Enterprise focused |
+| [IFTTT](https://ifttt.com) | Simple automation for everyday tasks. | Freemium | [Docs](https://ifttt.com/explore) | simple, personal | Consumer friendly |
+| [Pipedream](https://pipedream.com) | Developer-first workflow automation. | Freemium | [Docs](https://pipedream.com/docs) | developer, api | Loved by devs |
+| [Bardeen](https://www.bardeen.ai) | AI-powered browser automation. | Freemium | [Docs](https://www.bardeen.ai/help) | ai, browser | Growing |
+| [Automate.io](https://automate.io) | Connect 200+ apps with automation. | Freemium | [Docs](https://automate.io/help) | integrations, apps | Good for SMBs |
+
+---
+
+## 💸 Payments & Monetization (12)
 
 | Name | Description | Type | Learn | Tags | Popularity |
 |------|--------------|------|-------|------|------------|
@@ -151,6 +199,7 @@ Automatically generated from the data files in `/data/`.
 | [Polar.sh](https://polar.sh) | Sponsorships and payments for OSS. | Freemium | [Docs](https://docs.polar.sh) | open source, funding | Growing in OSS |
 | [BuyMeACoffee](https://www.buymeacoffee.com) | Donations and membership for creators. | Paid | [Docs](https://www.buymeacoffee.com/brand) | donations, creator | Very common |
 | [Ko-fi](https://ko-fi.com) | Support and shop for creators. | Freemium | [Docs](https://help.ko-fi.com) | donations, creator | Friendly fees |
+| [Selar](https://selar.com) | Sell digital products and courses in Africa. | Freemium | [Docs](https://selar.com/help) | africa, digital-products | Popular in Africa |
 
 ---
 
@@ -192,7 +241,7 @@ Automatically generated from the data files in `/data/`.
 
 ---
 
-## 🔐 Security & Privacy (12)
+## 🔐 Security & Privacy (13)
 
 | Name | Description | Type | Learn | Tags | Popularity |
 |------|--------------|------|-------|------|------------|
@@ -208,10 +257,11 @@ Automatically generated from the data files in `/data/`.
 | [1Password](https://1password.com) | Password manager for individuals and teams. | Paid | [Docs](https://support.1password.com) | passwords, security | Industry leader |
 | [Bitwarden](https://bitwarden.com) | Open-source password manager. | Freemium | [Docs](https://bitwarden.com/help) | passwords, open source | Loved by devs |
 | [HashiCorp Vault](https://www.vaultproject.io) | Secrets management and encryption. | Open Source | [Docs](https://developer.hashicorp.com/vault) | secrets, keys | Enterprise standard |
+| [Socket.dev](https://socket.dev) | Supply chain security for open-source dependencies. | Freemium | [Docs](https://docs.socket.dev) | supply chain, security, open source | Rising adoption |
 
 ---
 
-## 🧭 Project Management & Productivity (15)
+## 🧭 Project Management & Productivity (14)
 
 | Name | Description | Type | Learn | Tags | Popularity |
 |------|--------------|------|-------|------|------------|
@@ -229,7 +279,6 @@ Automatically generated from the data files in `/data/`.
 | [AppFlowy](https://www.appflowy.io) | Open-source Notion alternative. | Open Source | [Docs](https://docs.appflowy.io) | notes, open source | Active OSS |
 | [Obsidian](https://obsidian.md) | Knowledge base on local Markdown files. | Freemium | [Docs](https://help.obsidian.md) | notes, markdown | Huge community |
 | [Logseq](https://logseq.com) | Open-source outliner and knowledge graph. | Open Source | [Docs](https://docs.logseq.com) | notes, graph | Loved by researchers |
-| [Polar.sh](https://polar.sh) | Sponsorships and project funding. | Freemium | [Docs](https://docs.polar.sh) | funding, open source | Growing in OSS |
 
 ---
 
@@ -254,7 +303,23 @@ Automatically generated from the data files in `/data/`.
 
 ---
 
-## 🧠 Learning Resources (13)
+## 📝 Articles & Research (9)
+
+| Name | Description | Type | Learn | Tags | Popularity |
+|------|--------------|------|-------|------|------------|
+| [Medium](https://medium.com) | Publishing platform for technical articles and stories. | Freemium | [Docs](https://help.medium.com) | writing, blog | Very popular |
+| [LinkedIn Articles](https://www.linkedin.com) | Publish professional articles on LinkedIn. | Free | [Docs](https://www.linkedin.com/help/linkedin) | professional, network | Professional audience |
+| [Quora](https://www.quora.com) | Ask and answer platform with article-style posts. | Free | [Docs](https://help.quora.com) | q&a, knowledge | High traffic |
+| [Reddit](https://www.reddit.com) | Community platform with long-form posts and AMAs. | Free | [Docs](https://reddithelp.com) | community, discussion | Massive reach |
+| [Hashnode](https://hashnode.com) | Developer-focused blogging platform. | Free | [Docs](https://hashnode.com/onboard) | dev, blog | Developer audience |
+| [Dev.to](https://dev.to) | Developer community for publishing articles. | Free | [Docs](https://dev.to/new) | dev, articles | Large dev community |
+| [arXiv](https://arxiv.org) | Open-access archive for scholarly articles. | Free | [Docs](https://arxiv.org/help) | research, papers | Academic standard |
+| [ResearchGate](https://www.researchgate.net) | Network for researchers to share papers. | Free | [Docs](https://www.researchgate.net/help) | research, network | Academic network |
+| [Research Square](https://www.researchsquare.com) | Platform for early sharing of research papers. | Free | [Docs](https://www.researchsquare.com) | preprint, research | Growing academic use |
+
+---
+
+## 📚 Learning Resources (14)
 
 | Name | Description | Type | Learn | Tags | Popularity |
 |------|--------------|------|-------|------|------------|
@@ -271,6 +336,7 @@ Automatically generated from the data files in `/data/`.
 | [Supabase Docs](https://supabase.com/docs) | Docs and examples for Supabase platform. | Free | [Docs](https://supabase.com/docs) | db, auth | Very popular |
 | [Next.js Learn](https://nextjs.org/learn) | Official interactive course for Next.js. | Free | [Docs](https://nextjs.org/learn) | react, nextjs | Go-to resource |
 | [React.dev](https://react.dev) | Official React docs and tutorials. | Free | [Docs](https://react.dev/learn) | react, docs | Authoritative |
+| [Kaggle](https://www.kaggle.com) | Datasets, notebooks, and ML competitions. | Free | [Docs](https://www.kaggle.com/learn) | ml, datasets, notebooks | ML community |
 
 ---
 
