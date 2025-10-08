@@ -1,47 +1,51 @@
+
 import { useState, useEffect } from "react";
 import { Header } from "@/components/Header";
 import { Card } from "@/components/ui/card";
-import { Loader2, FolderCode, AlertCircle } from "lucide-react";
+import { Loader2, FolderCode, AlertCircle, FileText } from "lucide-react";
 import { Alert, AlertDescription } from "@/components/ui/alert";
-import ReactMarkdown from "react-markdown";
+import { Link } from "react-router-dom";
 
-interface Example {
-  name: string;
-  content: string;
-  path: string;
-}
+const EXAMPLE_FILES = [
+  "ai-chatbot-with-supabase.md",
+  "analytics-dashboard.md",
+  "file-uploader-app.md",
+  "image-generator-app.md",
+  "personal-dashboard.md",
+  "sample-projects.md"
+];
 
 const ExampleProjects = () => {
-  const [examples, setExamples] = useState<Example[]>([]);
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [exampleTitles, setExampleTitles] = useState<Record<string, string>>({});
 
   useEffect(() => {
-    const fetchExamples = async () => {
-      try {
-        // For now, we'll show a placeholder. In production, you'd fetch from GitHub API
-        // to list all .md files in the examples folder
-        setExamples([
-          {
-            name: "Example Projects",
-            content: "# Example Projects\n\nExplore real-world projects built with the tools in this toolkit!\n\nThis section will contain example projects from the repository's `examples` folder.",
-            path: "example-projects.md"
+    // Optionally, fetch the first heading from each example for display
+    const fetchTitles = async () => {
+      const titles: Record<string, string> = {};
+      await Promise.all(EXAMPLE_FILES.map(async (file) => {
+        try {
+          const res = await fetch(`https://raw.githubusercontent.com/programmify/builder-lab/main/examples/${file}`);
+          if (res.ok) {
+            const text = await res.text();
+            const match = text.match(/^#\s+(.*)/m);
+            titles[file] = match ? match[1] : file.replace(/\.md$/, "");
+          } else {
+            titles[file] = file.replace(/\.md$/, "");
           }
-        ]);
-        setIsLoading(false);
-      } catch (err) {
-        setError("Failed to load examples");
-        setIsLoading(false);
-      }
+        } catch {
+          titles[file] = file.replace(/\.md$/, "");
+        }
+      }));
+      setExampleTitles(titles);
     };
-
-    fetchExamples();
+    fetchTitles();
   }, []);
 
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      
       <main className="container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center gap-3 mb-8">
@@ -65,17 +69,22 @@ const ExampleProjects = () => {
             </Alert>
           )}
 
-          {!isLoading && !error && (
-            <div className="space-y-6">
-              {examples.map((example) => (
-                <Card key={example.path} className="p-6 gradient-card">
-                  <div className="prose prose-invert max-w-none">
-                    <ReactMarkdown>{example.content}</ReactMarkdown>
-                  </div>
-                </Card>
-              ))}
-            </div>
-          )}
+          <div className="space-y-4">
+            {EXAMPLE_FILES.map((file) => {
+              const slug = file.replace(/\.md$/, "");
+              return (
+                <Link to={`/examples/${slug}`} key={file} className="block">
+                  <Card className="p-4 flex items-center gap-4 hover:bg-accent-secondary/10 transition">
+                    <FileText className="w-6 h-6 text-accent-secondary" />
+                    <div>
+                      <h2 className="text-lg font-semibold mb-1">{exampleTitles[file] || slug}</h2>
+                      <span className="text-xs text-muted-foreground">{file}</span>
+                    </div>
+                  </Card>
+                </Link>
+              );
+            })}
+          </div>
         </div>
       </main>
     </div>

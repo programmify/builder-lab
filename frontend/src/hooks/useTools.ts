@@ -6,18 +6,22 @@ const GITHUB_BASE_URL = "https://raw.githubusercontent.com/programmify/builder-l
 const DATA_FILES = [
   "ai_tools.json",
   "analytics.json",
+  "articles_research.json",
+  "automation.json",
   "backend_tools.json",
   "communication_email.json",
   "design_tools.json",
   "dev_tools.json",
   "frontend_frameworks.json",
   "frontend_tools.json",
+  "hosting.json",
   "launch_community.json",
   "learning.json",
   "mobile_builders.json",
   "payments.json",
   "privacy.json",
-  "productivity.json"
+  "productivity.json",
+  "vibe_coding_tools.json"
 ];
 
 export const useTools = () => {

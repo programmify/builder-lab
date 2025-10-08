@@ -7,8 +7,7 @@
   {"name": "Microsoft Power Automate", "description": "Automate business processes.", "link": "https://powerautomate.microsoft.com", "type": "Freemium", "category": "Automation", "tags": ["microsoft", "business"], "popularity": "Enterprise focused", "tutorial": "https://docs.microsoft.com/power-automate"},
   {"name": "IFTTT", "description": "Simple automation for everyday tasks.", "link": "https://ifttt.com", "type": "Freemium", "category": "Automation", "tags": ["simple", "personal"], "popularity": "Consumer friendly", "tutorial": "https://ifttt.com/explore"},
   {"name": "Pipedream", "description": "Developer-first workflow automation.", "link": "https://pipedream.com", "type": "Freemium", "category": "Automation", "tags": ["developer", "api"], "popularity": "Loved by devs", "tutorial": "https://pipedream.com/docs"},
-  {"name": "Bardeen", "description": "AI-powered browser automation.", "link": "https://www.bardeen.ai", "type": "Freemium", "category": "Automation", "tags": ["ai", "browser"], "popularity": "Growing", "tutorial": "https://www.bardeen.ai/help"},
-  {"name": "Automate.io", "description": "Connect 200+ apps with automation.", "link": "https://automate.io", "type": "Freemium", "category": "Automation", "tags": ["integrations", "apps"], "popularity": "Good for SMBs", "tutorial": "https://automate.io/help"}
+  {"name": "Bardeen", "description": "AI-powered browser automation.", "link": "https://www.bardeen.ai", "type": "Freemium", "category": "Automation", "tags": ["ai", "browser"], "popularity": "Growing", "tutorial": "https://www.bardeen.ai/help"}
 ]
 
 
