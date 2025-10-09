@@ -1,15 +1,11 @@
+// Import assets to ensure they get bundled
 import faviconImage from "@/assets/favicon.png";
-import logoImage from "@/assets/logo.png";
 import ogImage from "@/assets/og-image.png";
 
+// Export the asset URLs so they can be used in HTML
+export { faviconImage, ogImage };
+
+// This component doesn't render anything, just ensures assets are bundled
 export const MetaAssets = () => {
-  return (
-    <>
-      <link rel="icon" type="image/png" href={faviconImage} />
-      <link rel="apple-touch-icon" href={faviconImage} />
-      <meta property="og:image" content={logoImage} />
-      <meta property="og:image:alt" content="Programmify logo" />
-      <meta name="twitter:image" content={logoImage} />
-    </>
-  );
+  return null;
 };
