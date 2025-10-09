@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { useIsMobile } from "@/hooks/use-mobile";
+import iconImage from "@/assets/icon.png";
 
 export const Header = () => {
   const [starCount, setStarCount] = useState<number | null>(null);
@@ -27,7 +28,7 @@ export const Header = () => {
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center overflow-hidden">
-              <img src="/icon.png" alt="Programmify" className="w-8 h-8" />
+              <img src={iconImage} alt="Programmify" className="w-8 h-8" />
             </div>
             <div>
             <span className="text-xl font-semibold" style={{ color: '#ffffff' }}>Builder Lab</span>

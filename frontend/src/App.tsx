@@ -9,6 +9,7 @@ import ExampleProjects from "./pages/ExampleProjects";
 import NotFound from "./pages/NotFound";
 import { GuideView } from "./pages/GuideView";
 import { ExampleView } from "./pages/ExampleView";
+import { MetaAssets } from "./components/MetaAssets";
 
 const queryClient = new QueryClient();
 
@@ -16,6 +17,7 @@ const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <div className="dark">
+        <MetaAssets />
         <Toaster />
         <Sonner />
         <BrowserRouter>
