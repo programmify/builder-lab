@@ -245,7 +245,7 @@ export const ChatInterface = ({ tools }: ChatInterfaceProps) => {
   return (
     <>
       <motion.div
-        className="fixed bottom-6 right-6 z-50"
+        className="fixed bottom-6 right-4 sm:right-6 z-50"
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         transition={{ duration: 0.3 }}
@@ -266,20 +266,20 @@ export const ChatInterface = ({ tools }: ChatInterfaceProps) => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 10 }}
             transition={{ duration: 0.15 }}
-            className="fixed bottom-24 right-6 z-50 w-[380px] sm:w-[420px] max-h-[calc(100vh-8rem)]"
+            className="fixed bottom-24 right-2 left-2 sm:right-6 sm:left-auto z-50 w-auto sm:w-[420px] max-h-[calc(100vh-8rem)]"
           >
             <Card className="flex flex-col h-[400px] max-h-[calc(100vh-8rem)] gradient-card border-accent-secondary/30 shadow-accent">
               <div className="p-3 border-b border-border/50 bg-accent-secondary">
-                <div className="flex items-center justify-between whitespace-nowrap">
-                  <div className="flex items-center gap-2">
-                    <h3 className="font-semibold text-white text-sm">AI Assistant</h3>
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2 min-w-0">
+                    <h3 className="font-semibold text-white text-sm truncate">AI Assistant</h3>
                     {!userApiKey.trim() && (
-                      <div className="w-2 h-2 bg-yellow-400 rounded-full animate-pulse" title="API key required" />
+                      <div className="w-2 h-2 bg-yellow-400 rounded-full animate-pulse flex-shrink-0" title="API key required" />
                     )}
                   </div>
-                  <div className="flex items-center gap-2 shrink-0">
+                  <div className="flex items-center gap-1 sm:gap-2 flex-shrink-0">
                     <Select value={selectedModel} onValueChange={setSelectedModel} disabled={!userApiKey.trim()}>
-                      <SelectTrigger className="w-[80px] h-6 text-xs bg-white/10 border-white/20 text-white disabled:opacity-50 shrink-0">
+                      <SelectTrigger className="w-[70px] sm:w-[80px] h-6 text-xs bg-white/10 border-white/20 text-white disabled:opacity-50 shrink-0">
                         <SelectValue />
                       </SelectTrigger>
                       <SelectContent>
