@@ -304,7 +304,7 @@ export const ChatInterface = ({ tools }: ChatInterfaceProps) => {
                           <Settings className="h-3 w-3" />
                         </Button>
                       </DialogTrigger>
-                      <DialogContent className="max-w-[95vw] sm:max-w-md mx-4">
+                      <DialogContent className="max-w-[95vw] sm:max-w-md">
                         <DialogHeader>
                           <DialogTitle className="flex items-center gap-2">
                             <Key className="h-4 w-4" />
