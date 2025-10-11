@@ -58,7 +58,6 @@ const categoryIcons: Record<string, React.ReactNode> = {
   'Project Management & Productivity': <Zap className="w-4 h-4" />,
   'Security & Privacy': <Lock className="w-4 h-4" />,
   'Vibe Coding Tools': <Coffee className="w-4 h-4" />,
-  'Other Utilities': <Wrench className="w-4 h-4" />,
 };
 
 export const CategoryFilter = ({ selectedCategory, onSelectCategory, categories }: CategoryFilterProps) => {

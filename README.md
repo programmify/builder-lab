@@ -64,7 +64,7 @@ Automatically generated from the data files in `/data/`.
 
 ---
 
-## 🧰 Developer Tools (20)
+## 🧰 Developer Tools (28)
 
 | Name | Description | Type | Learn | Tags | Popularity |
 |------|--------------|------|-------|------|------------|
@@ -88,6 +88,14 @@ Automatically generated from the data files in `/data/`.
 | [Ray.so](https://ray.so) | Create beautiful images of your code snippets for sharing on social or docs. | Free | [Docs](https://ray.so (homepage)) | visual, code, share | Popular for dev social posts |
 | [Carbon](https://carbon.now.sh) | Design tool to create beautiful images of source code for sharing. | Free | [Docs](https://carbon.now.sh (homepage)) | code, visual, design | Very popular |
 | [shadcn / AI Elements](https://www.shadcn.io/ai/tool) | React UI components designed for conversational AI interfaces (streaming, tool calls, reasoning) built with shadcn/ui and Vercel AI SDK. | Open Source | [Docs](https://www.shadcn.io/ai/tool#readme) | UI, React, AI, chat | Popular in AI+React devs |
+| [Turborepo (Turbo Cache)](https://turbo.build) | Monorepo build system and remote caching to speed up JS/TS builds and CI. | Freemium | [Docs](https://turbo.build/repo/docs) | monorepo, build, cache | Popular |
+| [Docker](https://www.docker.com) | Container platform to build, ship, and run distributed applications in containers. | Freemium | [Docs](https://docs.docker.com/get-started/) | containers, devops, docker | Very high |
+| [FileZilla](https://filezilla-project.org) | Open-source FTP client for transferring files between machines and servers. | Free | [Docs](https://wiki.filezilla-project.org/Documentation) | ftp, file transfer | Long-established |
+| [FreeFileSync](https://freefilesync.org) | Folder comparison and synchronization software for backups. | Free | [Docs](https://freefilesync.org/manual.php) | sync, backup, files | Useful for backups |
+| [Laragon](https://laragon.org) | Fast local development environment for Windows (Apache, MySQL, PHP combos). | Free | [Docs](https://laragon.org/documentation.html) | local dev, stack, windows | Popular with Windows devs |
+| [PuTTY](https://www.putty.org) | SSH and telnet client for Windows (terminal emulator). | Free | [Docs](https://the.earth.li/~sgtatham/putty/0.76/htmldoc/Chapter2.html) | ssh, terminal | Classic |
+| [WinSCP](https://winscp.net) | SFTP and FTP client for Windows with file manager UI and scripting support. | Free | [Docs](https://winscp.net/eng/docs/start) | sftp, ftp, file transfer | Widely used |
+| [XAMPP](https://www.apachefriends.org) | Local PHP/MySQL/Apache development environment for quickly running web apps locally. | Free | [Docs](https://www.apachefriends.org/faq.html) | local dev, php, apache | Common in PHP devs |
 
 ---
 
@@ -387,24 +395,6 @@ Automatically generated from the data files in `/data/`.
 | [Kaggle](https://www.kaggle.com) | Datasets, notebooks, and ML competitions. | Free | [Docs](https://www.kaggle.com/learn) | ml, datasets, notebooks | ML community |
 | [Y Combinator](https://www.youtube.com/@ycombinator/playlists) | Startup accelerator with educational content and resources. | Free | [Docs](https://www.youtube.com/@ycombinator/playlists) | startup, entrepreneurship, business | Highly respected |
 | [DevDocs](https://devdocs.io) | Aggregated API documentation browser for many languages and libraries in a fast, searchable interface. | Free | [Docs](https://devdocs.io (homepage)) | docs, reference, developer | Popular among devs |
-
----
-
-## 🔧 Other Utilities (11)
-
-| Name | Description | Type | Learn | Tags | Popularity |
-|------|--------------|------|-------|------|------------|
-| [Docker](https://www.docker.com) | Container platform to build, ship, and run distributed applications in containers. | Freemium | [Docs](https://docs.docker.com/get-started/) | containers, devops, docker | Very high |
-| [FileZilla](https://filezilla-project.org) | Open-source FTP client for transferring files between machines and servers. | Free | [Docs](https://wiki.filezilla-project.org/Documentation) | ftp, file transfer | Long-established |
-| [FreeFileSync](https://freefilesync.org) | Folder comparison and synchronization software for backups. | Free | [Docs](https://freefilesync.org/manual.php) | sync, backup, files | Useful for backups |
-| [Laragon](https://laragon.org) | Fast local development environment for Windows (Apache, MySQL, PHP combos). | Free | [Docs](https://laragon.org/documentation.html) | local dev, stack, windows | Popular with Windows devs |
-| [PuTTY](https://www.putty.org) | SSH and telnet client for Windows (terminal emulator). | Free | [Docs](https://the.earth.li/~sgtatham/putty/0.76/htmldoc/Chapter2.html) | ssh, terminal | Classic |
-| [WinSCP](https://winscp.net) | SFTP and FTP client for Windows with file manager UI and scripting support. | Free | [Docs](https://winscp.net/eng/docs/start) | sftp, ftp, file transfer | Widely used |
-| [XAMPP](https://www.apachefriends.org) | Local PHP/MySQL/Apache development environment for quickly running web apps locally. | Free | [Docs](https://www.apachefriends.org/faq.html) | local dev, php, apache | Common in PHP devs |
-| [Klotho](https://klo.dev) | Tooling to convert apps into cloud-native deployments and optimize cloud cost and infra. | Freemium | [Docs](https://docs.klo.dev) | cloud, deployment, infrastructure | Emerging |
-| [Turborepo (Turbo Cache)](https://turbo.build) | Monorepo build system and remote caching to speed up JS/TS builds and CI. | Freemium | [Docs](https://turbo.build/repo/docs) | monorepo, build, cache | Popular |
-| [Koding](https://koding.com) | Cloud-based development environment and workspace for teams. | Freemium | [Docs](https://koding.com/docs) | cloud ide, dev, workspace | Niche |
-| [Cloud9](https://aws.amazon.com/cloud9/) | AWS Cloud9 — cloud-based IDE from AWS with collaborative editing and terminal. | Freemium | [Docs](https://docs.aws.amazon.com/cloud9/latest/user-guide/) | cloud ide, aws, terminal | Used by AWS customers |
 
 ---
 

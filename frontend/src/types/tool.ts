@@ -31,5 +31,4 @@ export type Category =
   | 'Payments & Monetization'
   | 'Project Management & Productivity'
   | 'Security & Privacy'
-  | 'Vibe Coding Tools'
-  | 'Other Utilities';
+  | 'Vibe Coding Tools';
