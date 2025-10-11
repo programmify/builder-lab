@@ -1,8 +1,8 @@
-# 🌍 Builders Lab by Programmify
+# Builders Lab by Programmify
 
 Automatically generated from the data files in `/data/`.
 
-## 🧠 AI & LLM APIs (31)
+## AI & LLM APIs (31)
 
 | Name | Description | Type | Learn | Tags | Popularity |
 |------|--------------|------|-------|------|------------|
@@ -40,7 +40,7 @@ Automatically generated from the data files in `/data/`.
 
 ---
 
-## ⚡ Vibe Coding Tools (13)
+## Vibe Coding Tools (14)
 
 | Name | Description | Type | Learn | Tags | Popularity |
 |------|--------------|------|-------|------|------------|
@@ -57,10 +57,11 @@ Automatically generated from the data files in `/data/`.
 | [OpenCode.ai](https://opencode.ai) | AI-powered coding assistant and development platform. | Freemium | [Docs](https://opencode.ai) | ai, coding, assistant | Emerging |
 | [Qodo](https://www.qodo.ai) | AI assistant aimed at helping with code generation and developer workflows. | Freemium | [Docs](https://www.qodo.ai/docs) | AI, code, assistant | Emerging |
 | [Warp AI](https://www.warp.dev/warp-ai) | Terminal integrated AI agent that helps you generate commands, explain errors, and automate workflows by typing natural language in your shell. | Freemium | [Docs](https://www.warp.dev/docs/ai) | terminal, AI, CLI, agent | Growing in CLI dev community |
+| [Qwen Code CLI](https://github.com/QwenLM/qwen-code) | Open-source command-line AI workflow tool adapted from Gemini CLI, optimized for Qwen3-Coder models, for code editing, automation, and agentic tasks. | Open Source / Freemium | [Docs](https://qwenlm.github.io/qwen-code-docs/zh/ or GitHub README) | AI, CLI, coding, agent | Emerging but rapidly adopted |
 
 ---
 
-## 🧰 Developer Tools (28)
+## Developer Tools (28)
 
 | Name | Description | Type | Learn | Tags | Popularity |
 |------|--------------|------|-------|------|------------|
@@ -95,7 +96,7 @@ Automatically generated from the data files in `/data/`.
 
 ---
 
-## 📱 Mobile App Builders (14)
+## Mobile App Builders (14)
 
 | Name | Description | Type | Learn | Tags | Popularity |
 |------|--------------|------|-------|------|------------|
@@ -116,7 +117,7 @@ Automatically generated from the data files in `/data/`.
 
 ---
 
-## 🎨 Design, Video & Demo Creation (22)
+## Design, Video & Demo Creation (22)
 
 | Name | Description | Type | Learn | Tags | Popularity |
 |------|--------------|------|-------|------|------------|
@@ -145,7 +146,7 @@ Automatically generated from the data files in `/data/`.
 
 ---
 
-## 🧩 Frontend Frameworks (9)
+## Frontend Frameworks (9)
 
 | Name | Description | Type | Learn | Tags | Popularity |
 |------|--------------|------|-------|------|------------|
@@ -161,7 +162,7 @@ Automatically generated from the data files in `/data/`.
 
 ---
 
-## ⚙️ Backend & Databases (16)
+## Backend & Databases (16)
 
 | Name | Description | Type | Learn | Tags | Popularity |
 |------|--------------|------|-------|------|------------|
@@ -184,7 +185,7 @@ Automatically generated from the data files in `/data/`.
 
 ---
 
-## ☁️ Hosting & Deployment (13)
+## Hosting & Deployment (13)
 
 | Name | Description | Type | Learn | Tags | Popularity |
 |------|--------------|------|-------|------|------------|
@@ -204,7 +205,7 @@ Automatically generated from the data files in `/data/`.
 
 ---
 
-## 🤖 Automation & Workflows (12)
+## Automation & Workflows (12)
 
 | Name | Description | Type | Learn | Tags | Popularity |
 |------|--------------|------|-------|------|------------|
@@ -223,7 +224,7 @@ Automatically generated from the data files in `/data/`.
 
 ---
 
-## 💸 Payments & Monetization (12)
+## Payments & Monetization (12)
 
 | Name | Description | Type | Learn | Tags | Popularity |
 |------|--------------|------|-------|------|------------|
@@ -242,7 +243,7 @@ Automatically generated from the data files in `/data/`.
 
 ---
 
-## 📈 Analytics & Tracking (16)
+## Analytics & Tracking (16)
 
 | Name | Description | Type | Learn | Tags | Popularity |
 |------|--------------|------|-------|------|------------|
@@ -265,7 +266,7 @@ Automatically generated from the data files in `/data/`.
 
 ---
 
-## 📧 Communication & Email (17)
+## Communication & Email (17)
 
 | Name | Description | Type | Learn | Tags | Popularity |
 |------|--------------|------|-------|------|------------|
@@ -289,7 +290,7 @@ Automatically generated from the data files in `/data/`.
 
 ---
 
-## 🔐 Security & Privacy (16)
+## Security & Privacy (16)
 
 | Name | Description | Type | Learn | Tags | Popularity |
 |------|--------------|------|-------|------|------------|
@@ -312,7 +313,7 @@ Automatically generated from the data files in `/data/`.
 
 ---
 
-## 🧭 Project Management & Productivity (16)
+## Project Management & Productivity (16)
 
 | Name | Description | Type | Learn | Tags | Popularity |
 |------|--------------|------|-------|------|------------|
@@ -335,7 +336,7 @@ Automatically generated from the data files in `/data/`.
 
 ---
 
-## 🚀 Launch & Community Platforms (13)
+## Launch & Community Platforms (13)
 
 | Name | Description | Type | Learn | Tags | Popularity |
 |------|--------------|------|-------|------|------------|
@@ -355,7 +356,7 @@ Automatically generated from the data files in `/data/`.
 
 ---
 
-## 📝 Articles & Research (9)
+## Articles & Research (9)
 
 | Name | Description | Type | Learn | Tags | Popularity |
 |------|--------------|------|-------|------|------------|
@@ -371,7 +372,7 @@ Automatically generated from the data files in `/data/`.
 
 ---
 
-## 📚 Learning Resources (16)
+## Learning Resources (16)
 
 | Name | Description | Type | Learn | Tags | Popularity |
 |------|--------------|------|-------|------|------------|

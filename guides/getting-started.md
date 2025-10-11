@@ -2,11 +2,11 @@
 
 Welcome to **Builders Lab by Programmify**! This guide will help you navigate the toolkit and start building amazing AI-powered applications.
 
-## 🎯 What is Builders Lab by Programmify?
+## What is Builders Lab by Programmify?
 
 Builders Lab by Programmify is a comprehensive collection of tools, frameworks, and resources designed to help developers, especially PIP4 interns, build AI-powered applications quickly and efficiently. It covers everything from AI APIs to deployment platforms.
 
-## 🚀 Quick Start Guide
+## Quick Start Guide
 
 ### 1. Choose Your Project Type
 
@@ -66,7 +66,7 @@ SUPABASE_URL=your_supabase_url
 SUPABASE_ANON_KEY=your_supabase_key
 ```
 
-## 📚 Learning Paths
+## Learning Paths
 
 ### Path 1: AI Chatbot (Beginner)
 1. **Week 1**: Learn Next.js basics
@@ -104,39 +104,39 @@ SUPABASE_ANON_KEY=your_supabase_key
 - Workflow automation tools
 - Advanced deployment strategies
 
-## 🛠️ Tool Categories Explained
+## Tool Categories Explained
 
-### 🧠 AI & LLM APIs
+### AI & LLM APIs
 - **OpenAI**: GPT models, embeddings, fine-tuning
 - **Groq**: Ultra-fast inference for chat UIs
 - **Hugging Face**: Open-source models and datasets
 - **Replicate**: Run models in the cloud
 
-### ⚡ Vibe Coding Tools
+### Vibe Coding Tools
 - **Cursor**: AI-powered code editor
 - **Lovable**: AI full-stack builder
 - **Bolt**: AI code generation
 - **Warp**: AI terminal
 
-### 🧰 Developer Tools
+### Developer Tools
 - **VS Code**: Extensible code editor
 - **GitHub**: Version control and collaboration
 - **Docker**: Containerization
 - **Prisma**: Database ORM
 
-### ☁️ Hosting & Deployment
+### Hosting & Deployment
 - **Vercel**: Frontend deployment
 - **Railway**: Full-stack hosting
 - **Fly.io**: Global app deployment
 - **Cloudflare Workers**: Edge computing
 
-### 🤖 Automation & Workflows
+### Automation & Workflows
 - **n8n**: Open-source workflow automation
 - **Zapier**: Connect apps and automate tasks
 - **Make**: Visual workflow automation
 - **Pipedream**: Developer-first automation
 
-## 💡 Best Practices
+## Best Practices
 
 ### 1. Start Small
 - Begin with a simple project
@@ -160,7 +160,7 @@ SUPABASE_ANON_KEY=your_supabase_key
 - Implement caching strategies
 - Monitor performance
 
-## 🎯 Project Ideas
+## Project Ideas
 
 ### Beginner Projects
 1. **AI Chatbot**: Simple Q&A bot
@@ -180,7 +180,7 @@ SUPABASE_ANON_KEY=your_supabase_key
 3. **AI Workflow Engine**: Complex automation
 4. **AI Analytics Platform**: Advanced insights
 
-## 🚀 Deployment Strategies
+## Deployment Strategies
 
 ### 1. Frontend Deployment
 - **Vercel**: Best for Next.js apps
@@ -197,7 +197,7 @@ SUPABASE_ANON_KEY=your_supabase_key
 - **Neon**: Serverless Postgres
 - **PlanetScale**: MySQL with branching
 
-## 📖 Learning Resources
+## Learning Resources
 
 ### Documentation
 - [Next.js Docs](https://nextjs.org/docs)
@@ -214,7 +214,7 @@ SUPABASE_ANON_KEY=your_supabase_key
 - [GitHub](https://github.com/programmify) - Open source projects
 - [Twitter](https://twitter.com/programmify) - Latest updates
 
-## 🆘 Getting Help
+## Getting Help
 
 ### 1. Check Documentation
 - Always read the official docs first
@@ -232,7 +232,7 @@ SUPABASE_ANON_KEY=your_supabase_key
 - Test API endpoints
 - Validate environment variables
 
-## 🎉 Next Steps
+## Next Steps
 
 1. **Choose a project** from the examples
 2. **Set up your development environment**
@@ -244,6 +244,6 @@ Remember: The best way to learn is by building. Start with something simple, and
 
 ---
 
-**Happy Building! 🚀**
+**Happy Building!**
 
 *Need help? Join our [Discord community](https://discord.gg/programmify) or check out our [GitHub repository](https://github.com/programmify/builder-lab).*

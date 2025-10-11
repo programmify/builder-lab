@@ -2,7 +2,7 @@
 
 Build a modern file upload application with drag-and-drop, progress tracking, and cloud storage.
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Frontend**: Next.js 14 with App Router
 - **Storage**: UploadThing + EdgeStore
@@ -11,14 +11,14 @@ Build a modern file upload application with drag-and-drop, progress tracking, an
 - **Styling**: Tailwind CSS + shadcn/ui
 - **Deployment**: Vercel
 
-## 📋 Prerequisites
+## Prerequisites
 
 - Node.js 18+
 - UploadThing account
 - Supabase account
 - Clerk account
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Create Next.js App
 
@@ -408,24 +408,24 @@ export default function Home() {
 }
 ```
 
-## 🚀 Deployment
+## Deployment
 
 1. Push to GitHub
 2. Connect to Vercel
 3. Add environment variables
 4. Deploy!
 
-## 🎯 Features Added
+## Features Added
 
-- ✅ Drag & drop file upload
-- ✅ Progress tracking
-- ✅ File type validation
-- ✅ Image previews
-- ✅ File gallery with search
-- ✅ Delete functionality
-- ✅ Responsive design
+- Drag & drop file upload
+- Progress tracking
+- File type validation
+- Image previews
+- File gallery with search
+- Delete functionality
+- Responsive design
 
-## 🔧 Customization
+## Customization
 
 - **Multiple file types**: Add support for videos, documents
 - **File organization**: Add folders and tags
@@ -434,7 +434,7 @@ export default function Home() {
 - **Bulk operations**: Select multiple files
 - **Virus scanning**: Integrate with security services
 
-## 📚 Next Steps
+## Next Steps
 
 - Add file sharing capabilities
 - Implement file versioning

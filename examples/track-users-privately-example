@@ -1,0 +1,464 @@
+# Track Users Privately Example
+
+Privacy-first analytics let you understand user behavior without compromising their privacy. This guide shows you how to set up Plausible and Umami with real examples.
+
+## Why Privacy-First Analytics?
+
+- **No cookies required** - GDPR/CCPA compliant by default
+- **No personal data** - No IP addresses, no tracking across sites
+- **Lightweight** - Under 1KB scripts vs 45KB+ for Google Analytics
+- **User trust** - Transparent about what you collect
+
+---
+
+## Option 1: Plausible Analytics
+
+### Cloud-Hosted Setup (Easiest)
+
+**Step 1: Sign up**
+```bash
+# Visit plausible.io and create an account
+# Plans start at $9/month for 10k monthly pageviews
+```
+
+**Step 2: Add your site**
+1. Click "Add a website"
+2. Enter your domain: `example.com`
+3. Select timezone
+
+**Step 3: Install tracking script**
+
+Add this to your HTML `<head>`:
+```html
+<script defer data-domain="yourdomain.com" 
+  src="https://plausible.io/js/script.js"></script>
+```
+
+For Next.js, create a component:
+```javascript
+// components/PlausibleAnalytics.js
+import Script from 'next/script'
+
+export default function PlausibleAnalytics() {
+  return (
+    <Script
+      defer
+      data-domain="yourdomain.com"
+      src="https://plausible.io/js/script.js"
+    />
+  )
+}
+```
+
+Then add to `_app.js`:
+```javascript
+import PlausibleAnalytics from '../components/PlausibleAnalytics'
+
+function MyApp({ Component, pageProps }) {
+  return (
+    <>
+      <PlausibleAnalytics />
+      <Component {...pageProps} />
+    </>
+  )
+}
+```
+
+### Self-Hosted Setup
+
+**Prerequisites:**
+- VPS with 2GB RAM minimum
+- Docker and Docker Compose installed
+- Domain with DNS access
+
+**Step 1: Clone repository**
+```bash
+git clone https://github.com/plausible/hosting
+cd hosting
+```
+
+**Step 2: Configure environment**
+```bash
+# Generate secret key
+openssl rand -base64 64
+
+# Edit plausible-conf.env
+nano plausible-conf.env
+```
+
+Add these variables:
+```bash
+ADMIN_USER_EMAIL=you@example.com
+ADMIN_USER_NAME=YourName
+ADMIN_USER_PWD=your-secure-password
+BASE_URL=https://analytics.yourdomain.com
+SECRET_KEY_BASE=your-generated-secret-key
+
+# Disable registration after you create your account
+DISABLE_REGISTRATION=true
+```
+
+**Step 3: Start services**
+```bash
+docker-compose up -d
+```
+
+**Step 4: Set up reverse proxy (Nginx)**
+```nginx
+server {
+    listen 443 ssl http2;
+    server_name analytics.yourdomain.com;
+
+    ssl_certificate /etc/letsencrypt/live/analytics.yourdomain.com/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/analytics.yourdomain.com/privkey.pem;
+
+    location / {
+        proxy_pass http://localhost:8000;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    }
+}
+```
+
+**Step 5: Use your self-hosted instance**
+```html
+<script defer data-domain="yourdomain.com" 
+  src="https://analytics.yourdomain.com/js/script.js"></script>
+```
+
+---
+
+## Option 2: Umami Analytics
+
+### Cloud-Hosted Setup
+
+**Step 1: Sign up**
+```bash
+# Visit umami.is/pricing
+# Free tier: 100k events/month
+```
+
+**Step 2: Create website**
+1. Go to Settings → Websites
+2. Click "Add website"
+3. Enter name and domain
+
+**Step 3: Get tracking code**
+```html
+<script defer 
+  src="https://analytics.umami.is/script.js" 
+  data-website-id="your-website-id"></script>
+```
+
+### Self-Hosted Setup (Recommended)
+
+**Option A: Deploy to Vercel (Simplest)**
+
+**Step 1: Fork repository**
+```bash
+# Go to https://github.com/umami-software/umami
+# Click "Fork"
+```
+
+**Step 2: Create database**
+```bash
+# Use Railway, Supabase, or PlanetScale for free PostgreSQL
+# Get connection string like:
+# postgresql://user:password@host:5432/dbname
+```
+
+**Step 3: Deploy to Vercel**
+1. Go to vercel.com/new
+2. Import your forked repository
+3. Add environment variables:
+
+```bash
+DATABASE_URL=postgresql://user:password@host:5432/dbname
+HASH_SALT=$(openssl rand -hex 32)
+```
+
+4. Deploy!
+
+**Step 4: Create admin account**
+Visit your deployment URL, default login:
+```
+Username: admin
+Password: umami
+```
+
+Change immediately after first login!
+
+**Option B: Docker Self-Hosted**
+
+**Step 1: Create docker-compose.yml**
+```yaml
+version: '3'
+services:
+  umami:
+    image: ghcr.io/umami-software/umami:postgresql-latest
+    ports:
+      - "3000:3000"
+    environment:
+      DATABASE_URL: postgresql://umami:umami@db:5432/umami
+      DATABASE_TYPE: postgresql
+      HASH_SALT: ${HASH_SALT}
+    depends_on:
+      - db
+    restart: always
+  
+  db:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_DB: umami
+      POSTGRES_USER: umami
+      POSTGRES_PASSWORD: umami
+    volumes:
+      - ./sql/schema.postgresql.sql:/docker-entrypoint-initdb.d/schema.postgresql.sql:ro
+      - umami-db-data:/var/lib/postgresql/data
+    restart: always
+
+volumes:
+  umami-db-data:
+```
+
+**Step 2: Create .env file**
+```bash
+echo "HASH_SALT=$(openssl rand -hex 32)" > .env
+```
+
+**Step 3: Get database schema**
+```bash
+mkdir sql
+wget https://raw.githubusercontent.com/umami-software/umami/master/sql/schema.postgresql.sql -O sql/schema.postgresql.sql
+```
+
+**Step 4: Start services**
+```bash
+docker-compose up -d
+```
+
+**Step 5: Access Umami**
+```
+URL: http://localhost:3000
+Username: admin
+Password: umami
+```
+
+**Step 6: Install tracking script**
+```html
+<script defer 
+  src="http://your-server:3000/script.js" 
+  data-website-id="your-website-id"></script>
+```
+
+---
+
+## Advanced: Custom Event Tracking
+
+### Plausible Custom Events
+
+Track button clicks:
+```javascript
+// Plain JavaScript
+document.getElementById('signup-button').addEventListener('click', () => {
+  plausible('Signup', {props: {plan: 'pro'}})
+})
+
+// React
+import { usePlausible } from 'next-plausible'
+
+function SignupButton() {
+  const plausible = usePlausible()
+  
+  return (
+    <button onClick={() => plausible('Signup', {props: {plan: 'pro'}})}>
+      Sign Up
+    </button>
+  )
+}
+```
+
+### Umami Custom Events
+
+```javascript
+// Track custom event
+umami.track('signup-click', {plan: 'pro', source: 'homepage'})
+
+// Track with properties
+umami.track(props => ({
+  ...props,
+  userId: '12345'
+}))
+```
+
+For React/Next.js:
+```javascript
+import { useEffect } from 'react'
+
+function SignupButton() {
+  const trackEvent = () => {
+    if (window.umami) {
+      window.umami.track('signup-click', {plan: 'pro'})
+    }
+  }
+  
+  return <button onClick={trackEvent}>Sign Up</button>
+}
+```
+
+---
+
+## Privacy Policy Template
+
+Include this in your privacy policy:
+
+```markdown
+### Analytics
+
+We use [Plausible/Umami] Analytics to understand how visitors use our site. 
+This is a privacy-first analytics tool that:
+
+- Does not use cookies
+- Does not collect personal information
+- Does not track you across websites
+- Does not collect IP addresses
+
+Data collected:
+- Page URL
+- HTTP Referrer
+- Browser type
+- Operating system
+- Device type
+- Country (derived from IP, not stored)
+
+Data retention: 24 months
+
+You can opt out by enabling "Do Not Track" in your browser or using an ad blocker.
+```
+
+---
+
+## Best Practices
+
+### 1. Respect Do Not Track
+```javascript
+// Check DNT before loading analytics
+if (navigator.doNotTrack !== "1") {
+  // Load analytics script
+}
+```
+
+### 2. Use Subresource Integrity (SRI)
+```html
+<script defer 
+  src="https://plausible.io/js/script.js"
+  integrity="sha384-abc123..."
+  crossorigin="anonymous"></script>
+```
+
+### 3. Proxy Your Analytics (Avoid Ad Blockers)
+
+**Nginx proxy for Plausible:**
+```nginx
+location = /js/script.js {
+    proxy_pass https://plausible.io/js/script.js;
+    proxy_ssl_server_name on;
+}
+
+location = /api/event {
+    proxy_pass https://plausible.io/api/event;
+    proxy_ssl_server_name on;
+}
+```
+
+Update script:
+```html
+<script defer data-domain="yourdomain.com" 
+  src="/js/script.js"></script>
+```
+
+### 4. Minimal Data Retention
+
+Configure automatic deletion:
+- Plausible: Settings → Data Retention → 12 months
+- Umami: Settings → Websites → Data Retention → 365 days
+
+### 5. Regular Audits
+```bash
+# Monthly: Review what's being tracked
+# Quarterly: Check for unused metrics
+# Yearly: Update privacy policy
+```
+
+---
+
+## Comparison Table
+
+| Feature | Plausible | Umami | Google Analytics |
+|---------|-----------|-------|------------------|
+| Cookie-free | ✅ | ✅ | ❌ |
+| GDPR compliant | ✅ | ✅ | Requires consent |
+| Self-hostable | ✅ | ✅ | ❌ |
+| Script size | <1KB | <2KB | ~45KB |
+| Real-time | ✅ | ✅ | ⚠️ Delayed |
+| Open source | ✅ | ✅ | ❌ |
+| Free tier | ❌ | ✅ | ✅ |
+
+---
+
+## Troubleshooting
+
+### Script not loading?
+```javascript
+// Check if script loaded
+console.log(typeof plausible !== 'undefined' ? 'Plausible loaded' : 'Not loaded')
+console.log(typeof umami !== 'undefined' ? 'Umami loaded' : 'Not loaded')
+```
+
+### Events not showing?
+- Check browser console for errors
+- Verify website ID is correct
+- Ensure script is in `<head>`, not `<body>`
+- Disable ad blockers during testing
+
+### Self-hosted not working?
+```bash
+# Check Docker containers
+docker-compose ps
+
+# View logs
+docker-compose logs -f umami
+
+# Restart services
+docker-compose restart
+```
+
+---
+
+## Cost Comparison
+
+**Plausible Cloud:**
+- 10k pageviews: $9/month
+- 100k pageviews: $19/month
+- 1M pageviews: $69/month
+
+**Umami Cloud:**
+- 100k events: Free
+- 1M events: $20/month
+- 10M events: $100/month
+
+**Self-Hosted (both):**
+- VPS: $5-10/month (Hetzner, DigitalOcean)
+- Database: Free (included) or $0-15/month
+- Domain: ~$10/year
+- **Total: ~$5-15/month for unlimited traffic**
+
+---
+
+## Resources
+
+- [Plausible Documentation](https://plausible.io/docs)
+- [Umami Documentation](https://umami.is/docs)
+- [Plausible GitHub](https://github.com/plausible/analytics)
+- [Umami GitHub](https://github.com/umami-software/umami)
+- [GDPR Compliance Guide](https://gdpr.eu/)
+- [Privacy-First Analytics Comparison](https://github.com/privacyguides/privacyguides.org)

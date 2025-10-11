@@ -130,7 +130,7 @@ const Index = () => {
 
       <footer className="border-t border-border/50 mt-20 py-8">
         <div className="container mx-auto px-4 text-center text-sm text-muted-foreground">
-          <p>Built with 💙 by <a style={{ color: '#6cbcec' }} href="https://programmify.org">Programmify</a></p>
+          <p>Built with 💙 by <a style={{ color: '#6cbcec' }} href="https://programmify.org">Programmify Team</a></p>
         </div>
       </footer>
 

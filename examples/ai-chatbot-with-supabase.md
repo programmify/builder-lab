@@ -2,7 +2,7 @@
 
 Build a full-stack AI chatbot with authentication, real-time chat, and message history.
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Frontend**: Next.js 14 with App Router
 - **Backend**: Supabase (PostgreSQL + Auth + Realtime)
@@ -10,13 +10,13 @@ Build a full-stack AI chatbot with authentication, real-time chat, and message h
 - **Styling**: Tailwind CSS
 - **Deployment**: Vercel
 
-## 📋 Prerequisites
+## Prerequisites
 
 - Node.js 18+
 - Supabase account
 - OpenAI API key or Groq API key
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Create Next.js App
 
@@ -300,14 +300,14 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 export const useAuth = () => useContext(AuthContext)
 ```
 
-## 🚀 Deployment
+## Deployment
 
 1. Push to GitHub
 2. Connect to Vercel
 3. Add environment variables in Vercel dashboard
 4. Deploy!
 
-## 🎯 Features Added
+## Features Added
 
 - ✅ User authentication with Google OAuth
 - ✅ Real-time chat interface
@@ -316,7 +316,7 @@ export const useAuth = () => useContext(AuthContext)
 - ✅ Responsive design
 - ✅ Loading states
 
-## 🔧 Customization
+## Customization
 
 - **Different AI models**: Switch to Groq, Anthropic, or local models
 - **Streaming responses**: Use OpenAI's streaming API
@@ -324,7 +324,7 @@ export const useAuth = () => useContext(AuthContext)
 - **Voice chat**: Integrate speech-to-text
 - **Custom prompts**: Add system messages for different personalities
 
-## 📚 Next Steps
+## Next Steps
 
 - Add message search
 - Implement conversation threads

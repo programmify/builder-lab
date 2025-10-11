@@ -164,5 +164,15 @@
     "tags": ["terminal", "AI", "CLI", "agent"],
     "popularity": "Growing in CLI dev community",
     "tutorial": "https://www.warp.dev/docs/ai"
-  }
+  },
+  {
+    "name": "Qwen Code CLI",
+    "description": "Open-source command-line AI workflow tool adapted from Gemini CLI, optimized for Qwen3-Coder models, for code editing, automation, and agentic tasks.",
+    "link": "https://github.com/QwenLM/qwen-code",
+    "type": "Open Source / Freemium",
+    "category": "Vibe Coding Tools",
+    "tags": ["AI", "CLI", "coding", "agent"],
+    "popularity": "Emerging but rapidly adopted",
+    "tutorial": "https://qwenlm.github.io/qwen-code-docs/zh/ or GitHub README"
+  }  
 ]
