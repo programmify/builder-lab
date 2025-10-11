@@ -28,7 +28,8 @@ import {
   Smartphone as Mobile,
   Lock,
   Coffee,
-  Video
+  Video,
+  Wrench
 } from "lucide-react";
 
 interface CategoryFilterProps {
@@ -57,6 +58,7 @@ const categoryIcons: Record<string, React.ReactNode> = {
   'Project Management & Productivity': <Zap className="w-4 h-4" />,
   'Security & Privacy': <Lock className="w-4 h-4" />,
   'Vibe Coding Tools': <Coffee className="w-4 h-4" />,
+  'Other Utilities': <Wrench className="w-4 h-4" />,
 };
 
 export const CategoryFilter = ({ selectedCategory, onSelectCategory, categories }: CategoryFilterProps) => {
@@ -64,33 +66,35 @@ export const CategoryFilter = ({ selectedCategory, onSelectCategory, categories 
     <>
       {/* Desktop Sidebar */}
       <motion.div 
-        className="hidden lg:block space-y-2"
+        className="hidden lg:block space-y-2 max-h-[calc(100vh-200px)] overflow-y-auto scrollbar-hide"
         initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 0.3 }}
       >
-        <h3 className="font-semibold text-sm text-muted-foreground px-3 mb-4">Categories</h3>
-        {categories.map((category, index) => (
-          <motion.div
-            key={category}
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.3 + index * 0.05 }}
-          >
-            <Button
-              variant="ghost"
-              className={`w-full justify-start gap-2 transition-all duration-200 ${
-                selectedCategory === category 
-                  ? '!bg-[#344b9c] !text-white hover:!bg-[#6cbcec]' 
-                  : 'hover:!bg-[#6cbcec] hover:!text-white'
-              }`}
-              onClick={() => onSelectCategory(category)}
+        <h3 className="font-semibold text-sm text-muted-foreground px-3 mb-4 sticky top-0 bg-background z-10">Categories</h3>
+        <div className="space-y-1">
+          {categories.map((category, index) => (
+            <motion.div
+              key={category}
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.3 + index * 0.05 }}
             >
-              {categoryIcons[category]}
-              {category}
-            </Button>
-          </motion.div>
-        ))}
+              <Button
+                variant="ghost"
+                className={`w-full justify-start gap-2 transition-all duration-200 ${
+                  selectedCategory === category 
+                    ? '!bg-[#344b9c] !text-white hover:!bg-[#6cbcec]' 
+                    : 'hover:!bg-[#6cbcec] hover:!text-white'
+                }`}
+                onClick={() => onSelectCategory(category)}
+              >
+                {categoryIcons[category]}
+                {category}
+              </Button>
+            </motion.div>
+          ))}
+        </div>
       </motion.div>
 
       {/* Mobile Horizontal Scroll */}

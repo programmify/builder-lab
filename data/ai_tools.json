@@ -158,6 +158,166 @@
     "tags": ["notebooks", "gpu", "ml"],
     "popularity": "Widely used",
     "tutorial": "https://colab.research.google.com"
-  }
+  },
+  {
+    "name": "Claude",
+    "description": "AI assistant for chat and reasoning, hosted by Anthropic.",
+    "link": "https://claude.ai",
+    "type": "Freemium",
+    "category": "AI & LLM APIs",
+    "tags": ["AI", "assistant", "chat"],
+    "popularity": "Widely used",
+    "tutorial": "https://claude.ai/docs"
+  },
+  {
+    "name": "ChatGPT",
+    "description": "Conversational AI by OpenAI, useful for general-purpose chat, QA, and integration.",
+    "link": "https://chatgpt.com",
+    "type": "Freemium",
+    "category": "AI & LLM APIs",
+    "tags": ["AI", "chat", "LLM"],
+    "popularity": "Mainstream",
+    "tutorial": "https://platform.openai.com/docs/guides/chat"
+  },
+  {
+    "name": "AutoGPT",
+    "description": "Open-source autonomous agent framework that orchestrates LLMs to perform multi-step tasks.",
+    "link": "https://github.com/Significant-Gravitas/AutoGPT",
+    "type": "Open Source",
+    "category": "AI & LLM APIs",
+    "tags": ["agent", "LLM", "automation"],
+    "popularity": "Well-known in agent community",
+    "tutorial": "https://github.com/Significant-Gravitas/Auto-GPT#readme"
+  },
+  {
+    "name": "AutoGen (Microsoft)",
+    "description": "Multi-agent orchestration framework from Microsoft for building LLM-powered workflows and applications.",
+    "link": "https://github.com/microsoft/autogen",
+    "type": "Open Source",
+    "category": "AI & LLM APIs",
+    "tags": ["agent", "orchestration", "LLM"],
+    "popularity": "Emerging enterprise interest",
+    "tutorial": "https://github.com/microsoft/autogen#readme"
+  },
+  {
+    "name": "LangChain",
+    "description": "Framework for building applications with LLMs by chaining prompts, agents, and memory together.",
+    "link": "https://github.com/langchain-ai/langchain",
+    "type": "Open Source",
+    "category": "AI & LLM APIs",
+    "tags": ["framework", "LLM", "agents"],
+    "popularity": "Very high",
+    "tutorial": "https://python.langchain.com/en/latest/"
+  },
+  {
+    "name": "LlamaIndex (formerly GPT-Index)",
+    "description": "Indexing and data-connector library to connect LLMs to external data sources for retrieval-augmented generation.",
+    "link": "https://github.com/jerryjliu/llama_index",
+    "type": "Open Source",
+    "category": "AI & LLM APIs",
+    "tags": ["RAG", "indexing", "LLM"],
+    "popularity": "High among RAG builders",
+    "tutorial": "https://llamaindex.ai/docs/"
+  },
+  {
+    "name": "VLLM",
+    "description": "High-performance LLM inference engine for faster CPU/GPU batched inference.",
+    "link": "https://github.com/vllm-project/vllm",
+    "type": "Open Source",
+    "category": "AI & LLM APIs",
+    "tags": ["inference", "LLM", "performance"],
+    "popularity": "Popular for inference optimization",
+    "tutorial": "https://github.com/vllm-project/vllm#readme"
+  },
+  {
+    "name": "GooseAI",
+    "description": "Managed service and model host providing access to various foundation models and inference endpoints.",
+    "link": "https://www.goose.ai",
+    "type": "Freemium",
+    "category": "AI & LLM APIs",
+    "tags": ["inference", "models", "host"],
+    "popularity": "Niche / growing",
+    "tutorial": "https://www.goose.ai/docs"
+  },
+  {
+    "name": "Langflow",
+    "description": "Visual builder for LLM chains and flows — drag-and-drop interface for LangChain-compatible components.",
+    "link": "https://github.com/langflow-ai/langflow",
+    "type": "Open Source",
+    "category": "AI & LLM APIs",
+    "tags": ["visual", "workflow", "LLM"],
+    "popularity": "Indie favorite",
+    "tutorial": "https://github.com/langflow-ai/langflow#readme"
+  },
+  {
+    "name": "Letta",
+    "description": "Conversational AI framework designed to build chat experiences and conversational agents.",
+    "link": "https://github.com/letta-ai/letta",
+    "type": "Open Source",
+    "category": "AI & LLM APIs",
+    "tags": ["conversational", "AI", "framework"],
+    "popularity": "Emerging",
+    "tutorial": "https://github.com/letta-ai/letta#readme"
+  },
+  {
+    "name": "Apidog",
+    "description": "API testing platform (with AI-assisted features) for designing, testing, and documenting APIs.",
+    "link": "https://apidog.com",
+    "type": "Freemium",
+    "category": "AI & LLM APIs",
+    "tags": ["API", "testing", "automation"],
+    "popularity": "Indie dev favorite",
+    "tutorial": "https://apidog.com/docs"
+  },
+  {
+    "name": "Qodo",
+    "description": "AI assistant focused on code completion, refactorings and code understanding (developer-facing).",
+    "link": "https://www.qodo.ai",
+    "type": "Freemium",
+    "category": "AI & LLM APIs",
+    "tags": ["AI", "code", "assistant"],
+    "popularity": "Emerging",
+    "tutorial": "https://www.qodo.ai/docs"
+  },
+  {
+    "name": "DeepSeek",
+    "description": "AI-powered semantic search and reasoning product that enables building powerful search experiences.",
+    "link": "https://www.deepseek.com",
+    "type": "Freemium",
+    "category": "AI & LLM APIs",
+    "tags": ["semantic search", "AI", "retrieval"],
+    "popularity": "Niche",
+    "tutorial": "https://www.deepseek.com/docs"
+  },
+  {
+    "name": "Google Gemini",
+    "description": "Google’s family of large multimodal models and APIs for chat, images, and coding assistance.",
+    "link": "https://gemini.google.com",
+    "type": "Freemium",
+    "category": "AI & LLM APIs",
+    "tags": ["multimodal", "Google", "LLM"],
+    "popularity": "Mainstream",
+    "tutorial": "https://developers.generativeai.google"
+  },
+  {
+    "name": "NotebookLM",
+    "description": "Google’s research assistant that helps you ask questions and get answers from documents and notes.",
+    "link": "https://notebooklm.google.com",
+    "type": "Freemium",
+    "category": "AI & LLM APIs",
+    "tags": ["research", "notebook", "LLM"],
+    "popularity": "Google product audience",
+    "tutorial": "https://support.google.com/assistant/answer/..."
+  },
+  {
+    "name": "Qwen Code CLI",
+    "description": "Open-source command-line AI workflow tool adapted from Gemini CLI, optimized for Qwen3-Coder models, for code editing, automation, and agentic tasks.",
+    "link": "https://github.com/QwenLM/qwen-code",
+    "type": "Open Source / Freemium",
+    "category": "Vibe Coding Tools",
+    "tags": ["AI", "CLI", "coding", "agent"],
+    "popularity": "Emerging but rapidly adopted",
+    "tutorial": "https://qwenlm.github.io/qwen-code-docs/zh/ or GitHub README"
+  }  
 ]
 

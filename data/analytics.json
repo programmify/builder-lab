@@ -1,12 +1,192 @@
 [
-  {"name": "PostHog", "description": "Open-source product analytics with session replays.", "link": "https://posthog.com", "type": "Open Source", "category": "Analytics & Tracking", "tags": ["analytics", "oss"], "popularity": "Widely adopted", "tutorial": "https://posthog.com/docs"},
-  {"name": "Plausible Analytics", "description": "Privacy-friendly, lightweight web analytics.", "link": "https://plausible.io", "type": "Paid", "category": "Analytics & Tracking", "tags": ["privacy", "web"], "popularity": "Popular in EU", "tutorial": "https://plausible.io/docs"},
-  {"name": "Umami", "description": "Simple, open-source web analytics.", "link": "https://umami.is", "type": "Open Source", "category": "Analytics & Tracking", "tags": ["privacy", "oss"], "popularity": "Great self-host option", "tutorial": "https://umami.is/docs"},
-  {"name": "Matomo", "description": "Open-source analytics alternative to GA.", "link": "https://matomo.org", "type": "Open Source", "category": "Analytics & Tracking", "tags": ["privacy", "self-host"], "popularity": "Used by gov and enterprises", "tutorial": "https://matomo.org/guide"},
-  {"name": "Google Analytics (GA4)", "description": "Google's analytics platform for web and apps.", "link": "https://marketingplatform.google.com/about/analytics/", "type": "Free", "category": "Analytics & Tracking", "tags": ["web", "mobile"], "popularity": "Most common", "tutorial": "https://support.google.com/analytics"},
-  {"name": "Splitbee", "description": "Simple, beautiful analytics.", "link": "https://splitbee.io", "type": "Freemium", "category": "Analytics & Tracking", "tags": ["web", "product"], "popularity": "Indie favorite", "tutorial": "https://splitbee.io"},
-  {"name": "Hotjar", "description": "Heatmaps and recordings for UX research.", "link": "https://www.hotjar.com", "type": "Freemium", "category": "Analytics & Tracking", "tags": ["ux", "heatmap"], "popularity": "Very popular", "tutorial": "https://help.hotjar.com"},
-  {"name": "Mixpanel", "description": "Event-based analytics for products.", "link": "https://mixpanel.com", "type": "Freemium", "category": "Analytics & Tracking", "tags": ["product", "events"], "popularity": "Common in SaaS", "tutorial": "https://help.mixpanel.com"},
-  {"name": "LogSnag", "description": "Track product events and user activity.", "link": "https://logsnag.com", "type": "Freemium", "category": "Analytics & Tracking", "tags": ["events", "notifications"], "popularity": "Indie friendly", "tutorial": "https://docs.logsnag.com"},
-  {"name": "Simple Analytics", "description": "No-cookie privacy-first analytics.", "link": "https://simpleanalytics.com", "type": "Paid", "category": "Analytics & Tracking", "tags": ["privacy", "web"], "popularity": "Transparent and EU-focused", "tutorial": "https://docs.simpleanalytics.com"}
+  {
+    "name": "PostHog",
+    "description": "Open-source product analytics with session replays.",
+    "link": "https://posthog.com",
+    "type": "Open Source",
+    "category": "Analytics & Tracking",
+    "tags": [
+      "analytics",
+      "oss"
+    ],
+    "popularity": "Widely adopted",
+    "tutorial": "https://posthog.com/docs"
+  },
+  {
+    "name": "Plausible Analytics",
+    "description": "Privacy-friendly, lightweight web analytics.",
+    "link": "https://plausible.io",
+    "type": "Paid",
+    "category": "Analytics & Tracking",
+    "tags": [
+      "privacy",
+      "web"
+    ],
+    "popularity": "Popular in EU",
+    "tutorial": "https://plausible.io/docs"
+  },
+  {
+    "name": "Umami",
+    "description": "Simple, open-source web analytics.",
+    "link": "https://umami.is",
+    "type": "Open Source",
+    "category": "Analytics & Tracking",
+    "tags": [
+      "privacy",
+      "oss"
+    ],
+    "popularity": "Great self-host option",
+    "tutorial": "https://umami.is/docs"
+  },
+  {
+    "name": "Matomo",
+    "description": "Open-source analytics alternative to GA.",
+    "link": "https://matomo.org",
+    "type": "Open Source",
+    "category": "Analytics & Tracking",
+    "tags": [
+      "privacy",
+      "self-host"
+    ],
+    "popularity": "Used by gov and enterprises",
+    "tutorial": "https://matomo.org/guide"
+  },
+  {
+    "name": "Google Analytics (GA4)",
+    "description": "Google's analytics platform for web and apps.",
+    "link": "https://marketingplatform.google.com/about/analytics/",
+    "type": "Free",
+    "category": "Analytics & Tracking",
+    "tags": [
+      "web",
+      "mobile"
+    ],
+    "popularity": "Most common",
+    "tutorial": "https://support.google.com/analytics"
+  },
+  {
+    "name": "Splitbee",
+    "description": "Simple, beautiful analytics.",
+    "link": "https://splitbee.io",
+    "type": "Freemium",
+    "category": "Analytics & Tracking",
+    "tags": [
+      "web",
+      "product"
+    ],
+    "popularity": "Indie favorite",
+    "tutorial": "https://splitbee.io"
+  },
+  {
+    "name": "Hotjar",
+    "description": "Heatmaps and recordings for UX research.",
+    "link": "https://www.hotjar.com",
+    "type": "Freemium",
+    "category": "Analytics & Tracking",
+    "tags": [
+      "ux",
+      "heatmap"
+    ],
+    "popularity": "Very popular",
+    "tutorial": "https://help.hotjar.com"
+  },
+  {
+    "name": "Mixpanel",
+    "description": "Event-based analytics for products.",
+    "link": "https://mixpanel.com",
+    "type": "Freemium",
+    "category": "Analytics & Tracking",
+    "tags": [
+      "product",
+      "events"
+    ],
+    "popularity": "Common in SaaS",
+    "tutorial": "https://help.mixpanel.com"
+  },
+  {
+    "name": "LogSnag",
+    "description": "Track product events and user activity.",
+    "link": "https://logsnag.com",
+    "type": "Freemium",
+    "category": "Analytics & Tracking",
+    "tags": [
+      "events",
+      "notifications"
+    ],
+    "popularity": "Indie friendly",
+    "tutorial": "https://docs.logsnag.com"
+  },
+  {
+    "name": "Simple Analytics",
+    "description": "No-cookie privacy-first analytics.",
+    "link": "https://simpleanalytics.com",
+    "type": "Paid",
+    "category": "Analytics & Tracking",
+    "tags": [
+      "privacy",
+      "web"
+    ],
+    "popularity": "Transparent and EU-focused",
+    "tutorial": "https://docs.simpleanalytics.com"
+  },
+  {
+    "name": "Formbricks",
+    "description": "Surveys & in-product feedback platform (self-hosted or cloud).",
+    "link": "https://formbricks.com",
+    "type": "Open Source / Freemium",
+    "category": "Analytics & Tracking",
+    "tags": ["survey", "feedback", "UX"],
+    "popularity": "Growing in indie tools",
+    "tutorial": "https://formbricks.com/docs/self-hosting/setup/one-click"
+  },
+  {
+    "name": "Repohistory",
+    "description": "GitHub repository analytics to track contributions & trends.",
+    "link": "https://repohistory.dev",
+    "type": "Free / Freemium",
+    "category": "Analytics & Tracking",
+    "tags": ["git", "analytics", "repo"],
+    "popularity": "Lesser known",
+    "tutorial": "https://repohistory.dev/docs"
+  },
+  {
+    "name": "Highlight.io",
+    "description": "Session replay, error tracking, and logs combined in one SDK.",
+    "link": "https://highlight.io",
+    "type": "Freemium",
+    "category": "Analytics & Tracking",
+    "tags": ["monitoring", "replay", "errors"],
+    "popularity": "Growing",
+    "tutorial": "https://highlight.io/docs"
+  },
+  {
+    "name": "Sentry",
+    "description": "Error tracking and crash reporting for front-end and back-end.",
+    "link": "https://sentry.io",
+    "type": "Freemium",
+    "category": "Analytics & Tracking",
+    "tags": ["errors", "monitoring", "alerts"],
+    "popularity": "Widely adopted",
+    "tutorial": "https://docs.sentry.io"
+  },
+  {
+    "name": "Vercel Analytics",
+    "description": "Real-user metrics (TTFB, LCP, CLS) built into Vercel’s hosting.",
+    "link": "https://vercel.com/analytics",
+    "type": "Freemium",
+    "category": "Analytics & Tracking",
+    "tags": ["performance", "frontend", "metrics"],
+    "popularity": "Used by Vercel users",
+    "tutorial": "https://vercel.com/docs/analytics"
+  },
+  {
+    "name": "GoatCounter",
+    "description": "Simple, privacy-friendly web analytics with a focus on ease-of-use and open-source deployability.",
+    "link": "https://www.goatcounter.com",
+    "type": "Freemium / Open Source",
+    "category": "Analytics & Tracking",
+    "tags": ["analytics", "privacy", "simple"],
+    "popularity": "Popular for small sites",
+    "tutorial": "https://www.goatcounter.com/docs"
+  }
 ]

@@ -1,17 +1,204 @@
 [
-  {"name": "Linear", "description": "Fast issue tracking and project management.", "link": "https://linear.app", "type": "Paid", "category": "Project Management & Productivity", "tags": ["issues", "projects"], "popularity": "Loved by dev teams", "tutorial": "https://linear.app/docs"},
-  {"name": "ClickUp", "description": "All-in-one productivity platform.", "link": "https://clickup.com", "type": "Freemium", "category": "Project Management & Productivity", "tags": ["tasks", "docs"], "popularity": "Broad adoption", "tutorial": "https://help.clickup.com"},
-  {"name": "Trello", "description": "Kanban boards for tasks.", "link": "https://trello.com", "type": "Freemium", "category": "Project Management & Productivity", "tags": ["kanban", "tasks"], "popularity": "Mainstream", "tutorial": "https://support.atlassian.com/trello"},
-  {"name": "Notion", "description": "Docs, tasks, and databases in one workspace.", "link": "https://www.notion.so", "type": "Freemium", "category": "Project Management & Productivity", "tags": ["docs", "notes"], "popularity": "Huge community", "tutorial": "https://www.notion.so/help"},
-  {"name": "Tana", "description": "Networked note-taking and tasking.", "link": "https://tana.inc", "type": "Paid", "category": "Project Management & Productivity", "tags": ["notes", "graph"], "popularity": "Power user tool", "tutorial": "https://community.tana.inc"},
-  {"name": "Height", "description": "Project management with automation.", "link": "https://height.app", "type": "Freemium", "category": "Project Management & Productivity", "tags": ["tasks", "automation"], "popularity": "Growing", "tutorial": "https://height.app/docs"},
-  {"name": "Jira", "description": "Software project tracking by Atlassian.", "link": "https://www.atlassian.com/software/jira", "type": "Paid", "category": "Project Management & Productivity", "tags": ["issues", "scrum"], "popularity": "Enterprise staple", "tutorial": "https://support.atlassian.com/jira"},
-  {"name": "Taiga", "description": "Open-source agile project management.", "link": "https://www.taiga.io", "type": "Open Source", "category": "Project Management & Productivity", "tags": ["agile", "kanban"], "popularity": "OSS alternative", "tutorial": "https://docs.taiga.io"},
-  {"name": "Focalboard", "description": "Open-source Trello alternative.", "link": "https://www.focalboard.com", "type": "Open Source", "category": "Project Management & Productivity", "tags": ["kanban", "tasks"], "popularity": "Good self-host", "tutorial": "https://docs.mattermost.com/guides/focalboard.html"},
-  {"name": "Todoist", "description": "Personal and team task management.", "link": "https://todoist.com", "type": "Freemium", "category": "Project Management & Productivity", "tags": ["tasks", "personal"], "popularity": "Very popular", "tutorial": "https://get.todoist.help"},
-  {"name": "Anytype", "description": "Local-first knowledge base.", "link": "https://anytype.io", "type": "Free", "category": "Project Management & Productivity", "tags": ["notes", "local-first"], "popularity": "Privacy-focused", "tutorial": "https://manual.anytype.io"},
-  {"name": "AppFlowy", "description": "Open-source Notion alternative.", "link": "https://www.appflowy.io", "type": "Open Source", "category": "Project Management & Productivity", "tags": ["notes", "open source"], "popularity": "Active OSS", "tutorial": "https://docs.appflowy.io"},
-  {"name": "Obsidian", "description": "Knowledge base on local Markdown files.", "link": "https://obsidian.md", "type": "Freemium", "category": "Project Management & Productivity", "tags": ["notes", "markdown"], "popularity": "Huge community", "tutorial": "https://help.obsidian.md"},
-  {"name": "Logseq", "description": "Open-source outliner and knowledge graph.", "link": "https://logseq.com", "type": "Open Source", "category": "Project Management & Productivity", "tags": ["notes", "graph"], "popularity": "Loved by researchers", "tutorial": "https://docs.logseq.com"}
+  {
+    "name": "Linear",
+    "description": "Fast issue tracking and project management.",
+    "link": "https://linear.app",
+    "type": "Paid",
+    "category": "Project Management & Productivity",
+    "tags": [
+      "issues",
+      "projects"
+    ],
+    "popularity": "Loved by dev teams",
+    "tutorial": "https://linear.app/docs"
+  },
+  {
+    "name": "ClickUp",
+    "description": "All-in-one productivity platform.",
+    "link": "https://clickup.com",
+    "type": "Freemium",
+    "category": "Project Management & Productivity",
+    "tags": [
+      "tasks",
+      "docs"
+    ],
+    "popularity": "Broad adoption",
+    "tutorial": "https://help.clickup.com"
+  },
+  {
+    "name": "Trello",
+    "description": "Kanban boards for tasks.",
+    "link": "https://trello.com",
+    "type": "Freemium",
+    "category": "Project Management & Productivity",
+    "tags": [
+      "kanban",
+      "tasks"
+    ],
+    "popularity": "Mainstream",
+    "tutorial": "https://support.atlassian.com/trello"
+  },
+  {
+    "name": "Notion",
+    "description": "Docs, tasks, and databases in one workspace.",
+    "link": "https://www.notion.so",
+    "type": "Freemium",
+    "category": "Project Management & Productivity",
+    "tags": [
+      "docs",
+      "notes"
+    ],
+    "popularity": "Huge community",
+    "tutorial": "https://www.notion.so/help"
+  },
+  {
+    "name": "Tana",
+    "description": "Networked note-taking and tasking.",
+    "link": "https://tana.inc",
+    "type": "Paid",
+    "category": "Project Management & Productivity",
+    "tags": [
+      "notes",
+      "graph"
+    ],
+    "popularity": "Power user tool",
+    "tutorial": "https://community.tana.inc"
+  },
+  {
+    "name": "Height",
+    "description": "Project management with automation.",
+    "link": "https://height.app",
+    "type": "Freemium",
+    "category": "Project Management & Productivity",
+    "tags": [
+      "tasks",
+      "automation"
+    ],
+    "popularity": "Growing",
+    "tutorial": "https://height.app/docs"
+  },
+  {
+    "name": "Jira",
+    "description": "Software project tracking by Atlassian.",
+    "link": "https://www.atlassian.com/software/jira",
+    "type": "Paid",
+    "category": "Project Management & Productivity",
+    "tags": [
+      "issues",
+      "scrum"
+    ],
+    "popularity": "Enterprise staple",
+    "tutorial": "https://support.atlassian.com/jira"
+  },
+  {
+    "name": "Taiga",
+    "description": "Open-source agile project management.",
+    "link": "https://www.taiga.io",
+    "type": "Open Source",
+    "category": "Project Management & Productivity",
+    "tags": [
+      "agile",
+      "kanban"
+    ],
+    "popularity": "OSS alternative",
+    "tutorial": "https://docs.taiga.io"
+  },
+  {
+    "name": "Focalboard",
+    "description": "Open-source Trello alternative.",
+    "link": "https://www.focalboard.com",
+    "type": "Open Source",
+    "category": "Project Management & Productivity",
+    "tags": [
+      "kanban",
+      "tasks"
+    ],
+    "popularity": "Good self-host",
+    "tutorial": "https://docs.mattermost.com/guides/focalboard.html"
+  },
+  {
+    "name": "Todoist",
+    "description": "Personal and team task management.",
+    "link": "https://todoist.com",
+    "type": "Freemium",
+    "category": "Project Management & Productivity",
+    "tags": [
+      "tasks",
+      "personal"
+    ],
+    "popularity": "Very popular",
+    "tutorial": "https://get.todoist.help"
+  },
+  {
+    "name": "Anytype",
+    "description": "Local-first knowledge base.",
+    "link": "https://anytype.io",
+    "type": "Free",
+    "category": "Project Management & Productivity",
+    "tags": [
+      "notes",
+      "local-first"
+    ],
+    "popularity": "Privacy-focused",
+    "tutorial": "https://manual.anytype.io"
+  },
+  {
+    "name": "AppFlowy",
+    "description": "Open-source Notion alternative.",
+    "link": "https://www.appflowy.io",
+    "type": "Open Source",
+    "category": "Project Management & Productivity",
+    "tags": [
+      "notes",
+      "open source"
+    ],
+    "popularity": "Active OSS",
+    "tutorial": "https://docs.appflowy.io"
+  },
+  {
+    "name": "Obsidian",
+    "description": "Knowledge base on local Markdown files.",
+    "link": "https://obsidian.md",
+    "type": "Freemium",
+    "category": "Project Management & Productivity",
+    "tags": [
+      "notes",
+      "markdown"
+    ],
+    "popularity": "Huge community",
+    "tutorial": "https://help.obsidian.md"
+  },
+  {
+    "name": "Logseq",
+    "description": "Open-source outliner and knowledge graph.",
+    "link": "https://logseq.com",
+    "type": "Open Source",
+    "category": "Project Management & Productivity",
+    "tags": [
+      "notes",
+      "graph"
+    ],
+    "popularity": "Loved by researchers",
+    "tutorial": "https://docs.logseq.com"
+  },
+  {
+    "name": "Reclaim",
+    "description": "Smart calendar assistant that optimizes your schedule for focus time and priorities.",
+    "link": "https://reclaim.ai",
+    "type": "Freemium",
+    "category": "Project Management & Productivity",
+    "tags": ["calendar", "productivity", "scheduling"],
+    "popularity": "Popular with productivity-minded teams",
+    "tutorial": "https://reclaim.ai/help"
+  },
+  {
+    "name": "Granola",
+    "description": "AI-first productivity assistant that helps manage tasks, notes, and focus (tool for indie makers).",
+    "link": "https://www.granola.ai",
+    "type": "Freemium",
+    "category": "Project Management & Productivity",
+    "tags": ["AI", "productivity", "tasks"],
+    "popularity": "Emerging",
+    "tutorial": "https://www.granola.ai/docs"
+  }
 ]
-

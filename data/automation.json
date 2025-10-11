@@ -1,15 +1,149 @@
 [
-  {"name": "n8n", "description": "Open-source workflow automation platform.", "link": "https://n8n.io", "type": "Open Source", "category": "Automation", "tags": ["workflow", "open source"], "popularity": "Growing OSS community", "tutorial": "https://docs.n8n.io"},
-  {"name": "Zapier", "description": "Connect apps and automate workflows.", "link": "https://zapier.com", "type": "Freemium", "category": "Automation", "tags": ["workflow", "integrations"], "popularity": "Industry standard", "tutorial": "https://zapier.com/learn"},
-  {"name": "Lindly", "description": "AI-powered workflow automation.", "link": "https://lindly.com", "type": "Freemium", "category": "Automation", "tags": ["ai", "workflow"], "popularity": "Emerging", "tutorial": "https://lindly.com"},
-  {"name": "OpenAI Agent Builder", "description": "Build AI agents with OpenAI's platform.", "link": "https://platform.openai.com/docs/assistants/overview", "type": "Paid", "category": "Automation", "tags": ["ai", "agents"], "popularity": "Cutting edge", "tutorial": "https://platform.openai.com/docs/assistants/overview"},
-  {"name": "Make (Integromat)", "description": "Visual workflow automation platform.", "link": "https://www.make.com", "type": "Freemium", "category": "Automation", "tags": ["workflow", "visual"], "popularity": "Popular alternative", "tutorial": "https://www.make.com/help"},
-  {"name": "Microsoft Power Automate", "description": "Automate business processes.", "link": "https://powerautomate.microsoft.com", "type": "Freemium", "category": "Automation", "tags": ["microsoft", "business"], "popularity": "Enterprise focused", "tutorial": "https://docs.microsoft.com/power-automate"},
-  {"name": "IFTTT", "description": "Simple automation for everyday tasks.", "link": "https://ifttt.com", "type": "Freemium", "category": "Automation", "tags": ["simple", "personal"], "popularity": "Consumer friendly", "tutorial": "https://ifttt.com/explore"},
-  {"name": "Pipedream", "description": "Developer-first workflow automation.", "link": "https://pipedream.com", "type": "Freemium", "category": "Automation", "tags": ["developer", "api"], "popularity": "Loved by devs", "tutorial": "https://pipedream.com/docs"},
-  {"name": "Bardeen", "description": "AI-powered browser automation.", "link": "https://www.bardeen.ai", "type": "Freemium", "category": "Automation", "tags": ["ai", "browser"], "popularity": "Growing", "tutorial": "https://www.bardeen.ai/help"}
+  {
+    "name": "n8n",
+    "description": "Open-source workflow automation platform.",
+    "link": "https://n8n.io",
+    "type": "Open Source",
+    "category": "Automation",
+    "tags": [
+      "workflow",
+      "open source"
+    ],
+    "popularity": "Growing OSS community",
+    "tutorial": "https://docs.n8n.io"
+  },
+  {
+    "name": "Zapier",
+    "description": "Connect apps and automate workflows.",
+    "link": "https://zapier.com",
+    "type": "Freemium",
+    "category": "Automation",
+    "tags": [
+      "workflow",
+      "integrations"
+    ],
+    "popularity": "Industry standard",
+    "tutorial": "https://zapier.com/learn"
+  },
+  {
+    "name": "Lindly",
+    "description": "AI-powered workflow automation.",
+    "link": "https://lindly.com",
+    "type": "Freemium",
+    "category": "Automation",
+    "tags": [
+      "ai",
+      "workflow"
+    ],
+    "popularity": "Emerging",
+    "tutorial": "https://lindly.com"
+  },
+  {
+    "name": "OpenAI Agent Builder",
+    "description": "Build AI agents with OpenAI's platform.",
+    "link": "https://platform.openai.com/docs/assistants/overview",
+    "type": "Paid",
+    "category": "Automation",
+    "tags": [
+      "ai",
+      "agents"
+    ],
+    "popularity": "Cutting edge",
+    "tutorial": "https://platform.openai.com/docs/assistants/overview"
+  },
+  {
+    "name": "Make (Integromat)",
+    "description": "Visual workflow automation platform.",
+    "link": "https://www.make.com",
+    "type": "Freemium",
+    "category": "Automation",
+    "tags": [
+      "workflow",
+      "visual"
+    ],
+    "popularity": "Popular alternative",
+    "tutorial": "https://www.make.com/help"
+  },
+  {
+    "name": "Microsoft Power Automate",
+    "description": "Automate business processes.",
+    "link": "https://powerautomate.microsoft.com",
+    "type": "Freemium",
+    "category": "Automation",
+    "tags": [
+      "microsoft",
+      "business"
+    ],
+    "popularity": "Enterprise focused",
+    "tutorial": "https://docs.microsoft.com/power-automate"
+  },
+  {
+    "name": "IFTTT",
+    "description": "Simple automation for everyday tasks.",
+    "link": "https://ifttt.com",
+    "type": "Freemium",
+    "category": "Automation",
+    "tags": [
+      "simple",
+      "personal"
+    ],
+    "popularity": "Consumer friendly",
+    "tutorial": "https://ifttt.com/explore"
+  },
+  {
+    "name": "Pipedream",
+    "description": "Developer-first workflow automation.",
+    "link": "https://pipedream.com",
+    "type": "Freemium",
+    "category": "Automation",
+    "tags": [
+      "developer",
+      "api"
+    ],
+    "popularity": "Loved by devs",
+    "tutorial": "https://pipedream.com/docs"
+  },
+  {
+    "name": "Bardeen",
+    "description": "AI-powered browser automation.",
+    "link": "https://www.bardeen.ai",
+    "type": "Freemium",
+    "category": "Automation",
+    "tags": [
+      "ai",
+      "browser"
+    ],
+    "popularity": "Growing",
+    "tutorial": "https://www.bardeen.ai/help"
+  },
+  {
+    "name": "Hookdeck",
+    "description": "Webhook ingestion & delivery platform for building reliable workflows.",
+    "link": "https://hookdeck.com",
+    "type": "Freemium",
+    "category": "Automation",
+    "tags": ["webhooks", "automation", "events"],
+    "popularity": "Up-and-coming",
+    "tutorial": "https://docs.hookdeck.com"
+  },
+  {
+    "name": "Pipedream",
+    "description": "Serverless event & workflow automation across APIs, with code steps.",
+    "link": "https://pipedream.com",
+    "type": "Freemium",
+    "category": "Automation",
+    "tags": ["automation", "serverless", "integration"],
+    "popularity": "Well-known",
+    "tutorial": "https://pipedream.com/docs"
+  },
+  {
+    "name": "Hookdeck",
+    "description": "Webhook ingestion and delivery platform that ensures reliable event handling and retries.",
+    "link": "https://hookdeck.com",
+    "type": "Freemium",
+    "category": "Automation",
+    "tags": ["webhooks", "retries", "events"],
+    "popularity": "Up-and-coming",
+    "tutorial": "https://docs.hookdeck.com"
+  }
 ]
-
-
-
-

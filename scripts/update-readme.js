@@ -19,7 +19,8 @@ const categories = {
   "productivity.json": "🧭 Project Management & Productivity",
   "launch_community.json": "🚀 Launch & Community Platforms",
   "articles_research.json": "📝 Articles & Research",
-  "learning.json": "📚 Learning Resources"
+  "learning.json": "📚 Learning Resources",
+  "other_utilities.json": "🔧 Other Utilities"
 };
 
 let readme = `# 🌍 Builders Lab by Programmify\n\n`;

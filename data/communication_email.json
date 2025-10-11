@@ -1,17 +1,213 @@
 [
-  {"name": "Zoho Mail", "description": "Business email with a free plan (up to 5 users).", "link": "https://www.zoho.com/mail/", "type": "Freemium", "category": "Communication & Email", "tags": ["email", "business"], "popularity": "Good for small teams", "tutorial": "https://help.zoho.com/portal/en/kb/zoho-mail"},
-  {"name": "Resend", "description": "Developer-first email API with great DX.", "link": "https://resend.com", "type": "Freemium", "category": "Communication & Email", "tags": ["email", "api"], "popularity": "Popular with Next.js", "tutorial": "https://resend.com/docs"},
-  {"name": "Postmark", "description": "Reliable transactional email service.", "link": "https://postmarkapp.com", "type": "Paid", "category": "Communication & Email", "tags": ["email", "transactional"], "popularity": "Loved for deliverability", "tutorial": "https://postmarkapp.com/developer"},
-  {"name": "Brevo", "description": "Marketing emails and transactional service.", "link": "https://www.brevo.com", "type": "Freemium", "category": "Communication & Email", "tags": ["email", "marketing"], "popularity": "Good free plan", "tutorial": "https://help.brevo.com"},
-  {"name": "Mailgun", "description": "Email sending and validation APIs.", "link": "https://www.mailgun.com", "type": "Freemium", "category": "Communication & Email", "tags": ["email", "api"], "popularity": "Developer favorite", "tutorial": "https://help.mailgun.com"},
-  {"name": "MailerSend", "description": "Transactional email and templates.", "link": "https://www.mailersend.com", "type": "Freemium", "category": "Communication & Email", "tags": ["email", "transactional"], "popularity": "Great DX", "tutorial": "https://www.mailersend.com/help"},
-  {"name": "EmailJS", "description": "Send emails directly from client-side apps.", "link": "https://www.emailjs.com", "type": "Freemium", "category": "Communication & Email", "tags": ["email", "client"], "popularity": "Good for prototypes", "tutorial": "https://www.emailjs.com/docs"},
-  {"name": "Courier", "description": "Unified notifications for email, SMS, and push.", "link": "https://www.courier.com", "type": "Freemium", "category": "Communication & Email", "tags": ["notifications", "api"], "popularity": "Flexible routing", "tutorial": "https://docs.courier.com"},
-  {"name": "Twilio SendGrid", "description": "Email API and marketing tools.", "link": "https://sendgrid.com", "type": "Freemium", "category": "Communication & Email", "tags": ["email", "api"], "popularity": "Common choice", "tutorial": "https://docs.sendgrid.com"},
-  {"name": "Buttondown", "description": "Minimalist newsletter platform.", "link": "https://buttondown.email", "type": "Paid", "category": "Communication & Email", "tags": ["newsletter"], "popularity": "Beloved by indie writers", "tutorial": "https://buttondown.email/features"},
-  {"name": "Beehiiv", "description": "Newsletter platform with growth features.", "link": "https://www.beehiiv.com", "type": "Freemium", "category": "Communication & Email", "tags": ["newsletter", "growth"], "popularity": "Growing fast", "tutorial": "https://creators.beehiiv.com/p/resources"},
-  {"name": "ConvertKit", "description": "Email marketing for creators.", "link": "https://convertkit.com", "type": "Paid", "category": "Communication & Email", "tags": ["email", "marketing"], "popularity": "Creator favorite", "tutorial": "https://help.convertkit.com"},
-  {"name": "Elastic Email", "description": "Email API with competitive pricing.", "link": "https://elasticemail.com", "type": "Paid", "category": "Communication & Email", "tags": ["email", "api"], "popularity": "Budget friendly", "tutorial": "https://elasticemail.com/resources"},
-  {"name": "Ethereal Email", "description": "Fake SMTP service for testing.", "link": "https://ethereal.email", "type": "Free", "category": "Communication & Email", "tags": ["testing", "smtp"], "popularity": "Great for dev", "tutorial": "https://ethereal.email/create"}
+  {
+    "name": "Zoho Mail",
+    "description": "Business email with a free plan (up to 5 users).",
+    "link": "https://www.zoho.com/mail/",
+    "type": "Freemium",
+    "category": "Communication & Email",
+    "tags": [
+      "email",
+      "business"
+    ],
+    "popularity": "Good for small teams",
+    "tutorial": "https://help.zoho.com/portal/en/kb/zoho-mail"
+  },
+  {
+    "name": "Resend",
+    "description": "Developer-first email API with great DX.",
+    "link": "https://resend.com",
+    "type": "Freemium",
+    "category": "Communication & Email",
+    "tags": [
+      "email",
+      "api"
+    ],
+    "popularity": "Popular with Next.js",
+    "tutorial": "https://resend.com/docs"
+  },
+  {
+    "name": "Postmark",
+    "description": "Reliable transactional email service.",
+    "link": "https://postmarkapp.com",
+    "type": "Paid",
+    "category": "Communication & Email",
+    "tags": [
+      "email",
+      "transactional"
+    ],
+    "popularity": "Loved for deliverability",
+    "tutorial": "https://postmarkapp.com/developer"
+  },
+  {
+    "name": "Brevo",
+    "description": "Marketing emails and transactional service.",
+    "link": "https://www.brevo.com",
+    "type": "Freemium",
+    "category": "Communication & Email",
+    "tags": [
+      "email",
+      "marketing"
+    ],
+    "popularity": "Good free plan",
+    "tutorial": "https://help.brevo.com"
+  },
+  {
+    "name": "Mailgun",
+    "description": "Email sending and validation APIs.",
+    "link": "https://www.mailgun.com",
+    "type": "Freemium",
+    "category": "Communication & Email",
+    "tags": [
+      "email",
+      "api"
+    ],
+    "popularity": "Developer favorite",
+    "tutorial": "https://help.mailgun.com"
+  },
+  {
+    "name": "MailerSend",
+    "description": "Transactional email and templates.",
+    "link": "https://www.mailersend.com",
+    "type": "Freemium",
+    "category": "Communication & Email",
+    "tags": [
+      "email",
+      "transactional"
+    ],
+    "popularity": "Great DX",
+    "tutorial": "https://www.mailersend.com/help"
+  },
+  {
+    "name": "EmailJS",
+    "description": "Send emails directly from client-side apps.",
+    "link": "https://www.emailjs.com",
+    "type": "Freemium",
+    "category": "Communication & Email",
+    "tags": [
+      "email",
+      "client"
+    ],
+    "popularity": "Good for prototypes",
+    "tutorial": "https://www.emailjs.com/docs"
+  },
+  {
+    "name": "Courier",
+    "description": "Unified notifications for email, SMS, and push.",
+    "link": "https://www.courier.com",
+    "type": "Freemium",
+    "category": "Communication & Email",
+    "tags": [
+      "notifications",
+      "api"
+    ],
+    "popularity": "Flexible routing",
+    "tutorial": "https://docs.courier.com"
+  },
+  {
+    "name": "Twilio SendGrid",
+    "description": "Email API and marketing tools.",
+    "link": "https://sendgrid.com",
+    "type": "Freemium",
+    "category": "Communication & Email",
+    "tags": [
+      "email",
+      "api"
+    ],
+    "popularity": "Common choice",
+    "tutorial": "https://docs.sendgrid.com"
+  },
+  {
+    "name": "Buttondown",
+    "description": "Minimalist newsletter platform.",
+    "link": "https://buttondown.email",
+    "type": "Paid",
+    "category": "Communication & Email",
+    "tags": [
+      "newsletter"
+    ],
+    "popularity": "Beloved by indie writers",
+    "tutorial": "https://buttondown.email/features"
+  },
+  {
+    "name": "Beehiiv",
+    "description": "Newsletter platform with growth features.",
+    "link": "https://www.beehiiv.com",
+    "type": "Freemium",
+    "category": "Communication & Email",
+    "tags": [
+      "newsletter",
+      "growth"
+    ],
+    "popularity": "Growing fast",
+    "tutorial": "https://creators.beehiiv.com/p/resources"
+  },
+  {
+    "name": "ConvertKit",
+    "description": "Email marketing for creators.",
+    "link": "https://convertkit.com",
+    "type": "Paid",
+    "category": "Communication & Email",
+    "tags": [
+      "email",
+      "marketing"
+    ],
+    "popularity": "Creator favorite",
+    "tutorial": "https://help.convertkit.com"
+  },
+  {
+    "name": "Elastic Email",
+    "description": "Email API with competitive pricing.",
+    "link": "https://elasticemail.com",
+    "type": "Paid",
+    "category": "Communication & Email",
+    "tags": [
+      "email",
+      "api"
+    ],
+    "popularity": "Budget friendly",
+    "tutorial": "https://elasticemail.com/resources"
+  },
+  {
+    "name": "Ethereal Email",
+    "description": "Fake SMTP service for testing.",
+    "link": "https://ethereal.email",
+    "type": "Free",
+    "category": "Communication & Email",
+    "tags": [
+      "testing",
+      "smtp"
+    ],
+    "popularity": "Great for dev",
+    "tutorial": "https://ethereal.email/create"
+  },
+  {
+    "name": "Mailersend",
+    "description": "Email API & SMTP service with templates and analytics.",
+    "link": "https://www.mailersend.com",
+    "type": "Freemium",
+    "category": "Communication & Email",
+    "tags": ["email", "API", "SMTP"],
+    "popularity": "Used by devs",
+    "tutorial": "https://docs.mailersend.com"
+  },
+  {
+    "name": "SimpleLogin",
+    "description": "Create email aliases for privacy and anti-spam.",
+    "link": "https://simplelogin.io",
+    "type": "Freemium",
+    "category": "Communication & Email",
+    "tags": ["privacy", "email alias", "security"],
+    "popularity": "Popular in privacy tools",
+    "tutorial": "https://simplelogin.io/docs"
+  },
+  {
+    "name": "Crisp Chat",
+    "description": "Live chat widget & shared inbox for customer support.",
+    "link": "https://crisp.chat",
+    "type": "Freemium",
+    "category": "Communication & Email",
+    "tags": ["chat", "support", "widget"],
+    "popularity": "Widely used in startups",
+    "tutorial": "https://crisp.chat/en/docs"
+  }
 ]
-

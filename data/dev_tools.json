@@ -1,17 +1,248 @@
 [
-  {"name": "VS Code", "description": "Extensible code editor with rich ecosystem.", "link": "https://code.visualstudio.com", "type": "Free", "category": "Developer Tools", "tags": ["editor", "ide"], "popularity": "Industry standard", "tutorial": "https://code.visualstudio.com/docs"},
-  {"name": "Vercel AI SDK", "description": "AI SDK for building AI-powered applications.", "link": "https://sdk.vercel.ai", "type": "Open Source", "category": "Developer Tools", "tags": ["ai", "sdk"], "popularity": "Growing adoption", "tutorial": "https://sdk.vercel.ai/docs"},
-  {"name": "Cloudflare AI SDK", "description": "AI SDK for Cloudflare Workers and Pages.", "link": "https://developers.cloudflare.com/ai", "type": "Freemium", "category": "Developer Tools", "tags": ["ai", "edge"], "popularity": "Edge-first AI", "tutorial": "https://developers.cloudflare.com/ai"},
-  {"name": "OpenAI SDK", "description": "Official SDK for OpenAI APIs.", "link": "https://platform.openai.com/docs/api-reference", "type": "Paid", "category": "Developer Tools", "tags": ["ai", "openai"], "popularity": "Most common", "tutorial": "https://platform.openai.com/docs"},
-  {"name": "Supabase", "description": "Open-source backend: Postgres, auth, storage, edge.", "link": "https://supabase.com", "type": "Freemium", "category": "Developer Tools", "tags": ["database", "auth", "storage"], "popularity": "Very popular", "tutorial": "https://supabase.com/docs"},
-  {"name": "Neon", "description": "Serverless Postgres with branching.", "link": "https://neon.tech", "type": "Freemium", "category": "Developer Tools", "tags": ["postgres", "serverless"], "popularity": "Loved for DX", "tutorial": "https://neon.tech/docs"},
-  {"name": "Clerk", "description": "Full-stack auth and user management.", "link": "https://clerk.com", "type": "Freemium", "category": "Developer Tools", "tags": ["auth", "users"], "popularity": "Common in Next.js apps", "tutorial": "https://clerk.com/docs"},
-  {"name": "Convex", "description": "Serverless database and reactive backend.", "link": "https://www.convex.dev", "type": "Freemium", "category": "Developer Tools", "tags": ["database", "serverless"], "popularity": "Rising", "tutorial": "https://docs.convex.dev"},
-  {"name": "UploadThing", "description": "Simple file uploads for web apps.", "link": "https://uploadthing.com", "type": "Freemium", "category": "Developer Tools", "tags": ["uploads", "storage"], "popularity": "Common in Next.js", "tutorial": "https://docs.uploadthing.com"},
-  {"name": "EdgeStore", "description": "Edge-first file storage layer.", "link": "https://edgestore.dev", "type": "Freemium", "category": "Developer Tools", "tags": ["storage", "edge"], "popularity": "New but useful", "tutorial": "https://docs.edgestore.dev"},
-  {"name": "Prisma", "description": "Type-safe ORM for Node.js and TypeScript.", "link": "https://www.prisma.io", "type": "Open Source", "category": "Developer Tools", "tags": ["orm", "typescript"], "popularity": "De facto standard", "tutorial": "https://www.prisma.io/docs"},
-  {"name": "Drizzle ORM", "description": "Lightweight TypeScript-first SQL ORM.", "link": "https://orm.drizzle.team", "type": "Open Source", "category": "Developer Tools", "tags": ["orm", "sql"], "popularity": "Rapidly growing", "tutorial": "https://orm.drizzle.team/docs"},
-  {"name": "GitHub", "description": "Version control and collaboration platform.", "link": "https://github.com", "type": "Freemium", "category": "Developer Tools", "tags": ["git", "collaboration"], "popularity": "Industry standard", "tutorial": "https://docs.github.com"},
-  {"name": "GitLab", "description": "DevOps platform with Git repository management.", "link": "https://gitlab.com", "type": "Freemium", "category": "Developer Tools", "tags": ["git", "devops"], "popularity": "Enterprise alternative", "tutorial": "https://docs.gitlab.com"},
-  {"name": "Docker", "description": "Containerization platform for applications.", "link": "https://www.docker.com", "type": "Freemium", "category": "Developer Tools", "tags": ["containers", "devops"], "popularity": "Standard for deployment", "tutorial": "https://docs.docker.com"}
+  {
+    "name": "VS Code",
+    "description": "Extensible code editor with rich ecosystem.",
+    "link": "https://code.visualstudio.com",
+    "type": "Free",
+    "category": "Developer Tools",
+    "tags": [
+      "editor",
+      "ide"
+    ],
+    "popularity": "Industry standard",
+    "tutorial": "https://code.visualstudio.com/docs"
+  },
+  {
+    "name": "Vercel AI SDK",
+    "description": "AI SDK for building AI-powered applications.",
+    "link": "https://sdk.vercel.ai",
+    "type": "Open Source",
+    "category": "Developer Tools",
+    "tags": [
+      "ai",
+      "sdk"
+    ],
+    "popularity": "Growing adoption",
+    "tutorial": "https://sdk.vercel.ai/docs"
+  },
+  {
+    "name": "Cloudflare AI SDK",
+    "description": "AI SDK for Cloudflare Workers and Pages.",
+    "link": "https://developers.cloudflare.com/ai",
+    "type": "Freemium",
+    "category": "Developer Tools",
+    "tags": [
+      "ai",
+      "edge"
+    ],
+    "popularity": "Edge-first AI",
+    "tutorial": "https://developers.cloudflare.com/ai"
+  },
+  {
+    "name": "OpenAI SDK",
+    "description": "Official SDK for OpenAI APIs.",
+    "link": "https://platform.openai.com/docs/api-reference",
+    "type": "Paid",
+    "category": "Developer Tools",
+    "tags": [
+      "ai",
+      "openai"
+    ],
+    "popularity": "Most common",
+    "tutorial": "https://platform.openai.com/docs"
+  },
+  {
+    "name": "Supabase",
+    "description": "Open-source backend: Postgres, auth, storage, edge.",
+    "link": "https://supabase.com",
+    "type": "Freemium",
+    "category": "Developer Tools",
+    "tags": [
+      "database",
+      "auth",
+      "storage"
+    ],
+    "popularity": "Very popular",
+    "tutorial": "https://supabase.com/docs"
+  },
+  {
+    "name": "Neon",
+    "description": "Serverless Postgres with branching.",
+    "link": "https://neon.tech",
+    "type": "Freemium",
+    "category": "Developer Tools",
+    "tags": [
+      "postgres",
+      "serverless"
+    ],
+    "popularity": "Loved for DX",
+    "tutorial": "https://neon.tech/docs"
+  },
+  {
+    "name": "Clerk",
+    "description": "Full-stack auth and user management.",
+    "link": "https://clerk.com",
+    "type": "Freemium",
+    "category": "Developer Tools",
+    "tags": [
+      "auth",
+      "users"
+    ],
+    "popularity": "Common in Next.js apps",
+    "tutorial": "https://clerk.com/docs"
+  },
+  {
+    "name": "Convex",
+    "description": "Serverless database and reactive backend.",
+    "link": "https://www.convex.dev",
+    "type": "Freemium",
+    "category": "Developer Tools",
+    "tags": [
+      "database",
+      "serverless"
+    ],
+    "popularity": "Rising",
+    "tutorial": "https://docs.convex.dev"
+  },
+  {
+    "name": "UploadThing",
+    "description": "Simple file uploads for web apps.",
+    "link": "https://uploadthing.com",
+    "type": "Freemium",
+    "category": "Developer Tools",
+    "tags": [
+      "uploads",
+      "storage"
+    ],
+    "popularity": "Common in Next.js",
+    "tutorial": "https://docs.uploadthing.com"
+  },
+  {
+    "name": "EdgeStore",
+    "description": "Edge-first file storage layer.",
+    "link": "https://edgestore.dev",
+    "type": "Freemium",
+    "category": "Developer Tools",
+    "tags": [
+      "storage",
+      "edge"
+    ],
+    "popularity": "New but useful",
+    "tutorial": "https://docs.edgestore.dev"
+  },
+  {
+    "name": "Prisma",
+    "description": "Type-safe ORM for Node.js and TypeScript.",
+    "link": "https://www.prisma.io",
+    "type": "Open Source",
+    "category": "Developer Tools",
+    "tags": [
+      "orm",
+      "typescript"
+    ],
+    "popularity": "De facto standard",
+    "tutorial": "https://www.prisma.io/docs"
+  },
+  {
+    "name": "Drizzle ORM",
+    "description": "Lightweight TypeScript-first SQL ORM.",
+    "link": "https://orm.drizzle.team",
+    "type": "Open Source",
+    "category": "Developer Tools",
+    "tags": [
+      "orm",
+      "sql"
+    ],
+    "popularity": "Rapidly growing",
+    "tutorial": "https://orm.drizzle.team/docs"
+  },
+  {
+    "name": "GitHub",
+    "description": "Version control and collaboration platform.",
+    "link": "https://github.com",
+    "type": "Freemium",
+    "category": "Developer Tools",
+    "tags": [
+      "git",
+      "collaboration"
+    ],
+    "popularity": "Industry standard",
+    "tutorial": "https://docs.github.com"
+  },
+  {
+    "name": "GitLab",
+    "description": "DevOps platform with Git repository management.",
+    "link": "https://gitlab.com",
+    "type": "Freemium",
+    "category": "Developer Tools",
+    "tags": [
+      "git",
+      "devops"
+    ],
+    "popularity": "Enterprise alternative",
+    "tutorial": "https://docs.gitlab.com"
+  },
+  {
+    "name": "Docker",
+    "description": "Containerization platform for applications.",
+    "link": "https://www.docker.com",
+    "type": "Freemium",
+    "category": "Developer Tools",
+    "tags": [
+      "containers",
+      "devops"
+    ],
+    "popularity": "Standard for deployment",
+    "tutorial": "https://docs.docker.com"
+  },
+  {
+    "name": "Pinggy",
+    "description": "Instant public URLs & tunnels to localhost, useful for sharing dev previews.",
+    "link": "https://pinggy.io",
+    "type": "Free / Freemium",
+    "category": "Developer Tools",
+    "tags": ["tunnel", "preview", "devtool"],
+    "popularity": "Smaller niche",
+    "tutorial": "https://pinggy.io/docs"
+  },
+  {
+    "name": "Snippet Generator",
+    "description": "Tool to quickly craft and style code snippets for sharing or blog posts.",
+    "link": "https://snippet-generator.app",
+    "type": "Free",
+    "category": "Developer Tools",
+    "tags": ["snippet", "developer", "visual"],
+    "popularity": "Indie",
+    "tutorial": "https://snippet-generator.app (homepage)"
+  },
+  {
+    "name": "Ray.so",
+    "description": "Create beautiful images of your code snippets for sharing on social or docs.",
+    "link": "https://ray.so",
+    "type": "Free",
+    "category": "Developer Tools",
+    "tags": ["visual", "code", "share"],
+    "popularity": "Popular for dev social posts",
+    "tutorial": "https://ray.so (homepage)"
+  },
+  {
+    "name": "Carbon",
+    "description": "Design tool to create beautiful images of source code for sharing.",
+    "link": "https://carbon.now.sh",
+    "type": "Free",
+    "category": "Developer Tools",
+    "tags": ["code", "visual", "design"],
+    "popularity": "Very popular",
+    "tutorial": "https://carbon.now.sh (homepage)"
+  },
+  {
+    "name": "shadcn / AI Elements",
+    "description": "React UI components designed for conversational AI interfaces (streaming, tool calls, reasoning) built with shadcn/ui and Vercel AI SDK.",
+    "link": "https://www.shadcn.io/ai/tool",
+    "type": "Open Source",
+    "category": "Developer Tools",
+    "tags": ["UI", "React", "AI", "chat"],
+    "popularity": "Popular in AI+React devs",
+    "tutorial": "https://www.shadcn.io/ai/tool#readme"
+  }
 ]

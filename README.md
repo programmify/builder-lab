@@ -2,7 +2,7 @@
 
 Automatically generated from the data files in `/data/`.
 
-## 🧠 AI & LLM APIs (16)
+## 🧠 AI & LLM APIs (32)
 
 | Name | Description | Type | Learn | Tags | Popularity |
 |------|--------------|------|-------|------|------------|
@@ -22,10 +22,26 @@ Automatically generated from the data files in `/data/`.
 | [Text Generation Web UI](https://github.com/oobabooga/text-generation-webui) | Popular web UI for running and chatting with local text-generation models. | Open Source | [Docs](https://github.com/oobabooga/text-generation-webui) | local, UI, open source | Large community |
 | [Perplexity API](https://docs.perplexity.ai) | Answer engine API combining retrieval with strong model responses. | Paid | [Docs](https://docs.perplexity.ai) | RAG, search | Emerging API |
 | [Google Colab](https://colab.research.google.com) | Hosted Jupyter notebooks with free GPUs for ML. | Free | [Docs](https://colab.research.google.com) | notebooks, gpu, ml | Widely used |
+| [Claude](https://claude.ai) | AI assistant for chat and reasoning, hosted by Anthropic. | Freemium | [Docs](https://claude.ai/docs) | AI, assistant, chat | Widely used |
+| [ChatGPT](https://chatgpt.com) | Conversational AI by OpenAI, useful for general-purpose chat, QA, and integration. | Freemium | [Docs](https://platform.openai.com/docs/guides/chat) | AI, chat, LLM | Mainstream |
+| [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT) | Open-source autonomous agent framework that orchestrates LLMs to perform multi-step tasks. | Open Source | [Docs](https://github.com/Significant-Gravitas/Auto-GPT#readme) | agent, LLM, automation | Well-known in agent community |
+| [AutoGen (Microsoft)](https://github.com/microsoft/autogen) | Multi-agent orchestration framework from Microsoft for building LLM-powered workflows and applications. | Open Source | [Docs](https://github.com/microsoft/autogen#readme) | agent, orchestration, LLM | Emerging enterprise interest |
+| [LangChain](https://github.com/langchain-ai/langchain) | Framework for building applications with LLMs by chaining prompts, agents, and memory together. | Open Source | [Docs](https://python.langchain.com/en/latest/) | framework, LLM, agents | Very high |
+| [LlamaIndex (formerly GPT-Index)](https://github.com/jerryjliu/llama_index) | Indexing and data-connector library to connect LLMs to external data sources for retrieval-augmented generation. | Open Source | [Docs](https://llamaindex.ai/docs/) | RAG, indexing, LLM | High among RAG builders |
+| [VLLM](https://github.com/vllm-project/vllm) | High-performance LLM inference engine for faster CPU/GPU batched inference. | Open Source | [Docs](https://github.com/vllm-project/vllm#readme) | inference, LLM, performance | Popular for inference optimization |
+| [GooseAI](https://www.goose.ai) | Managed service and model host providing access to various foundation models and inference endpoints. | Freemium | [Docs](https://www.goose.ai/docs) | inference, models, host | Niche / growing |
+| [Langflow](https://github.com/langflow-ai/langflow) | Visual builder for LLM chains and flows — drag-and-drop interface for LangChain-compatible components. | Open Source | [Docs](https://github.com/langflow-ai/langflow#readme) | visual, workflow, LLM | Indie favorite |
+| [Letta](https://github.com/letta-ai/letta) | Conversational AI framework designed to build chat experiences and conversational agents. | Open Source | [Docs](https://github.com/letta-ai/letta#readme) | conversational, AI, framework | Emerging |
+| [Apidog](https://apidog.com) | API testing platform (with AI-assisted features) for designing, testing, and documenting APIs. | Freemium | [Docs](https://apidog.com/docs) | API, testing, automation | Indie dev favorite |
+| [Qodo](https://www.qodo.ai) | AI assistant focused on code completion, refactorings and code understanding (developer-facing). | Freemium | [Docs](https://www.qodo.ai/docs) | AI, code, assistant | Emerging |
+| [DeepSeek](https://www.deepseek.com) | AI-powered semantic search and reasoning product that enables building powerful search experiences. | Freemium | [Docs](https://www.deepseek.com/docs) | semantic search, AI, retrieval | Niche |
+| [Google Gemini](https://gemini.google.com) | Google’s family of large multimodal models and APIs for chat, images, and coding assistance. | Freemium | [Docs](https://developers.generativeai.google) | multimodal, Google, LLM | Mainstream |
+| [NotebookLM](https://notebooklm.google.com) | Google’s research assistant that helps you ask questions and get answers from documents and notes. | Freemium | [Docs](https://support.google.com/assistant/answer/...) | research, notebook, LLM | Google product audience |
+| [Qwen Code CLI](https://github.com/QwenLM/qwen-code) | Open-source command-line AI workflow tool adapted from Gemini CLI, optimized for Qwen3-Coder models, for code editing, automation, and agentic tasks. | Open Source / Freemium | [Docs](https://qwenlm.github.io/qwen-code-docs/zh/ or GitHub README) | AI, CLI, coding, agent | Emerging but rapidly adopted |
 
 ---
 
-## ⚡ Vibe Coding Tools (12)
+## ⚡ Vibe Coding Tools (16)
 
 | Name | Description | Type | Learn | Tags | Popularity |
 |------|--------------|------|-------|------|------------|
@@ -41,10 +57,14 @@ Automatically generated from the data files in `/data/`.
 | [GitHub Codespaces](https://github.com/features/codespaces) | Cloud dev environments powered by VS Code. | Paid | [Docs](https://docs.github.com/codespaces) | cloud, ide | Enterprise friendly |
 | [StackBlitz](https://stackblitz.com) | Instant web IDE running in the browser. | Free | [Docs](https://developer.stackblitz.com) | ide, web | Great for web demos |
 | [CodeSandbox](https://codesandbox.io) | Cloud development for frontends and containers. | Freemium | [Docs](https://codesandbox.io/docs) | ide, cloud | Popular for sandboxes |
+| [OpenCode.ai](https://opencode.ai) | AI-powered coding assistant and development platform. | Freemium | [Docs](https://opencode.ai) | ai, coding, assistant | Emerging |
+| [Windsurf / Codeium](https://codeium.com) | AI coding assistant for completions, code search, and contextual help (Codeium offers similar features under its brand). | Freemium | [Docs](https://docs.codeium.com) | AI, coding, assistant | Popular alternative to other AI dev tools |
+| [Qodo](https://www.qodo.ai) | AI assistant aimed at helping with code generation and developer workflows. | Freemium | [Docs](https://www.qodo.ai/docs) | AI, code, assistant | Emerging |
+| [Warp AI](https://www.warp.dev/warp-ai) | Terminal integrated AI agent that helps you generate commands, explain errors, and automate workflows by typing natural language in your shell. | Freemium | [Docs](https://www.warp.dev/docs/ai) | terminal, AI, CLI, agent | Growing in CLI dev community |
 
 ---
 
-## 🧰 Developer Tools (15)
+## 🧰 Developer Tools (20)
 
 | Name | Description | Type | Learn | Tags | Popularity |
 |------|--------------|------|-------|------|------------|
@@ -63,6 +83,11 @@ Automatically generated from the data files in `/data/`.
 | [GitHub](https://github.com) | Version control and collaboration platform. | Freemium | [Docs](https://docs.github.com) | git, collaboration | Industry standard |
 | [GitLab](https://gitlab.com) | DevOps platform with Git repository management. | Freemium | [Docs](https://docs.gitlab.com) | git, devops | Enterprise alternative |
 | [Docker](https://www.docker.com) | Containerization platform for applications. | Freemium | [Docs](https://docs.docker.com) | containers, devops | Standard for deployment |
+| [Pinggy](https://pinggy.io) | Instant public URLs & tunnels to localhost, useful for sharing dev previews. | Free / Freemium | [Docs](https://pinggy.io/docs) | tunnel, preview, devtool | Smaller niche |
+| [Snippet Generator](https://snippet-generator.app) | Tool to quickly craft and style code snippets for sharing or blog posts. | Free | [Docs](https://snippet-generator.app (homepage)) | snippet, developer, visual | Indie |
+| [Ray.so](https://ray.so) | Create beautiful images of your code snippets for sharing on social or docs. | Free | [Docs](https://ray.so (homepage)) | visual, code, share | Popular for dev social posts |
+| [Carbon](https://carbon.now.sh) | Design tool to create beautiful images of source code for sharing. | Free | [Docs](https://carbon.now.sh (homepage)) | code, visual, design | Very popular |
+| [shadcn / AI Elements](https://www.shadcn.io/ai/tool) | React UI components designed for conversational AI interfaces (streaming, tool calls, reasoning) built with shadcn/ui and Vercel AI SDK. | Open Source | [Docs](https://www.shadcn.io/ai/tool#readme) | UI, React, AI, chat | Popular in AI+React devs |
 
 ---
 
@@ -87,15 +112,15 @@ Automatically generated from the data files in `/data/`.
 
 ---
 
-## 🎨 Design, Video & Demo Creation (17)
+## 🎨 Design, Video & Demo Creation (22)
 
 | Name | Description | Type | Learn | Tags | Popularity |
 |------|--------------|------|-------|------|------------|
-| [VEO3](https://veo.google) | AI video generation for cinematic outputs. | Paid | [Docs](https://ai.google.dev) | video, ai | Cutting edge |
 | [Pika Labs](https://pika.art) | AI video generation from prompts. | Freemium | [Docs](https://docs.pika.art) | video, ai | Popular for short clips |
 | [Runway ML](https://runwayml.com) | Creative AI suite for video, image, and motion. | Paid | [Docs](https://runwayml.com/learn) | video, image | Used by creators |
 | [Kaiber](https://www.kaiber.ai) | AI video generation and stylization. | Freemium | [Docs](https://help.kaiber.ai) | video, style | Strong social presence |
-| [Veo2](https://deepmind.google/technologies/veo) | High-quality AI video model previews. | Free | [Docs](https://ai.google.dev) | video, ai | Research grade |
+| [Veo](https://gemini.google.com/app) | High-quality AI video model previews. | Free | [Docs](https://ai.google.dev) | video, ai | Research grade |
+| [Nano Banana](https://gemini.google.com/app) | AI image generation tool. | Free | [Docs](https://gemini.google.com/app) | image, ai | Emerging |
 | [Lumen5](https://lumen5.com) | Turn blogs into social videos. | Freemium | [Docs](https://help.lumen5.com) | video, marketing | SMB friendly |
 | [Kap](https://getkap.co) | Open-source screen recorder for macOS. | Open Source | [Docs](https://getkap.co) | screen, recorder | Popular OSS tool |
 | [OBS Studio](https://obsproject.com) | Open-source streaming and recording. | Open Source | [Docs](https://obsproject.com/help) | stream, record | Industry standard |
@@ -108,6 +133,11 @@ Automatically generated from the data files in `/data/`.
 | [Penpot](https://penpot.app) | Open-source design and prototyping. | Open Source | [Docs](https://help.penpot.app) | design, open source | Loved by OSS |
 | [Excalidraw](https://excalidraw.com) | Hand-drawn style diagrams and sketches. | Open Source | [Docs](https://github.com/excalidraw/excalidraw) | diagram, whiteboard | Common for docs |
 | [Screenpal](https://screenpal.com) | Screen recording and quick video editing. | Freemium | [Docs](https://support.screenpal.com) | screen, edit | Accessible |
+| [LottieFiles](https://lottiefiles.com) | Marketplace & editor for JSON animations (Lottie format). | Freemium | [Docs](https://lottiefiles.com/docs) | animation, Lottie, designer tool | Popular among designers |
+| [Haikei](https://haikei.app) | Generative SVG and abstract background generator for designers. | Freemium | [Docs](https://haikei.app/#docs (homepage provides usage)) | svg, backgrounds, design | Popular for quick assets |
+| [Iconshock Free Bundle](https://www.iconshock.com) | Collection of icons available for download (free bundles available). | Freemium | [Docs](https://www.iconshock.com (homepage)) | icons, assets, design | Classic icon resource |
+| [OpenPeeps](https://www.openpeeps.com) | Open-source hand-drawn illustration library of characters for projects and mockups. | Free | [Docs](https://www.openpeeps.com (homepage)) | illustrations, design, open-source | Popular for mockups |
+| [Fontshare](https://www.fontshare.com) | Free fonts library with high-quality typefaces for designers and devs. | Free | [Docs](https://www.fontshare.com (homepage)) | fonts, typography, design | Well-known in design community |
 
 ---
 
@@ -150,7 +180,7 @@ Automatically generated from the data files in `/data/`.
 
 ---
 
-## ☁️ Hosting & Deployment (10)
+## ☁️ Hosting & Deployment (13)
 
 | Name | Description | Type | Learn | Tags | Popularity |
 |------|--------------|------|-------|------|------------|
@@ -164,10 +194,13 @@ Automatically generated from the data files in `/data/`.
 | [DigitalOcean App Platform](https://www.digitalocean.com/products/app-platform) | Simple app deployment and scaling. | Paid | [Docs](https://docs.digitalocean.com/products/app-platform) | hosting, scaling | Developer friendly |
 | [Heroku](https://www.heroku.com) | Platform as a service for web apps. | Paid | [Docs](https://devcenter.heroku.com) | paas, deployment | Classic PaaS |
 | [Supabase](https://supabase.com) | Open-source backend: Postgres, auth, storage, edge. | Freemium | [Docs](https://supabase.com/docs) | database, auth, storage | Very popular |
+| [GitHub Pages](https://pages.github.com) | Free static site hosting via GitHub repos. | Free | [Docs](https://docs.github.com/pages) | static site, git, hosting | Common among devs |
+| [Surge](https://surge.sh) | Simple CLI-based static web publishing tool. | Freemium | [Docs](https://surge.sh/help) | static, CLI, hosting | Used by indie devs |
+| [Coolify](https://coolify.io) | Self-hosted PaaS / web app deployment platform, similar to Heroku, Vercel, allowing you to deploy web services from Docker or Git. | Open Source / Self-hosted | [Docs](https://docs.coolify.io) | deployment, self-hosted, PaaS | Used by smaller teams |
 
 ---
 
-## 🤖 Automation & Workflows (10)
+## 🤖 Automation & Workflows (12)
 
 | Name | Description | Type | Learn | Tags | Popularity |
 |------|--------------|------|-------|------|------------|
@@ -180,7 +213,9 @@ Automatically generated from the data files in `/data/`.
 | [IFTTT](https://ifttt.com) | Simple automation for everyday tasks. | Freemium | [Docs](https://ifttt.com/explore) | simple, personal | Consumer friendly |
 | [Pipedream](https://pipedream.com) | Developer-first workflow automation. | Freemium | [Docs](https://pipedream.com/docs) | developer, api | Loved by devs |
 | [Bardeen](https://www.bardeen.ai) | AI-powered browser automation. | Freemium | [Docs](https://www.bardeen.ai/help) | ai, browser | Growing |
-| [Automate.io](https://automate.io) | Connect 200+ apps with automation. | Freemium | [Docs](https://automate.io/help) | integrations, apps | Good for SMBs |
+| [Hookdeck](https://hookdeck.com) | Webhook ingestion & delivery platform for building reliable workflows. | Freemium | [Docs](https://docs.hookdeck.com) | webhooks, automation, events | Up-and-coming |
+| [Pipedream](https://pipedream.com) | Serverless event & workflow automation across APIs, with code steps. | Freemium | [Docs](https://pipedream.com/docs) | automation, serverless, integration | Well-known |
+| [Hookdeck](https://hookdeck.com) | Webhook ingestion and delivery platform that ensures reliable event handling and retries. | Freemium | [Docs](https://docs.hookdeck.com) | webhooks, retries, events | Up-and-coming |
 
 ---
 
@@ -203,7 +238,7 @@ Automatically generated from the data files in `/data/`.
 
 ---
 
-## 📈 Analytics & Tracking (10)
+## 📈 Analytics & Tracking (16)
 
 | Name | Description | Type | Learn | Tags | Popularity |
 |------|--------------|------|-------|------|------------|
@@ -217,10 +252,16 @@ Automatically generated from the data files in `/data/`.
 | [Mixpanel](https://mixpanel.com) | Event-based analytics for products. | Freemium | [Docs](https://help.mixpanel.com) | product, events | Common in SaaS |
 | [LogSnag](https://logsnag.com) | Track product events and user activity. | Freemium | [Docs](https://docs.logsnag.com) | events, notifications | Indie friendly |
 | [Simple Analytics](https://simpleanalytics.com) | No-cookie privacy-first analytics. | Paid | [Docs](https://docs.simpleanalytics.com) | privacy, web | Transparent and EU-focused |
+| [Formbricks](https://formbricks.com) | Surveys & in-product feedback platform (self-hosted or cloud). | Open Source / Freemium | [Docs](https://formbricks.com/docs/self-hosting/setup/one-click) | survey, feedback, UX | Growing in indie tools |
+| [Repohistory](https://repohistory.dev) | GitHub repository analytics to track contributions & trends. | Free / Freemium | [Docs](https://repohistory.dev/docs) | git, analytics, repo | Lesser known |
+| [Highlight.io](https://highlight.io) | Session replay, error tracking, and logs combined in one SDK. | Freemium | [Docs](https://highlight.io/docs) | monitoring, replay, errors | Growing |
+| [Sentry](https://sentry.io) | Error tracking and crash reporting for front-end and back-end. | Freemium | [Docs](https://docs.sentry.io) | errors, monitoring, alerts | Widely adopted |
+| [Vercel Analytics](https://vercel.com/analytics) | Real-user metrics (TTFB, LCP, CLS) built into Vercel’s hosting. | Freemium | [Docs](https://vercel.com/docs/analytics) | performance, frontend, metrics | Used by Vercel users |
+| [GoatCounter](https://www.goatcounter.com) | Simple, privacy-friendly web analytics with a focus on ease-of-use and open-source deployability. | Freemium / Open Source | [Docs](https://www.goatcounter.com/docs) | analytics, privacy, simple | Popular for small sites |
 
 ---
 
-## 📧 Communication & Email (14)
+## 📧 Communication & Email (17)
 
 | Name | Description | Type | Learn | Tags | Popularity |
 |------|--------------|------|-------|------|------------|
@@ -238,10 +279,13 @@ Automatically generated from the data files in `/data/`.
 | [ConvertKit](https://convertkit.com) | Email marketing for creators. | Paid | [Docs](https://help.convertkit.com) | email, marketing | Creator favorite |
 | [Elastic Email](https://elasticemail.com) | Email API with competitive pricing. | Paid | [Docs](https://elasticemail.com/resources) | email, api | Budget friendly |
 | [Ethereal Email](https://ethereal.email) | Fake SMTP service for testing. | Free | [Docs](https://ethereal.email/create) | testing, smtp | Great for dev |
+| [Mailersend](https://www.mailersend.com) | Email API & SMTP service with templates and analytics. | Freemium | [Docs](https://docs.mailersend.com) | email, API, SMTP | Used by devs |
+| [SimpleLogin](https://simplelogin.io) | Create email aliases for privacy and anti-spam. | Freemium | [Docs](https://simplelogin.io/docs) | privacy, email alias, security | Popular in privacy tools |
+| [Crisp Chat](https://crisp.chat) | Live chat widget & shared inbox for customer support. | Freemium | [Docs](https://crisp.chat/en/docs) | chat, support, widget | Widely used in startups |
 
 ---
 
-## 🔐 Security & Privacy (13)
+## 🔐 Security & Privacy (16)
 
 | Name | Description | Type | Learn | Tags | Popularity |
 |------|--------------|------|-------|------|------------|
@@ -258,10 +302,13 @@ Automatically generated from the data files in `/data/`.
 | [Bitwarden](https://bitwarden.com) | Open-source password manager. | Freemium | [Docs](https://bitwarden.com/help) | passwords, open source | Loved by devs |
 | [HashiCorp Vault](https://www.vaultproject.io) | Secrets management and encryption. | Open Source | [Docs](https://developer.hashicorp.com/vault) | secrets, keys | Enterprise standard |
 | [Socket.dev](https://socket.dev) | Supply chain security for open-source dependencies. | Freemium | [Docs](https://docs.socket.dev) | supply chain, security, open source | Rising adoption |
+| [Auth0](https://auth0.com) | Authentication & authorization platform (OAuth, SSO, JWT). | Freemium | [Docs](https://auth0.com/docs) | auth, security, login | Widely used |
+| [Cloudflare](https://www.cloudflare.com) | CDN and web security platform providing DDoS protection, DNS, and edge services. | Freemium | [Docs](https://developers.cloudflare.com) | CDN, security, DNS | Very popular |
+| [ClouDNS](https://cloudns.net) | DNS management provider offering DNS, DDoS protection and domain services. | Freemium | [Docs](https://www.cloudns.net/wiki/) | dns, management, security | Niche |
 
 ---
 
-## 🧭 Project Management & Productivity (14)
+## 🧭 Project Management & Productivity (16)
 
 | Name | Description | Type | Learn | Tags | Popularity |
 |------|--------------|------|-------|------|------------|
@@ -279,10 +326,12 @@ Automatically generated from the data files in `/data/`.
 | [AppFlowy](https://www.appflowy.io) | Open-source Notion alternative. | Open Source | [Docs](https://docs.appflowy.io) | notes, open source | Active OSS |
 | [Obsidian](https://obsidian.md) | Knowledge base on local Markdown files. | Freemium | [Docs](https://help.obsidian.md) | notes, markdown | Huge community |
 | [Logseq](https://logseq.com) | Open-source outliner and knowledge graph. | Open Source | [Docs](https://docs.logseq.com) | notes, graph | Loved by researchers |
+| [Reclaim](https://reclaim.ai) | Smart calendar assistant that optimizes your schedule for focus time and priorities. | Freemium | [Docs](https://reclaim.ai/help) | calendar, productivity, scheduling | Popular with productivity-minded teams |
+| [Granola](https://www.granola.ai) | AI-first productivity assistant that helps manage tasks, notes, and focus (tool for indie makers). | Freemium | [Docs](https://www.granola.ai/docs) | AI, productivity, tasks | Emerging |
 
 ---
 
-## 🚀 Launch & Community Platforms (14)
+## 🚀 Launch & Community Platforms (13)
 
 | Name | Description | Type | Learn | Tags | Popularity |
 |------|--------------|------|-------|------|------------|
@@ -292,7 +341,6 @@ Automatically generated from the data files in `/data/`.
 | [Reddit](https://www.reddit.com) | Communities like r/SideProject and r/Entrepreneur. | Free | [Docs](https://reddithelp.com) | community, feedback | Huge reach |
 | [Indie Hackers](https://www.indiehackers.com) | Community for indie founders. | Free | [Docs](https://www.indiehackers.com/post/new) | community, founders | Active |
 | [Microlaunch](https://microlaunch.net) | Platform for launching micro-products. | Free | [Docs](https://microlaunch.net) | launch, micro | Niche |
-| [Buildspace](https://buildspace.so) | Community to build and ship in public. | Free | [Docs](https://buildspace.so) | community, learning | Vibrant |
 | [Build in Public](https://twitter.com/hashtag/buildinpublic) | Community around sharing work publicly. | Free | [Docs](https://x.com) | twitter, community | Hashtag-driven |
 | [Makerlog](https://getmakerlog.com) | Community for daily maker progress. | Free | [Docs](https://getmakerlog.com) | habits, community | Niche but engaged |
 | [Launchpedia](https://launchpedia.co) | Find launch platforms and strategies. | Free | [Docs](https://launchpedia.co) | directory, launch | Helpful directory |
@@ -319,12 +367,12 @@ Automatically generated from the data files in `/data/`.
 
 ---
 
-## 📚 Learning Resources (14)
+## 📚 Learning Resources (16)
 
 | Name | Description | Type | Learn | Tags | Popularity |
 |------|--------------|------|-------|------|------------|
 | [freeCodeCamp](https://www.freecodecamp.org) | Free coding lessons and certificates. | Free | [Docs](https://www.freecodecamp.org/learn) | web, learn | Massive community |
-| [Buildspace](https://buildspace.so) | Project-based learning with community. | Free | [Docs](https://buildspace.so) | ai, web | Very active |
+| [Buildspace](https://www.youtube.com/@_buildspace/playlists) | Project-based learning with community. | Free | [Docs](https://www.youtube.com/@_buildspace/playlists) | ai, web | Very active |
 | [Scrimba](https://scrimba.com) | Interactive coding screencasts. | Freemium | [Docs](https://scrimba.com) | frontend, interactive | Great for beginners |
 | [Frontend Mentor](https://www.frontendmentor.io) | Real-world frontend challenges. | Freemium | [Docs](https://www.frontendmentor.io/resources) | frontend, practice | Popular practice site |
 | [Egghead](https://egghead.io) | Concise courses for developers. | Paid | [Docs](https://egghead.io) | js, react | High quality |
@@ -337,6 +385,26 @@ Automatically generated from the data files in `/data/`.
 | [Next.js Learn](https://nextjs.org/learn) | Official interactive course for Next.js. | Free | [Docs](https://nextjs.org/learn) | react, nextjs | Go-to resource |
 | [React.dev](https://react.dev) | Official React docs and tutorials. | Free | [Docs](https://react.dev/learn) | react, docs | Authoritative |
 | [Kaggle](https://www.kaggle.com) | Datasets, notebooks, and ML competitions. | Free | [Docs](https://www.kaggle.com/learn) | ml, datasets, notebooks | ML community |
+| [Y Combinator](https://www.youtube.com/@ycombinator/playlists) | Startup accelerator with educational content and resources. | Free | [Docs](https://www.youtube.com/@ycombinator/playlists) | startup, entrepreneurship, business | Highly respected |
+| [DevDocs](https://devdocs.io) | Aggregated API documentation browser for many languages and libraries in a fast, searchable interface. | Free | [Docs](https://devdocs.io (homepage)) | docs, reference, developer | Popular among devs |
+
+---
+
+## 🔧 Other Utilities (11)
+
+| Name | Description | Type | Learn | Tags | Popularity |
+|------|--------------|------|-------|------|------------|
+| [Docker](https://www.docker.com) | Container platform to build, ship, and run distributed applications in containers. | Freemium | [Docs](https://docs.docker.com/get-started/) | containers, devops, docker | Very high |
+| [FileZilla](https://filezilla-project.org) | Open-source FTP client for transferring files between machines and servers. | Free | [Docs](https://wiki.filezilla-project.org/Documentation) | ftp, file transfer | Long-established |
+| [FreeFileSync](https://freefilesync.org) | Folder comparison and synchronization software for backups. | Free | [Docs](https://freefilesync.org/manual.php) | sync, backup, files | Useful for backups |
+| [Laragon](https://laragon.org) | Fast local development environment for Windows (Apache, MySQL, PHP combos). | Free | [Docs](https://laragon.org/documentation.html) | local dev, stack, windows | Popular with Windows devs |
+| [PuTTY](https://www.putty.org) | SSH and telnet client for Windows (terminal emulator). | Free | [Docs](https://the.earth.li/~sgtatham/putty/0.76/htmldoc/Chapter2.html) | ssh, terminal | Classic |
+| [WinSCP](https://winscp.net) | SFTP and FTP client for Windows with file manager UI and scripting support. | Free | [Docs](https://winscp.net/eng/docs/start) | sftp, ftp, file transfer | Widely used |
+| [XAMPP](https://www.apachefriends.org) | Local PHP/MySQL/Apache development environment for quickly running web apps locally. | Free | [Docs](https://www.apachefriends.org/faq.html) | local dev, php, apache | Common in PHP devs |
+| [Klotho](https://klo.dev) | Tooling to convert apps into cloud-native deployments and optimize cloud cost and infra. | Freemium | [Docs](https://docs.klo.dev) | cloud, deployment, infrastructure | Emerging |
+| [Turborepo (Turbo Cache)](https://turbo.build) | Monorepo build system and remote caching to speed up JS/TS builds and CI. | Freemium | [Docs](https://turbo.build/repo/docs) | monorepo, build, cache | Popular |
+| [Koding](https://koding.com) | Cloud-based development environment and workspace for teams. | Freemium | [Docs](https://koding.com/docs) | cloud ide, dev, workspace | Niche |
+| [Cloud9](https://aws.amazon.com/cloud9/) | AWS Cloud9 — cloud-based IDE from AWS with collaborative editing and terminal. | Freemium | [Docs](https://docs.aws.amazon.com/cloud9/latest/user-guide/) | cloud ide, aws, terminal | Used by AWS customers |
 
 ---
 

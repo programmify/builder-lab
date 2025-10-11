@@ -1,19 +1,273 @@
 [
-  {"name": "VEO3", "description": "AI video generation for cinematic outputs.", "link": "https://veo.google", "type": "Paid", "category": "Design, Video & Demo Creation", "tags": ["video", "ai"], "popularity": "Cutting edge", "tutorial": "https://ai.google.dev"},
-  {"name": "Pika Labs", "description": "AI video generation from prompts.", "link": "https://pika.art", "type": "Freemium", "category": "Design, Video & Demo Creation", "tags": ["video", "ai"], "popularity": "Popular for short clips", "tutorial": "https://docs.pika.art"},
-  {"name": "Runway ML", "description": "Creative AI suite for video, image, and motion.", "link": "https://runwayml.com", "type": "Paid", "category": "Design, Video & Demo Creation", "tags": ["video", "image"], "popularity": "Used by creators", "tutorial": "https://runwayml.com/learn"},
-  {"name": "Kaiber", "description": "AI video generation and stylization.", "link": "https://www.kaiber.ai", "type": "Freemium", "category": "Design, Video & Demo Creation", "tags": ["video", "style"], "popularity": "Strong social presence", "tutorial": "https://help.kaiber.ai"},
-  {"name": "Veo2", "description": "High-quality AI video model previews.", "link": "https://deepmind.google/technologies/veo", "type": "Free", "category": "Design, Video & Demo Creation", "tags": ["video", "ai"], "popularity": "Research grade", "tutorial": "https://ai.google.dev"},
-  {"name": "Lumen5", "description": "Turn blogs into social videos.", "link": "https://lumen5.com", "type": "Freemium", "category": "Design, Video & Demo Creation", "tags": ["video", "marketing"], "popularity": "SMB friendly", "tutorial": "https://help.lumen5.com"},
-  {"name": "Kap", "description": "Open-source screen recorder for macOS.", "link": "https://getkap.co", "type": "Open Source", "category": "Design, Video & Demo Creation", "tags": ["screen", "recorder"], "popularity": "Popular OSS tool", "tutorial": "https://getkap.co"},
-  {"name": "OBS Studio", "description": "Open-source streaming and recording.", "link": "https://obsproject.com", "type": "Open Source", "category": "Design, Video & Demo Creation", "tags": ["stream", "record"], "popularity": "Industry standard", "tutorial": "https://obsproject.com/help"},
-  {"name": "Screenity", "description": "Chrome extension for screen recording.", "link": "https://www.screenity.io", "type": "Free", "category": "Design, Video & Demo Creation", "tags": ["screen", "extension"], "popularity": "Easy for quick demos", "tutorial": "https://www.screenity.io"},
-  {"name": "Loom", "description": "Async video messaging with free plan.", "link": "https://www.loom.com", "type": "Freemium", "category": "Design, Video & Demo Creation", "tags": ["video", "async"], "popularity": "Very common in teams", "tutorial": "https://support.loom.com"},
-  {"name": "Descript", "description": "AI video editor with transcript editing.", "link": "https://www.descript.com", "type": "Freemium", "category": "Design, Video & Demo Creation", "tags": ["edit", "ai"], "popularity": "Popular with podcasters", "tutorial": "https://help.descript.com"},
-  {"name": "Scribe", "description": "Auto-generate step-by-step guides from screen recordings.", "link": "https://scribehow.com", "type": "Freemium", "category": "Design, Video & Demo Creation", "tags": ["docs", "how-to"], "popularity": "Handy for onboarding", "tutorial": "https://help.scribehow.com"},
-  {"name": "Canva", "description": "Online design suite with rich templates.", "link": "https://canva.com", "type": "Freemium", "category": "Design, Video & Demo Creation", "tags": ["design", "templates"], "popularity": "Mass adoption", "tutorial": "https://www.canva.com/learn"},
-  {"name": "Figma", "description": "Collaborative interface design.", "link": "https://figma.com", "type": "Freemium", "category": "Design, Video & Demo Creation", "tags": ["design", "ui"], "popularity": "Industry standard", "tutorial": "https://help.figma.com"},
-  {"name": "Penpot", "description": "Open-source design and prototyping.", "link": "https://penpot.app", "type": "Open Source", "category": "Design, Video & Demo Creation", "tags": ["design", "open source"], "popularity": "Loved by OSS", "tutorial": "https://help.penpot.app"},
-  {"name": "Excalidraw", "description": "Hand-drawn style diagrams and sketches.", "link": "https://excalidraw.com", "type": "Open Source", "category": "Design, Video & Demo Creation", "tags": ["diagram", "whiteboard"], "popularity": "Common for docs", "tutorial": "https://github.com/excalidraw/excalidraw"},
-  {"name": "Screenpal", "description": "Screen recording and quick video editing.", "link": "https://screenpal.com", "type": "Freemium", "category": "Design, Video & Demo Creation", "tags": ["screen", "edit"], "popularity": "Accessible", "tutorial": "https://support.screenpal.com"}
+  {
+    "name": "Pika Labs",
+    "description": "AI video generation from prompts.",
+    "link": "https://pika.art",
+    "type": "Freemium",
+    "category": "Design, Video & Demo Creation",
+    "tags": [
+      "video",
+      "ai"
+    ],
+    "popularity": "Popular for short clips",
+    "tutorial": "https://docs.pika.art"
+  },
+  {
+    "name": "Runway ML",
+    "description": "Creative AI suite for video, image, and motion.",
+    "link": "https://runwayml.com",
+    "type": "Paid",
+    "category": "Design, Video & Demo Creation",
+    "tags": [
+      "video",
+      "image"
+    ],
+    "popularity": "Used by creators",
+    "tutorial": "https://runwayml.com/learn"
+  },
+  {
+    "name": "Kaiber",
+    "description": "AI video generation and stylization.",
+    "link": "https://www.kaiber.ai",
+    "type": "Freemium",
+    "category": "Design, Video & Demo Creation",
+    "tags": [
+      "video",
+      "style"
+    ],
+    "popularity": "Strong social presence",
+    "tutorial": "https://help.kaiber.ai"
+  },
+  {
+    "name": "Veo",
+    "description": "High-quality AI video model previews.",
+    "link": "https://gemini.google.com/app",
+    "type": "Free",
+    "category": "Design, Video & Demo Creation",
+    "tags": [
+      "video",
+      "ai"
+    ],
+    "popularity": "Research grade",
+    "tutorial": "https://ai.google.dev"
+  },
+  {
+    "name": "Nano Banana",
+    "description": "AI image generation tool.",
+    "link": "https://gemini.google.com/app",
+    "type": "Free",
+    "category": "Design, Video & Demo Creation",
+    "tags": [
+      "image",
+      "ai"
+    ],
+    "popularity": "Emerging",
+    "tutorial": "https://gemini.google.com/app"
+  },
+  {
+    "name": "Lumen5",
+    "description": "Turn blogs into social videos.",
+    "link": "https://lumen5.com",
+    "type": "Freemium",
+    "category": "Design, Video & Demo Creation",
+    "tags": [
+      "video",
+      "marketing"
+    ],
+    "popularity": "SMB friendly",
+    "tutorial": "https://help.lumen5.com"
+  },
+  {
+    "name": "Kap",
+    "description": "Open-source screen recorder for macOS.",
+    "link": "https://getkap.co",
+    "type": "Open Source",
+    "category": "Design, Video & Demo Creation",
+    "tags": [
+      "screen",
+      "recorder"
+    ],
+    "popularity": "Popular OSS tool",
+    "tutorial": "https://getkap.co"
+  },
+  {
+    "name": "OBS Studio",
+    "description": "Open-source streaming and recording.",
+    "link": "https://obsproject.com",
+    "type": "Open Source",
+    "category": "Design, Video & Demo Creation",
+    "tags": [
+      "stream",
+      "record"
+    ],
+    "popularity": "Industry standard",
+    "tutorial": "https://obsproject.com/help"
+  },
+  {
+    "name": "Screenity",
+    "description": "Chrome extension for screen recording.",
+    "link": "https://www.screenity.io",
+    "type": "Free",
+    "category": "Design, Video & Demo Creation",
+    "tags": [
+      "screen",
+      "extension"
+    ],
+    "popularity": "Easy for quick demos",
+    "tutorial": "https://www.screenity.io"
+  },
+  {
+    "name": "Loom",
+    "description": "Async video messaging with free plan.",
+    "link": "https://www.loom.com",
+    "type": "Freemium",
+    "category": "Design, Video & Demo Creation",
+    "tags": [
+      "video",
+      "async"
+    ],
+    "popularity": "Very common in teams",
+    "tutorial": "https://support.loom.com"
+  },
+  {
+    "name": "Descript",
+    "description": "AI video editor with transcript editing.",
+    "link": "https://www.descript.com",
+    "type": "Freemium",
+    "category": "Design, Video & Demo Creation",
+    "tags": [
+      "edit",
+      "ai"
+    ],
+    "popularity": "Popular with podcasters",
+    "tutorial": "https://help.descript.com"
+  },
+  {
+    "name": "Scribe",
+    "description": "Auto-generate step-by-step guides from screen recordings.",
+    "link": "https://scribehow.com",
+    "type": "Freemium",
+    "category": "Design, Video & Demo Creation",
+    "tags": [
+      "docs",
+      "how-to"
+    ],
+    "popularity": "Handy for onboarding",
+    "tutorial": "https://help.scribehow.com"
+  },
+  {
+    "name": "Canva",
+    "description": "Online design suite with rich templates.",
+    "link": "https://canva.com",
+    "type": "Freemium",
+    "category": "Design, Video & Demo Creation",
+    "tags": [
+      "design",
+      "templates"
+    ],
+    "popularity": "Mass adoption",
+    "tutorial": "https://www.canva.com/learn"
+  },
+  {
+    "name": "Figma",
+    "description": "Collaborative interface design.",
+    "link": "https://figma.com",
+    "type": "Freemium",
+    "category": "Design, Video & Demo Creation",
+    "tags": [
+      "design",
+      "ui"
+    ],
+    "popularity": "Industry standard",
+    "tutorial": "https://help.figma.com"
+  },
+  {
+    "name": "Penpot",
+    "description": "Open-source design and prototyping.",
+    "link": "https://penpot.app",
+    "type": "Open Source",
+    "category": "Design, Video & Demo Creation",
+    "tags": [
+      "design",
+      "open source"
+    ],
+    "popularity": "Loved by OSS",
+    "tutorial": "https://help.penpot.app"
+  },
+  {
+    "name": "Excalidraw",
+    "description": "Hand-drawn style diagrams and sketches.",
+    "link": "https://excalidraw.com",
+    "type": "Open Source",
+    "category": "Design, Video & Demo Creation",
+    "tags": [
+      "diagram",
+      "whiteboard"
+    ],
+    "popularity": "Common for docs",
+    "tutorial": "https://github.com/excalidraw/excalidraw"
+  },
+  {
+    "name": "Screenpal",
+    "description": "Screen recording and quick video editing.",
+    "link": "https://screenpal.com",
+    "type": "Freemium",
+    "category": "Design, Video & Demo Creation",
+    "tags": [
+      "screen",
+      "edit"
+    ],
+    "popularity": "Accessible",
+    "tutorial": "https://support.screenpal.com"
+  },
+  {
+    "name": "LottieFiles",
+    "description": "Marketplace & editor for JSON animations (Lottie format).",
+    "link": "https://lottiefiles.com",
+    "type": "Freemium",
+    "category": "Design, Video & Demo Creation",
+    "tags": ["animation", "Lottie", "designer tool"],
+    "popularity": "Popular among designers",
+    "tutorial": "https://lottiefiles.com/docs"
+  },
+  {
+    "name": "Haikei",
+    "description": "Generative SVG and abstract background generator for designers.",
+    "link": "https://haikei.app",
+    "type": "Freemium",
+    "category": "Design, Video & Demo Creation",
+    "tags": ["svg", "backgrounds", "design"],
+    "popularity": "Popular for quick assets",
+    "tutorial": "https://haikei.app/#docs (homepage provides usage)"
+  },
+  {
+    "name": "Iconshock Free Bundle",
+    "description": "Collection of icons available for download (free bundles available).",
+    "link": "https://www.iconshock.com",
+    "type": "Freemium",
+    "category": "Design, Video & Demo Creation",
+    "tags": ["icons", "assets", "design"],
+    "popularity": "Classic icon resource",
+    "tutorial": "https://www.iconshock.com (homepage)"
+  },
+  {
+    "name": "OpenPeeps",
+    "description": "Open-source hand-drawn illustration library of characters for projects and mockups.",
+    "link": "https://www.openpeeps.com",
+    "type": "Free",
+    "category": "Design, Video & Demo Creation",
+    "tags": ["illustrations", "design", "open-source"],
+    "popularity": "Popular for mockups",
+    "tutorial": "https://www.openpeeps.com (homepage)"
+  },
+  {
+    "name": "Fontshare",
+    "description": "Free fonts library with high-quality typefaces for designers and devs.",
+    "link": "https://www.fontshare.com",
+    "type": "Free",
+    "category": "Design, Video & Demo Creation",
+    "tags": ["fonts", "typography", "design"],
+    "popularity": "Well-known in design community",
+    "tutorial": "https://www.fontshare.com (homepage)"
+  }
 ]

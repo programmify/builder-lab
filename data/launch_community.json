@@ -1,17 +1,171 @@
 [
-  {"name": "Product Hunt", "description": "Launch and discover new products.", "link": "https://www.producthunt.com", "type": "Free", "category": "Launch & Community Platforms", "tags": ["launch", "community"], "popularity": "High visibility", "tutorial": "https://help.producthunt.com"},
-  {"name": "Peerlist", "description": "Professional network for tech folks.", "link": "https://peerlist.io", "type": "Free", "category": "Launch & Community Platforms", "tags": ["network", "profiles"], "popularity": "Rising", "tutorial": "https://peerlist.io"},
-  {"name": "Hacker News (Show HN)", "description": "Share projects to the HN community.", "link": "https://news.ycombinator.com/show", "type": "Free", "category": "Launch & Community Platforms", "tags": ["launch", "news"], "popularity": "Influential", "tutorial": "https://news.ycombinator.com/newsguidelines.html"},
-  {"name": "Reddit", "description": "Communities like r/SideProject and r/Entrepreneur.", "link": "https://www.reddit.com", "type": "Free", "category": "Launch & Community Platforms", "tags": ["community", "feedback"], "popularity": "Huge reach", "tutorial": "https://reddithelp.com"},
-  {"name": "Indie Hackers", "description": "Community for indie founders.", "link": "https://www.indiehackers.com", "type": "Free", "category": "Launch & Community Platforms", "tags": ["community", "founders"], "popularity": "Active", "tutorial": "https://www.indiehackers.com/post/new"},
-  {"name": "Microlaunch", "description": "Platform for launching micro-products.", "link": "https://microlaunch.net", "type": "Free", "category": "Launch & Community Platforms", "tags": ["launch", "micro"], "popularity": "Niche", "tutorial": "https://microlaunch.net"},
-  {"name": "Buildspace", "description": "Community to build and ship in public.", "link": "https://buildspace.so", "type": "Free", "category": "Launch & Community Platforms", "tags": ["community", "learning"], "popularity": "Vibrant", "tutorial": "https://buildspace.so"},
-  {"name": "Build in Public", "description": "Community around sharing work publicly.", "link": "https://twitter.com/hashtag/buildinpublic", "type": "Free", "category": "Launch & Community Platforms", "tags": ["twitter", "community"], "popularity": "Hashtag-driven", "tutorial": "https://x.com"},
-  {"name": "Makerlog", "description": "Community for daily maker progress.", "link": "https://getmakerlog.com", "type": "Free", "category": "Launch & Community Platforms", "tags": ["habits", "community"], "popularity": "Niche but engaged", "tutorial": "https://getmakerlog.com"},
-  {"name": "Launchpedia", "description": "Find launch platforms and strategies.", "link": "https://launchpedia.co", "type": "Free", "category": "Launch & Community Platforms", "tags": ["directory", "launch"], "popularity": "Helpful directory", "tutorial": "https://launchpedia.co"},
-  {"name": "YC Startup School", "description": "Free resources and community for founders.", "link": "https://www.startupschool.org", "type": "Free", "category": "Launch & Community Platforms", "tags": ["yc", "education"], "popularity": "Trusted", "tutorial": "https://www.startupschool.org"},
-  {"name": "Dev.to", "description": "Developer articles and community.", "link": "https://dev.to", "type": "Free", "category": "Launch & Community Platforms", "tags": ["blog", "dev"], "popularity": "Large dev audience", "tutorial": "https://dev.to/new"},
-  {"name": "Hashnode", "description": "Developer blogging platform.", "link": "https://hashnode.com", "type": "Free", "category": "Launch & Community Platforms", "tags": ["blog", "dev"], "popularity": "Active", "tutorial": "https://hashnode.com/onboard"},
-  {"name": "Twitter (X)", "description": "Social network for builders and tech.", "link": "https://x.com", "type": "Free", "category": "Launch & Community Platforms", "tags": ["social", "network"], "popularity": "Massive reach", "tutorial": "https://help.x.com"}
+  {
+    "name": "Product Hunt",
+    "description": "Launch and discover new products.",
+    "link": "https://www.producthunt.com",
+    "type": "Free",
+    "category": "Launch & Community Platforms",
+    "tags": [
+      "launch",
+      "community"
+    ],
+    "popularity": "High visibility",
+    "tutorial": "https://help.producthunt.com"
+  },
+  {
+    "name": "Peerlist",
+    "description": "Professional network for tech folks.",
+    "link": "https://peerlist.io",
+    "type": "Free",
+    "category": "Launch & Community Platforms",
+    "tags": [
+      "network",
+      "profiles"
+    ],
+    "popularity": "Rising",
+    "tutorial": "https://peerlist.io"
+  },
+  {
+    "name": "Hacker News (Show HN)",
+    "description": "Share projects to the HN community.",
+    "link": "https://news.ycombinator.com/show",
+    "type": "Free",
+    "category": "Launch & Community Platforms",
+    "tags": [
+      "launch",
+      "news"
+    ],
+    "popularity": "Influential",
+    "tutorial": "https://news.ycombinator.com/newsguidelines.html"
+  },
+  {
+    "name": "Reddit",
+    "description": "Communities like r/SideProject and r/Entrepreneur.",
+    "link": "https://www.reddit.com",
+    "type": "Free",
+    "category": "Launch & Community Platforms",
+    "tags": [
+      "community",
+      "feedback"
+    ],
+    "popularity": "Huge reach",
+    "tutorial": "https://reddithelp.com"
+  },
+  {
+    "name": "Indie Hackers",
+    "description": "Community for indie founders.",
+    "link": "https://www.indiehackers.com",
+    "type": "Free",
+    "category": "Launch & Community Platforms",
+    "tags": [
+      "community",
+      "founders"
+    ],
+    "popularity": "Active",
+    "tutorial": "https://www.indiehackers.com/post/new"
+  },
+  {
+    "name": "Microlaunch",
+    "description": "Platform for launching micro-products.",
+    "link": "https://microlaunch.net",
+    "type": "Free",
+    "category": "Launch & Community Platforms",
+    "tags": [
+      "launch",
+      "micro"
+    ],
+    "popularity": "Niche",
+    "tutorial": "https://microlaunch.net"
+  },
+  {
+    "name": "Build in Public",
+    "description": "Community around sharing work publicly.",
+    "link": "https://twitter.com/hashtag/buildinpublic",
+    "type": "Free",
+    "category": "Launch & Community Platforms",
+    "tags": [
+      "twitter",
+      "community"
+    ],
+    "popularity": "Hashtag-driven",
+    "tutorial": "https://x.com"
+  },
+  {
+    "name": "Makerlog",
+    "description": "Community for daily maker progress.",
+    "link": "https://getmakerlog.com",
+    "type": "Free",
+    "category": "Launch & Community Platforms",
+    "tags": [
+      "habits",
+      "community"
+    ],
+    "popularity": "Niche but engaged",
+    "tutorial": "https://getmakerlog.com"
+  },
+  {
+    "name": "Launchpedia",
+    "description": "Find launch platforms and strategies.",
+    "link": "https://launchpedia.co",
+    "type": "Free",
+    "category": "Launch & Community Platforms",
+    "tags": [
+      "directory",
+      "launch"
+    ],
+    "popularity": "Helpful directory",
+    "tutorial": "https://launchpedia.co"
+  },
+  {
+    "name": "YC Startup School",
+    "description": "Free resources and community for founders.",
+    "link": "https://www.startupschool.org",
+    "type": "Free",
+    "category": "Launch & Community Platforms",
+    "tags": [
+      "yc",
+      "education"
+    ],
+    "popularity": "Trusted",
+    "tutorial": "https://www.startupschool.org"
+  },
+  {
+    "name": "Dev.to",
+    "description": "Developer articles and community.",
+    "link": "https://dev.to",
+    "type": "Free",
+    "category": "Launch & Community Platforms",
+    "tags": [
+      "blog",
+      "dev"
+    ],
+    "popularity": "Large dev audience",
+    "tutorial": "https://dev.to/new"
+  },
+  {
+    "name": "Hashnode",
+    "description": "Developer blogging platform.",
+    "link": "https://hashnode.com",
+    "type": "Free",
+    "category": "Launch & Community Platforms",
+    "tags": [
+      "blog",
+      "dev"
+    ],
+    "popularity": "Active",
+    "tutorial": "https://hashnode.com/onboard"
+  },
+  {
+    "name": "Twitter (X)",
+    "description": "Social network for builders and tech.",
+    "link": "https://x.com",
+    "type": "Free",
+    "category": "Launch & Community Platforms",
+    "tags": [
+      "social",
+      "network"
+    ],
+    "popularity": "Massive reach",
+    "tutorial": "https://help.x.com"
+  }
 ]
-
