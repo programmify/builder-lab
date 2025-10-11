@@ -67,20 +67,6 @@
     "tutorial": "https://cursor.sh/docs"
   },
   {
-    "name": "Vibe Coder",
-    "description": "AI React UI builder from prompts.",
-    "link": "https://vibecoder.ai",
-    "type": "Freemium",
-    "category": "Vibe Coding Tools",
-    "tags": [
-      "react",
-      "builder",
-      "ai"
-    ],
-    "popularity": "Early-stage but useful for UI",
-    "tutorial": "https://vibecoder.ai"
-  },
-  {
     "name": "Bolt.sh",
     "description": "AI code builder that scaffolds full-stack apps from prompts.",
     "link": "https://bolt.new",

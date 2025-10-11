@@ -41,7 +41,7 @@ Automatically generated from the data files in `/data/`.
 
 ---
 
-## ⚡ Vibe Coding Tools (16)
+## ⚡ Vibe Coding Tools (15)
 
 | Name | Description | Type | Learn | Tags | Popularity |
 |------|--------------|------|-------|------|------------|
@@ -50,7 +50,6 @@ Automatically generated from the data files in `/data/`.
 | [Lovable.dev](https://lovable.dev) | AI full‑stack builder that iterates on your repo. | Freemium | [Docs](https://docs.lovable.dev) | ai, full-stack | Growing among indie hackers |
 | [Dyad.sh](https://dyad.sh) | Pair programming with AI agents on your codebase. | Freemium | [Docs](https://dyad.sh) | pair-programming, ai | New but promising |
 | [Cursor.sh](https://cursor.sh) | AI-native code editor built on VS Code. | Freemium | [Docs](https://cursor.sh/docs) | editor, ai | Widely used by AI builders |
-| [Vibe Coder](https://vibecoder.ai) | AI React UI builder from prompts. | Freemium | [Docs](https://vibecoder.ai) | react, builder, ai | Early-stage but useful for UI |
 | [Bolt.sh](https://bolt.new) | AI code builder that scaffolds full-stack apps from prompts. | Freemium | [Docs](https://bolt.new/docs) | ai, codegen | Used for rapid prototyping |
 | [Warp (AI terminal)](https://www.warp.dev) | Modern, team-aware terminal with AI and blocks. | Freemium | [Docs](https://docs.warp.dev) | terminal, productivity | Popular with macOS developers |
 | [Replit](https://replit.com) | In-browser IDE and deployments with AI features. | Freemium | [Docs](https://docs.replit.com) | ide, hosting | Large student and indie base |

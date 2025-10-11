@@ -8,11 +8,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: 18
-      - run: npm ci
+          node-version: '20'
+      - run: npm ci || npm i
       - run: node scripts/update-readme.js
       - name: Commit files
         uses: stefanzweifel/git-auto-commit-action@v5
