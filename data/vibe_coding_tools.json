@@ -54,7 +54,7 @@
     "tutorial": "https://dyad.sh"
   },
   {
-    "name": "Cursor.sh",
+    "name": "Cursor",
     "description": "AI-native code editor built on VS Code.",
     "link": "https://cursor.sh",
     "type": "Freemium",
@@ -67,7 +67,7 @@
     "tutorial": "https://cursor.sh/docs"
   },
   {
-    "name": "Bolt.sh",
+    "name": "Bolt",
     "description": "AI code builder that scaffolds full-stack apps from prompts.",
     "link": "https://bolt.new",
     "type": "Freemium",
@@ -78,19 +78,6 @@
     ],
     "popularity": "Used for rapid prototyping",
     "tutorial": "https://bolt.new/docs"
-  },
-  {
-    "name": "Warp (AI terminal)",
-    "description": "Modern, team-aware terminal with AI and blocks.",
-    "link": "https://www.warp.dev",
-    "type": "Freemium",
-    "category": "Vibe Coding Tools",
-    "tags": [
-      "terminal",
-      "productivity"
-    ],
-    "popularity": "Popular with macOS developers",
-    "tutorial": "https://docs.warp.dev"
   },
   {
     "name": "Replit",
@@ -157,16 +144,6 @@
     ],
     "popularity": "Emerging",
     "tutorial": "https://opencode.ai"
-  },
-  {
-    "name": "Windsurf / Codeium",
-    "description": "AI coding assistant for completions, code search, and contextual help (Codeium offers similar features under its brand).",
-    "link": "https://codeium.com",
-    "type": "Freemium",
-    "category": "Vibe Coding Tools",
-    "tags": ["AI", "coding", "assistant"],
-    "popularity": "Popular alternative to other AI dev tools",
-    "tutorial": "https://docs.codeium.com"
   },
   {
     "name": "Qodo",

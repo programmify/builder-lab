@@ -58,6 +58,7 @@ const categoryIcons: Record<string, React.ReactNode> = {
   'Project Management & Productivity': <Zap className="w-4 h-4" />,
   'Security & Privacy': <Lock className="w-4 h-4" />,
   'Vibe Coding Tools': <Coffee className="w-4 h-4" />,
+  'Other Utilities': <Wrench className="w-4 h-4" />,
 };
 
 export const CategoryFilter = ({ selectedCategory, onSelectCategory, categories }: CategoryFilterProps) => {
@@ -65,18 +66,19 @@ export const CategoryFilter = ({ selectedCategory, onSelectCategory, categories 
     <>
       {/* Desktop Sidebar */}
       <motion.div 
-        className="hidden lg:block space-y-2 max-h-[calc(100vh-200px)] overflow-y-auto scrollbar-hide"
-        initial={{ opacity: 0, x: -20 }}
-        animate={{ opacity: 1, x: 0 }}
+        className="hidden lg:block space-y-2 max-h-[calc(100vh-200px)] overflow-y-auto overflow-x-hidden scrollbar-hide touch-pan-y"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3 }}
+        style={{ touchAction: 'pan-y' }}
       >
         <h3 className="font-semibold text-sm text-muted-foreground px-3 mb-4 sticky top-0 bg-background z-10">Categories</h3>
         <div className="space-y-1">
           {categories.map((category, index) => (
             <motion.div
               key={category}
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 + index * 0.05 }}
             >
               <Button

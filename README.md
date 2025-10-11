@@ -2,7 +2,7 @@
 
 Automatically generated from the data files in `/data/`.
 
-## 🧠 AI & LLM APIs (32)
+## 🧠 AI & LLM APIs (31)
 
 | Name | Description | Type | Learn | Tags | Popularity |
 |------|--------------|------|-------|------|------------|
@@ -37,11 +37,10 @@ Automatically generated from the data files in `/data/`.
 | [DeepSeek](https://www.deepseek.com) | AI-powered semantic search and reasoning product that enables building powerful search experiences. | Freemium | [Docs](https://www.deepseek.com/docs) | semantic search, AI, retrieval | Niche |
 | [Google Gemini](https://gemini.google.com) | Google’s family of large multimodal models and APIs for chat, images, and coding assistance. | Freemium | [Docs](https://developers.generativeai.google) | multimodal, Google, LLM | Mainstream |
 | [NotebookLM](https://notebooklm.google.com) | Google’s research assistant that helps you ask questions and get answers from documents and notes. | Freemium | [Docs](https://support.google.com/assistant/answer/...) | research, notebook, LLM | Google product audience |
-| [Qwen Code CLI](https://github.com/QwenLM/qwen-code) | Open-source command-line AI workflow tool adapted from Gemini CLI, optimized for Qwen3-Coder models, for code editing, automation, and agentic tasks. | Open Source / Freemium | [Docs](https://qwenlm.github.io/qwen-code-docs/zh/ or GitHub README) | AI, CLI, coding, agent | Emerging but rapidly adopted |
 
 ---
 
-## ⚡ Vibe Coding Tools (15)
+## ⚡ Vibe Coding Tools (13)
 
 | Name | Description | Type | Learn | Tags | Popularity |
 |------|--------------|------|-------|------|------------|
@@ -49,15 +48,13 @@ Automatically generated from the data files in `/data/`.
 | [Rork](https://rork.com) | AI coding assistant and development platform. | Freemium | [Docs](https://rork.com) | ai, coding, assistant | Emerging |
 | [Lovable.dev](https://lovable.dev) | AI full‑stack builder that iterates on your repo. | Freemium | [Docs](https://docs.lovable.dev) | ai, full-stack | Growing among indie hackers |
 | [Dyad.sh](https://dyad.sh) | Pair programming with AI agents on your codebase. | Freemium | [Docs](https://dyad.sh) | pair-programming, ai | New but promising |
-| [Cursor.sh](https://cursor.sh) | AI-native code editor built on VS Code. | Freemium | [Docs](https://cursor.sh/docs) | editor, ai | Widely used by AI builders |
-| [Bolt.sh](https://bolt.new) | AI code builder that scaffolds full-stack apps from prompts. | Freemium | [Docs](https://bolt.new/docs) | ai, codegen | Used for rapid prototyping |
-| [Warp (AI terminal)](https://www.warp.dev) | Modern, team-aware terminal with AI and blocks. | Freemium | [Docs](https://docs.warp.dev) | terminal, productivity | Popular with macOS developers |
+| [Cursor](https://cursor.sh) | AI-native code editor built on VS Code. | Freemium | [Docs](https://cursor.sh/docs) | editor, ai | Widely used by AI builders |
+| [Bolt](https://bolt.new) | AI code builder that scaffolds full-stack apps from prompts. | Freemium | [Docs](https://bolt.new/docs) | ai, codegen | Used for rapid prototyping |
 | [Replit](https://replit.com) | In-browser IDE and deployments with AI features. | Freemium | [Docs](https://docs.replit.com) | ide, hosting | Large student and indie base |
 | [GitHub Codespaces](https://github.com/features/codespaces) | Cloud dev environments powered by VS Code. | Paid | [Docs](https://docs.github.com/codespaces) | cloud, ide | Enterprise friendly |
 | [StackBlitz](https://stackblitz.com) | Instant web IDE running in the browser. | Free | [Docs](https://developer.stackblitz.com) | ide, web | Great for web demos |
 | [CodeSandbox](https://codesandbox.io) | Cloud development for frontends and containers. | Freemium | [Docs](https://codesandbox.io/docs) | ide, cloud | Popular for sandboxes |
 | [OpenCode.ai](https://opencode.ai) | AI-powered coding assistant and development platform. | Freemium | [Docs](https://opencode.ai) | ai, coding, assistant | Emerging |
-| [Windsurf / Codeium](https://codeium.com) | AI coding assistant for completions, code search, and contextual help (Codeium offers similar features under its brand). | Freemium | [Docs](https://docs.codeium.com) | AI, coding, assistant | Popular alternative to other AI dev tools |
 | [Qodo](https://www.qodo.ai) | AI assistant aimed at helping with code generation and developer workflows. | Freemium | [Docs](https://www.qodo.ai/docs) | AI, code, assistant | Emerging |
 | [Warp AI](https://www.warp.dev/warp-ai) | Terminal integrated AI agent that helps you generate commands, explain errors, and automate workflows by typing natural language in your shell. | Freemium | [Docs](https://www.warp.dev/docs/ai) | terminal, AI, CLI, agent | Growing in CLI dev community |
 
