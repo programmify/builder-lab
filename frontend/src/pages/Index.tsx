@@ -101,7 +101,7 @@ const Index = () => {
 
             {/* Tools Grid */}
             {!isLoading && !error && filteredTools.length > 0 && (
-              <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 lg:gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6">
                 {filteredTools.map((tool, index) => (
                   <ToolCard key={tool.id} tool={tool} index={index} />
                 ))}
