@@ -18,6 +18,7 @@ const GUIDE_FILES = [
   "getting-started.md",
   "prompt_engineering_guide.md",
   "run-llm-locally.md",
+  "setup-qwen-coder-cli.md",
   "track-users-privately.md"
 ];
 
@@ -33,7 +34,8 @@ const GUIDE_CATEGORIES = [
 const GUIDE_TAGS = [
   "AI", "Payments", "Supabase", "Vercel", "Paystack", "OpenAI", "Groq", "Hugging Face", 
   "Replicate", "Ollama", "Local LLM", "Authentication", "Database", "Deployment", 
-  "Privacy", "Security", "Getting Started", "Tutorial", "Integration"
+  "Privacy", "Security", "Getting Started", "Tutorial", "Integration", "QWEN", "CLI", 
+  "VS Code", "Development", "Free", "Coding Assistant"
 ];
 
 interface GuideMetadata {
@@ -138,6 +140,15 @@ const Guides = () => {
       difficulty: "beginner",
       estimatedTime: "20-30 minutes",
       techStack: ["Development", "Productivity", "Open Source"]
+    },
+    "setup-qwen-coder-cli.md": {
+      title: "Setup QWEN Coder CLI in VS Code",
+      description: "Complete step-by-step guide to set up QWEN Coder CLI, a free AI coding assistant, in VS Code for enhanced development productivity.",
+      category: "ai",
+      tags: ["AI", "QWEN", "CLI", "VS Code", "Development", "Free", "Coding Assistant"],
+      difficulty: "beginner",
+      estimatedTime: "15-20 minutes",
+      techStack: ["QWEN Coder CLI", "VS Code", "Node.js", "Terminal"]
     }
   };
 
