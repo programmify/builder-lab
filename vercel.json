@@ -9,26 +9,10 @@
       }
     }
   ],
-  "rewrites": [
+  "routes": [
     {
-      "source": "/guides",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/guides/:path*",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/examples",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/examples/:path*",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/((?!assets|favicon.ico|logo.svg|static|node_modules|api/|.*\\.(css|js|png|jpg|jpeg|gif|svg|ico|webp|txt)).*)",
-      "destination": "/index.html"
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
   ]
 }
