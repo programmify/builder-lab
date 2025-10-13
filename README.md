@@ -2,7 +2,7 @@
 
 Automatically generated from the data files in `/data/`.
 
-## AI & LLM APIs (31)
+## AI & LLM APIs (29)
 
 | Name | Description | Type | Learn | Tags | Popularity |
 |------|--------------|------|-------|------|------------|
@@ -14,11 +14,9 @@ Automatically generated from the data files in `/data/`.
 | [Gemini API](https://ai.google.dev) | Google's multimodal models for text, image, and tooling. | Freemium | [Docs](https://ai.google.dev/tutorials) | multimodal, text, vision | Google scale |
 | [Together AI](https://www.together.ai) | Inference and fine-tuning platform for open models with competitive throughput. | Paid | [Docs](https://docs.together.ai) | LLM, inference, finetune | Production ready |
 | [Groq API](https://groq.com) | Ultra-low-latency LPU inference for Llama and Mixtral models. | Freemium | [Docs](https://console.groq.com/docs) | latency, LLM | Blazing fast |
-| [Fireworks AI](https://fireworks.ai) | High-throughput inference and fine-tuning for open-source models. | Paid | [Docs](https://docs.fireworks.ai) | inference, LLM | Startup scale |
 | [LM Studio (local)](https://lmstudio.ai) | Desktop app to run, compare, and serve local LLMs. | Free | [Docs](https://lmstudio.ai/docs) | local, desktop | User friendly |
 | [GPT4All (local)](https://gpt4all.io) | Open-source local LLM ecosystem with desktop apps and SDKs. | Open Source | [Docs](https://docs.gpt4all.io) | local, open source | Privacy focused |
 | [KoboldCpp](https://github.com/LostRuins/koboldcpp) | Fast CPU/GPU backend for running LLMs locally with UI integrations. | Open Source | [Docs](https://github.com/LostRuins/koboldcpp) | local, cpp, open source | Active OSS |
-| [LMQL](https://lmql.ai) | Query language for LLMs enabling constrained and structured generation. | Open Source | [Docs](https://docs.lmql.ai) | programming, LLM | Niche powerful |
 | [Text Generation Web UI](https://github.com/oobabooga/text-generation-webui) | Popular web UI for running and chatting with local text-generation models. | Open Source | [Docs](https://github.com/oobabooga/text-generation-webui) | local, UI, open source | Large community |
 | [Perplexity API](https://docs.perplexity.ai) | Answer engine API combining retrieval with strong model responses. | Paid | [Docs](https://docs.perplexity.ai) | RAG, search | Emerging API |
 | [Google Colab](https://colab.research.google.com) | Hosted Jupyter notebooks with free GPUs for ML. | Free | [Docs](https://colab.research.google.com) | notebooks, gpu, ml | Widely used |
@@ -61,7 +59,7 @@ Automatically generated from the data files in `/data/`.
 
 ---
 
-## Developer Tools (28)
+## Developer Tools (27)
 
 | Name | Description | Type | Learn | Tags | Popularity |
 |------|--------------|------|-------|------|------------|
@@ -90,7 +88,6 @@ Automatically generated from the data files in `/data/`.
 | [FileZilla](https://filezilla-project.org) | Open-source FTP client for transferring files between machines and servers. | Free | [Docs](https://wiki.filezilla-project.org/Documentation) | ftp, file transfer | Long-established |
 | [FreeFileSync](https://freefilesync.org) | Folder comparison and synchronization software for backups. | Free | [Docs](https://freefilesync.org/manual.php) | sync, backup, files | Useful for backups |
 | [Laragon](https://laragon.org) | Fast local development environment for Windows (Apache, MySQL, PHP combos). | Free | [Docs](https://laragon.org/documentation.html) | local dev, stack, windows | Popular with Windows devs |
-| [PuTTY](https://www.putty.org) | SSH and telnet client for Windows (terminal emulator). | Free | [Docs](https://the.earth.li/~sgtatham/putty/0.76/htmldoc/Chapter2.html) | ssh, terminal | Classic |
 | [WinSCP](https://winscp.net) | SFTP and FTP client for Windows with file manager UI and scripting support. | Free | [Docs](https://winscp.net/eng/docs/start) | sftp, ftp, file transfer | Widely used |
 | [XAMPP](https://www.apachefriends.org) | Local PHP/MySQL/Apache development environment for quickly running web apps locally. | Free | [Docs](https://www.apachefriends.org/faq.html) | local dev, php, apache | Common in PHP devs |
 
@@ -185,7 +182,7 @@ Automatically generated from the data files in `/data/`.
 
 ---
 
-## Hosting & Deployment (13)
+## Hosting & Deployment (12)
 
 | Name | Description | Type | Learn | Tags | Popularity |
 |------|--------------|------|-------|------|------------|
@@ -200,7 +197,6 @@ Automatically generated from the data files in `/data/`.
 | [Heroku](https://www.heroku.com) | Platform as a service for web apps. | Paid | [Docs](https://devcenter.heroku.com) | paas, deployment | Classic PaaS |
 | [Supabase](https://supabase.com) | Open-source backend: Postgres, auth, storage, edge. | Freemium | [Docs](https://supabase.com/docs) | database, auth, storage | Very popular |
 | [GitHub Pages](https://pages.github.com) | Free static site hosting via GitHub repos. | Free | [Docs](https://docs.github.com/pages) | static site, git, hosting | Common among devs |
-| [Surge](https://surge.sh) | Simple CLI-based static web publishing tool. | Freemium | [Docs](https://surge.sh/help) | static, CLI, hosting | Used by indie devs |
 | [Coolify](https://coolify.io) | Self-hosted PaaS / web app deployment platform, similar to Heroku, Vercel, allowing you to deploy web services from Docker or Git. | Open Source / Self-hosted | [Docs](https://docs.coolify.io) | deployment, self-hosted, PaaS | Used by smaller teams |
 
 ---
@@ -224,7 +220,7 @@ Automatically generated from the data files in `/data/`.
 
 ---
 
-## Payments & Monetization (12)
+## Payments & Monetization (11)
 
 | Name | Description | Type | Learn | Tags | Popularity |
 |------|--------------|------|-------|------|------------|
@@ -234,7 +230,6 @@ Automatically generated from the data files in `/data/`.
 | [Paystack](https://paystack.com) | Payments for Africa with great DX. | Paid | [Docs](https://paystack.com/docs) | africa, payments | Popular in Africa |
 | [Flutterwave](https://flutterwave.com) | Pan-African payments and remittances. | Paid | [Docs](https://developer.flutterwave.com) | payments, africa | Wide coverage |
 | [Coinbase Commerce](https://commerce.coinbase.com) | Accept crypto payments easily. | Freemium | [Docs](https://docs.commerce.coinbase.com) | crypto, payments | Trusted brand |
-| [SuperPay](https://www.superpay.com) | One API for payments and payouts. | Paid | [Docs](https://www.superpay.com/docs) | payments, api | New entrant |
 | [Gumroad](https://gumroad.com) | Sell digital products simply. | Paid | [Docs](https://help.gumroad.com) | creator, sales | Creator favorite |
 | [Polar.sh](https://polar.sh) | Sponsorships and payments for OSS. | Freemium | [Docs](https://docs.polar.sh) | open source, funding | Growing in OSS |
 | [BuyMeACoffee](https://www.buymeacoffee.com) | Donations and membership for creators. | Paid | [Docs](https://www.buymeacoffee.com/brand) | donations, creator | Very common |
@@ -243,7 +238,7 @@ Automatically generated from the data files in `/data/`.
 
 ---
 
-## Analytics & Tracking (16)
+## Analytics & Tracking (15)
 
 | Name | Description | Type | Learn | Tags | Popularity |
 |------|--------------|------|-------|------|------------|
@@ -258,7 +253,6 @@ Automatically generated from the data files in `/data/`.
 | [LogSnag](https://logsnag.com) | Track product events and user activity. | Freemium | [Docs](https://docs.logsnag.com) | events, notifications | Indie friendly |
 | [Simple Analytics](https://simpleanalytics.com) | No-cookie privacy-first analytics. | Paid | [Docs](https://docs.simpleanalytics.com) | privacy, web | Transparent and EU-focused |
 | [Formbricks](https://formbricks.com) | Surveys & in-product feedback platform (self-hosted or cloud). | Open Source / Freemium | [Docs](https://formbricks.com/docs/self-hosting/setup/one-click) | survey, feedback, UX | Growing in indie tools |
-| [Repohistory](https://repohistory.dev) | GitHub repository analytics to track contributions & trends. | Free / Freemium | [Docs](https://repohistory.dev/docs) | git, analytics, repo | Lesser known |
 | [Highlight.io](https://highlight.io) | Session replay, error tracking, and logs combined in one SDK. | Freemium | [Docs](https://highlight.io/docs) | monitoring, replay, errors | Growing |
 | [Sentry](https://sentry.io) | Error tracking and crash reporting for front-end and back-end. | Freemium | [Docs](https://docs.sentry.io) | errors, monitoring, alerts | Widely adopted |
 | [Vercel Analytics](https://vercel.com/analytics) | Real-user metrics (TTFB, LCP, CLS) built into Vercel’s hosting. | Freemium | [Docs](https://vercel.com/docs/analytics) | performance, frontend, metrics | Used by Vercel users |
