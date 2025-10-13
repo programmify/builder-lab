@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Guides from "./pages/Guides";
+import { ChatInterface } from "@/components/ChatInterface";
 import ExampleProjects from "./pages/ExampleProjects";
 import NotFound from "./pages/NotFound";
 import { GuideView } from "./pages/GuideView";

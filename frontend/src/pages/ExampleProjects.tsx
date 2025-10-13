@@ -336,7 +336,7 @@ const ExampleProjects = () => {
                           <span>{file}</span>
                           <span className="text-accent-secondary">View Guide →</span>
                         </div>
-                      </div>
+                    </div>
                     </Card>
                   </Card>
                 </Link>
