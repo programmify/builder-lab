@@ -184,9 +184,18 @@ export const ChatInterface = ({ tools }: ChatInterfaceProps) => {
     const userMessage = messageToSend;
     if (!retryMessage) {
       setInput("");
+      const messageUserLevel = detectUserLevel(userMessage);
+      const { tools: relatedTools, guides, examples } = findRelatedContent(userMessage, tools);
+      
       setMessages(prev => [...prev, { 
         role: "user", 
-        content: userMessage
+        content: userMessage,
+        context: {
+          userLevel: messageUserLevel,
+          relatedTools,
+          relatedGuides: guides,
+          relatedExamples: examples
+        }
       }]);
     }
     setIsLoading(true);

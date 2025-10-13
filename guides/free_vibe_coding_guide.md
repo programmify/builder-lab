@@ -225,7 +225,7 @@ Use debounce (300ms) and show loading state while searching.
    - Show diff before applying
    - You approve/reject
 
-**Video tutorial:** [How to setup Cline with OpenRouter](https://www.youtube.com/watch?v=m8a83oBsIBI&t=8s)
+**Video tutorial:** [How to setup Dyad with openRouter API](https://www.youtube.com/watch?v=m8a83oBsIBI&t=8s)
 
 ### Option C: Qwen Coder CLI (Completely Free, Runs Locally)
 

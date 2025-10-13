@@ -13,8 +13,10 @@ const GUIDE_FILES = [
   "accept-payments-with-paystack.md",
   "ai-integration-guide.md",
   "connect-supabase-vercel.md",
+  "free_vibe_coding_guide.md",
   "get-started.md",
   "getting-started.md",
+  "prompt_engineering_guide.md",
   "run-llm-locally.md",
   "track-users-privately.md"
 ];
@@ -118,6 +120,24 @@ const Guides = () => {
       difficulty: "intermediate",
       estimatedTime: "30-45 minutes",
       techStack: ["Analytics", "Privacy", "Data Protection"]
+    },
+    "prompt_engineering_guide.md": {
+      title: "Prompt Engineering Guide",
+      description: "Comprehensive guide to crafting effective prompts for AI models, with practical examples and best practices.",
+      category: "ai",
+      tags: ["AI", "Prompt Engineering", "Best Practices", "OpenAI", "ChatGPT"],
+      difficulty: "intermediate",
+      estimatedTime: "45-60 minutes",
+      techStack: ["AI", "Prompting", "OpenAI", "GPT"]
+    },
+    "free_vibe_coding_guide.md": {
+      title: "Free Vibe Coding Guide",
+      description: "Learn how to maintain a relaxed, productive coding environment while working on projects with free and open-source tools.",
+      category: "getting-started",
+      tags: ["Productivity", "Development", "Open Source", "Tools"],
+      difficulty: "beginner",
+      estimatedTime: "20-30 minutes",
+      techStack: ["Development", "Productivity", "Open Source"]
     }
   };
 
