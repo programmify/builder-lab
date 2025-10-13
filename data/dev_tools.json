@@ -296,16 +296,6 @@
     "tutorial": "https://laragon.org/documentation.html"
   },
   {
-    "name": "PuTTY",
-    "description": "SSH and telnet client for Windows (terminal emulator).",
-    "link": "https://www.putty.org",
-    "type": "Free",
-    "category": "Developer Tools",
-    "tags": ["ssh", "terminal"],
-    "popularity": "Classic",
-    "tutorial": "https://the.earth.li/~sgtatham/putty/0.76/htmldoc/Chapter2.html"
-  },
-  {
     "name": "WinSCP",
     "description": "SFTP and FTP client for Windows with file manager UI and scripting support.",
     "link": "https://winscp.net",

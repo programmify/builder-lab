@@ -140,16 +140,6 @@
     "tutorial": "https://docs.github.com/pages"
   },
   {
-    "name": "Surge",
-    "description": "Simple CLI-based static web publishing tool.",
-    "link": "https://surge.sh",
-    "type": "Freemium",
-    "category": "Hosting",
-    "tags": ["static", "CLI", "hosting"],
-    "popularity": "Used by indie devs",
-    "tutorial": "https://surge.sh/help"
-  },
-  {
     "name": "Coolify",
     "description": "Self-hosted PaaS / web app deployment platform, similar to Heroku, Vercel, allowing you to deploy web services from Docker or Git.",
     "link": "https://coolify.io",

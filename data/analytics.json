@@ -140,16 +140,6 @@
     "tutorial": "https://formbricks.com/docs/self-hosting/setup/one-click"
   },
   {
-    "name": "Repohistory",
-    "description": "GitHub repository analytics to track contributions & trends.",
-    "link": "https://repohistory.dev",
-    "type": "Free / Freemium",
-    "category": "Analytics & Tracking",
-    "tags": ["git", "analytics", "repo"],
-    "popularity": "Lesser known",
-    "tutorial": "https://repohistory.dev/docs"
-  },
-  {
     "name": "Highlight.io",
     "description": "Session replay, error tracking, and logs combined in one SDK.",
     "link": "https://highlight.io",

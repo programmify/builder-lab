@@ -80,16 +80,6 @@
     "tutorial": "https://console.groq.com/docs"
   },
   {
-    "name": "Fireworks AI",
-    "description": "High-throughput inference and fine-tuning for open-source models.",
-    "link": "https://fireworks.ai",
-    "type": "Paid",
-    "category": "AI & LLM APIs",
-    "tags": ["inference", "LLM"],
-    "popularity": "Startup scale",
-    "tutorial": "https://docs.fireworks.ai"
-  },
-  {
     "name": "LM Studio (local)",
     "description": "Desktop app to run, compare, and serve local LLMs.",
     "link": "https://lmstudio.ai",
@@ -118,16 +108,6 @@
     "tags": ["local", "cpp", "open source"],
     "popularity": "Active OSS",
     "tutorial": "https://github.com/LostRuins/koboldcpp"
-  },
-  {
-    "name": "LMQL",
-    "description": "Query language for LLMs enabling constrained and structured generation.",
-    "link": "https://lmql.ai",
-    "type": "Open Source",
-    "category": "AI & LLM APIs",
-    "tags": ["programming", "LLM"],
-    "popularity": "Niche powerful",
-    "tutorial": "https://docs.lmql.ai"
   },
   {
     "name": "Text Generation Web UI",
