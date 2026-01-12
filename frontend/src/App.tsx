@@ -10,6 +10,7 @@ import ExampleProjects from "./pages/ExampleProjects";
 import NotFound from "./pages/NotFound";
 import { GuideView } from "./pages/GuideView";
 import { ExampleView } from "./pages/ExampleView";
+import { Analytics } from '@vercel/analytics/react';
 
 const queryClient = new QueryClient();
 
@@ -30,6 +31,7 @@ const App = () => (
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
+        <Analytics />
       </div>
     </TooltipProvider>
   </QueryClientProvider>
