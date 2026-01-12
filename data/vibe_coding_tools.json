@@ -151,7 +151,11 @@
     "link": "https://www.qodo.ai",
     "type": "Freemium",
     "category": "Vibe Coding Tools",
-    "tags": ["AI", "code", "assistant"],
+    "tags": [
+      "AI",
+      "code",
+      "assistant"
+    ],
     "popularity": "Emerging",
     "tutorial": "https://www.qodo.ai/docs"
   },
@@ -161,7 +165,12 @@
     "link": "https://www.warp.dev/warp-ai",
     "type": "Freemium",
     "category": "Vibe Coding Tools",
-    "tags": ["terminal", "AI", "CLI", "agent"],
+    "tags": [
+      "terminal",
+      "AI",
+      "CLI",
+      "agent"
+    ],
     "popularity": "Growing in CLI dev community",
     "tutorial": "https://www.warp.dev/docs/ai"
   },
@@ -171,8 +180,43 @@
     "link": "https://github.com/QwenLM/qwen-code",
     "type": "Open Source / Freemium",
     "category": "Vibe Coding Tools",
-    "tags": ["AI", "CLI", "coding", "agent"],
+    "tags": [
+      "AI",
+      "CLI",
+      "coding",
+      "agent"
+    ],
     "popularity": "Emerging but rapidly adopted",
     "tutorial": "https://qwenlm.github.io/qwen-code-docs/zh/ or GitHub README"
-  }  
+  },
+  {
+    "name": "Google Antigravity",
+    "description": "Agentic development platform prioritizing autonomous AI agents.",
+    "link": "https://www.antigravity.google/",
+    "type": "Free (Preview)",
+    "category": "Vibe Coding Tools",
+    "tags": [
+      "ai",
+      "agent",
+      "ide",
+      "google"
+    ],
+    "popularity": "High",
+    "tutorial": "https://www.antigravity.google/"
+  },
+  {
+    "name": "Emergent",
+    "description": "AI-powered agentic development platform that generates full-stack apps from natural language.",
+    "link": "https://emergent.sh/",
+    "type": "Free / Enterprise",
+    "category": "Vibe Coding Tools",
+    "tags": [
+      "ai",
+      "agent",
+      "full-stack",
+      "codegen"
+    ],
+    "popularity": "Emerging",
+    "tutorial": "https://app.emergent.sh/"
+  }
 ]

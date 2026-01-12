@@ -117,19 +117,6 @@
     "tutorial": "https://launchpedia.co"
   },
   {
-    "name": "YC Startup School",
-    "description": "Free resources and community for founders.",
-    "link": "https://www.startupschool.org",
-    "type": "Free",
-    "category": "Launch & Community Platforms",
-    "tags": [
-      "yc",
-      "education"
-    ],
-    "popularity": "Trusted",
-    "tutorial": "https://www.startupschool.org"
-  },
-  {
     "name": "Dev.to",
     "description": "Developer articles and community.",
     "link": "https://dev.to",
@@ -167,5 +154,19 @@
     ],
     "popularity": "Massive reach",
     "tutorial": "https://help.x.com"
+  },
+  {
+    "name": "DistributionKit",
+    "description": "Directory of 135+ platforms to launch your startup.",
+    "link": "https://distributionkit.com/",
+    "type": "Free",
+    "category": "Launch & Community Platforms",
+    "tags": [
+      "launch",
+      "directory",
+      "marketing"
+    ],
+    "popularity": "Growing",
+    "tutorial": "https://distributionkit.com/"
   }
 ]

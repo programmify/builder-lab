@@ -202,8 +202,25 @@
     "link": "https://devdocs.io",
     "type": "Free",
     "category": "Learning Resources",
-    "tags": ["docs", "reference", "developer"],
+    "tags": [
+      "docs",
+      "reference",
+      "developer"
+    ],
     "popularity": "Popular among devs",
     "tutorial": "https://devdocs.io (homepage)"
+  },
+  {
+    "name": "YC Startup School",
+    "description": "Free resources and community for founders.",
+    "link": "https://www.startupschool.org",
+    "type": "Free",
+    "category": "Learning Resources",
+    "tags": [
+      "yc",
+      "education"
+    ],
+    "popularity": "Trusted",
+    "tutorial": "https://www.startupschool.org"
   }
 ]

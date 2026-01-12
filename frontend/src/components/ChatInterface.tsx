@@ -10,6 +10,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
 import { Tool } from "@/types/tool";
 import { SYSTEM_PROMPTS } from "@/lib/prompts";
+import ReactMarkdown from "react-markdown";
 
 interface Message {
   role: "user" | "assistant";
@@ -29,24 +30,23 @@ interface ChatInterfaceProps {
 
 const AVAILABLE_MODELS = {
   auto: "Auto (Recommended)",
-  gemini: "Gemini (General Knowledge)",
-  deepseek: "DeepSeek (Technical)",
-  gpt_oss: "GPT-OSS (Creative)"
+  deepseek: "DeepSeek (Reasoning)", // tngtech/deepseek-r1t2-chimera:free
+  qwen_coder: "Qwen 3 (Speed)" // qwen/qwen3-4b:free
 };
 
 // Helper function to detect user experience level
 const detectUserLevel = (message: string): "beginner" | "intermediate" | "expert" => {
   const lowerMessage = message.toLowerCase();
-  if (lowerMessage.includes("help me understand") || 
-      lowerMessage.includes("i'm new") || 
-      lowerMessage.includes("beginner") ||
-      lowerMessage.includes("getting started")) {
+  if (lowerMessage.includes("help me understand") ||
+    lowerMessage.includes("i'm new") ||
+    lowerMessage.includes("beginner") ||
+    lowerMessage.includes("getting started")) {
     return "beginner";
   }
-  if (lowerMessage.includes("advanced") || 
-      lowerMessage.includes("optimize") ||
-      lowerMessage.includes("architecture") ||
-      lowerMessage.includes("best practice")) {
+  if (lowerMessage.includes("advanced") ||
+    lowerMessage.includes("optimize") ||
+    lowerMessage.includes("architecture") ||
+    lowerMessage.includes("best practice")) {
     return "expert";
   }
   return "intermediate";
@@ -60,8 +60,9 @@ const findRelatedContent = (message: string, tools: Tool[]): {
 } => {
   const lowerMessage = message.toLowerCase();
   const messageWords = lowerMessage.split(/\W+/).filter(word => word.length > 2);
-  
+
   // Find related tools with better matching
+  // Find related tools with better matching and relevance sorting
   const relatedTools = tools.filter(tool => {
     // Create a combined search string from tool attributes
     const searchContent = [
@@ -70,20 +71,28 @@ const findRelatedContent = (message: string, tools: Tool[]): {
       tool.category.toLowerCase(),
       ...tool.tags.map(tag => tag.toLowerCase())
     ].join(' ');
-    
+
     // Check for matches using word boundaries for better relevance
-    const matches = messageWords.filter(word => 
+    const matches = messageWords.filter(word =>
       searchContent.includes(word)
     );
-    
-    // Include tool if it has at least one good match
-    return matches.length > 0;
-  }).slice(0, 5); // Increase to 5 for more comprehensive suggestions
+
+    // score the match based on number of words matched + exact category match
+    const categoryMatch = tool.category.toLowerCase().includes(lowerMessage);
+    const score = matches.length + (categoryMatch ? 5 : 0);
+
+    // Attach score to tool for sorting (temporary)
+    (tool as any)._score = score;
+
+    return score > 0;
+  })
+    .sort((a, b) => ((b as any)._score || 0) - ((a as any)._score || 0))
+    .slice(0, 8); // Increase to 8 suggestions and better sorted
 
   // Find related guides with better matching
   const allGuides = [
     "getting-started.md",
-    "ai-integration-guide.md", 
+    "ai-integration-guide.md",
     "prompt_engineering_guide.md",
     "run-llm-locally.md",
     "accept-payments-with-paystack.md",
@@ -92,11 +101,17 @@ const findRelatedContent = (message: string, tools: Tool[]): {
     "get-started.md",
     "track-users-privately.md"
   ];
-  
+
   const guides = allGuides.filter(guide => {
     const guideName = guide.toLowerCase();
-    return lowerMessage.includes(guideName.replace('.md', '')) || 
-           messageWords.some(word => guideName.includes(word));
+    // Check if any word from message appears in guide name
+    const matchCount = messageWords.filter(word => guideName.includes(word)).length;
+    return matchCount > 0 || lowerMessage.includes(guideName.replace('.md', ''));
+  }).sort((a, b) => {
+    // Sort by relevance (number of matching words)
+    const aCount = messageWords.filter(word => a.toLowerCase().includes(word)).length;
+    const bCount = messageWords.filter(word => b.toLowerCase().includes(word)).length;
+    return bCount - aCount;
   });
 
   // Find related examples with better matching
@@ -111,11 +126,17 @@ const findRelatedContent = (message: string, tools: Tool[]): {
     "sample-projects.md",
     "social-media-app.md"
   ];
-  
+
   const examples = allExamples.filter(example => {
     const exampleName = example.toLowerCase();
-    return lowerMessage.includes(exampleName.replace('.md', '')) || 
-           messageWords.some(word => exampleName.includes(word));
+    // Check if any word from message appears in example name
+    const matchCount = messageWords.filter(word => exampleName.includes(word)).length;
+    return matchCount > 0 || lowerMessage.includes(exampleName.replace('.md', ''));
+  }).sort((a, b) => {
+    // Sort by relevance
+    const aCount = messageWords.filter(word => a.toLowerCase().includes(word)).length;
+    const bCount = messageWords.filter(word => b.toLowerCase().includes(word)).length;
+    return bCount - aCount;
   });
 
   return { tools: relatedTools, guides, examples };
@@ -186,9 +207,9 @@ export const ChatInterface = ({ tools }: ChatInterfaceProps) => {
       setInput("");
       const messageUserLevel = detectUserLevel(userMessage);
       const { tools: relatedTools, guides, examples } = findRelatedContent(userMessage, tools);
-      
-      setMessages(prev => [...prev, { 
-        role: "user", 
+
+      setMessages(prev => [...prev, {
+        role: "user",
         content: userMessage,
         context: {
           userLevel: messageUserLevel,
@@ -201,158 +222,156 @@ export const ChatInterface = ({ tools }: ChatInterfaceProps) => {
     setIsLoading(true);
 
     try {
-      const toolsContext = tools.map(tool => 
+      const toolsContext = tools.map(tool =>
         `${tool.name} (${tool.category}): ${tool.description}. Status: ${tool.status}. Link: ${tool.link}`
       ).join("\n");
 
       const userLevel = detectUserLevel(userMessage);
-      const systemPrompt = userLevel === "beginner" 
-        ? SYSTEM_PROMPTS.beginner 
-        : userLevel === "expert" 
-          ? SYSTEM_PROMPTS.technical 
+      const systemPrompt = userLevel === "beginner"
+        ? SYSTEM_PROMPTS.beginner
+        : userLevel === "expert"
+          ? SYSTEM_PROMPTS.technical
           : SYSTEM_PROMPTS.default;
 
-      // Select the appropriate model (without qwen, gemma, deepseek_chat)
-      const selectedModelKey = selectedModel === "auto" ? 
-        (userMessage.toLowerCase().includes('code') || userMessage.toLowerCase().includes('programming') ? 'deepseek' : 'gemini') :
-        selectedModel;
-
-      const modelMap = {
-        gemini: "google/gemini-2.0-flash-exp:free", 
-        deepseek: "deepseek/deepseek-r1:free",
-        gpt_oss: "openai/gpt-oss-20b:free"
+      // Select the appropriate model
+      const modelMap: Record<string, string> = {
+        deepseek: "tngtech/deepseek-r1t2-chimera:free",
+        qwen_coder: "qwen/qwen3-4b:free",
+        auto: "tngtech/deepseek-r1t2-chimera:free"
       };
 
-      const openrouterModel = modelMap[selectedModelKey] || modelMap.gemini;
+      const openrouterModel = modelMap[selectedModel] || modelMap.auto;
 
       // Prepare enhanced context for the AI
       const detectedUserLevel = detectUserLevel(userMessage);
       const { tools: relatedTools, guides, examples } = findRelatedContent(userMessage, tools);
-      
+
       // Enhance the system prompt with context about available tools
       const enhancedSystemPrompt = `${systemPrompt}
 
-Context about the user's question:
-- User's experience level: ${detectedUserLevel}
-- Related tools from our catalog: ${relatedTools.length > 0 
-    ? relatedTools.map(t => `${t.name} - ${t.description}`).join('; ') 
-    : 'None found'}
-- Related guides: ${guides.length > 0 
-    ? guides.map(g => g.replace('.md', '')).join(', ') 
-    : 'None found'}
-- Related examples: ${examples.length > 0 
-    ? examples.map(e => e.replace('.md', '')).join(', ') 
-    : 'None found'}
+Context from our Internal Database:
+- User Experience Level: ${detectedUserLevel}
+- Available Tools: ${relatedTools.length > 0
+          ? relatedTools.map(t => `${t.name} (${t.category}): ${t.description}`).join('; ')
+          : 'None directly matching, use general knowledge but mention we have a catalog.'}
+- Guides: ${guides.length > 0
+          ? guides.map(g => g.replace('.md', '')).join(', ')
+          : 'None'}
+- Examples: ${examples.length > 0
+          ? examples.map(e => e.replace('.md', '')).join(', ')
+          : 'None'}
 
-If the user is asking about specific tools, guides, or examples mentioned above, provide detailed information about them and their appropriate use cases. Always be helpful and encourage exploration of these resources.`;
+INSTRUCTIONS: 
+1. PRIORITIZE the Internal Database information above. If the user asks about tools, guides, or examples, MUST use the ones listed above if relevant.
+2. Only use general knowledge (RAG/External) if the internal data is insufficient or the user asks for something not in our catalog.
+3. FLAGGED: Ensure the response is well-formatted using standard Markdown (Tool names in bold, lists for steps, code blocks for code). 
+4. Do NOT output the text "Related Tools:" or "Examples:" in the response body, just weave them naturally into the conversation.`;
 
       const response = userApiKey
         ? await fetch("https://openrouter.ai/api/v1/chat/completions", {
-            method: "POST",
-            headers: {
-              "Authorization": `Bearer ${userApiKey}`,
-              "Content-Type": "application/json",
-              "HTTP-Referer": "https://builderlab.programmify.org",
-              "X-Title": "Builders Lab by Programmify",
-            },
-            body: JSON.stringify({
-              model: openrouterModel,
-              messages: [
-                { role: "system", content: enhancedSystemPrompt },
-                { role: "user", content: `Question: ${userMessage}
+          method: "POST",
+          headers: {
+            "Authorization": `Bearer ${userApiKey}`,
+            "Content-Type": "application/json",
+            "HTTP-Referer": "https://builderlab.programmify.org",
+            "X-Title": "Builders Lab by Programmify",
+          },
+          body: JSON.stringify({
+            model: openrouterModel,
+            messages: [
+              { role: "system", content: enhancedSystemPrompt },
+              {
+                role: "user", content: `Question: ${userMessage}
 
-Please provide a detailed, helpful response that addresses the question and mentions relevant tools, guides, or examples from the context provided in the system message if they're applicable. Make sure your response feels natural and conversational. If you're suggesting tools, explain why they might be good choices for this specific scenario.` }
-              ],
-              temperature: 0.7, // Increased temperature for more creative and natural responses
-              max_tokens: 1200, // Increased token limit for more detailed responses
-              top_p: 0.9, // Add top_p for more diverse responses
-            }),
-          })
+Please provide a helpful, well-formatted response. Use Markdown for clarity.` }
+            ],
+            temperature: 0.7,
+            max_tokens: 1200,
+            top_p: 0.9,
+          }),
+        })
         : await (async () => {
-            try {
-              const { data, error } = await supabase.functions.invoke("chat-with-tool", {
-                body: { 
-                  message: `Question: ${userMessage}
+          try {
+            const { data, error } = await supabase.functions.invoke("chat-with-tool", {
+              body: {
+                message: `Question: ${userMessage}
 
-Please provide a detailed, helpful response that addresses the question and mentions relevant tools, guides, or examples from our catalog if they're applicable. Make sure your response feels natural and conversational. If you're suggesting tools, explain why they might be good choices for this specific scenario.
+Please provide a helpful, well-formatted response. Use Markdown for clarity.`,
+                toolsContext: `${toolsContext}
 
-IMPORTANT: Use PLAIN TEXT ONLY - no markdown formatting of any kind. Never use ** for bold, * for italics, # for headers, or []() for links. Use simple quotes like "this" instead of markdown formatting.`,
-                  toolsContext: `${toolsContext}
-
-Context about the user's question:
-- User's experience level: ${detectedUserLevel}
-- Related tools from our catalog: ${relatedTools.length > 0 
-    ? relatedTools.map(t => `${t.name} - ${t.description}`).join('; ') 
-    : 'None found'}
-- Related guides: ${guides.length > 0 
-    ? guides.map(g => g.replace('.md', '')).join(', ') 
-    : 'None found'}
-- Related examples: ${examples.length > 0 
-    ? examples.map(e => e.replace('.md', '')).join(', ') 
-    : 'None found'}`,
-                  modelPreference: selectedModelKey, 
-                  provider: "lovable",
-                  systemPrompt: enhancedSystemPrompt
-                }
-              });
-
-              if (error) {
-                console.error("Supabase function error:", error);
-                // If it's a connection error, try to use the free model directly
-                if (error.message.includes("Failed to send a request")) {
-                  toast({
-                    title: "Connection Error",
-                    description: "Falling back to free model. Consider adding your API key in settings for better reliability.",
-                    duration: 5000,
-                  });
-                  
-                  // Fallback to free model with enhanced context
-                  const fallbackResponse = await fetch("https://openrouter.ai/api/v1/chat/completions", {
-                    method: "POST",
-                    headers: {
-                      "Authorization": "Bearer " + process.env.VITE_OPEN_ROUTER_API,
-                      "Content-Type": "application/json",
-                      "HTTP-Referer": "https://builderlab.programmify.org",
-                      "X-Title": "Builders Lab by Programmify",
-                    },
-                    body: JSON.stringify({
-                      model: "google/gemini-2.0-flash-exp:free",
-                      messages: [
-                        { role: "system", content: enhancedSystemPrompt },
-                        { role: "user", content: `Question: ${userMessage}
-
-Please provide a detailed, helpful response that addresses the question and mentions relevant tools, guides, or examples from the context provided in the system message if they're applicable. Make sure your response feels natural and conversational. If you're suggesting tools, explain why they might be good choices for this specific scenario.
-
-IMPORTANT: Use PLAIN TEXT ONLY - no markdown formatting of any kind. Never use ** for bold, * for italics, # for headers, or []() for links. Use simple quotes like "this" instead of markdown formatting.` }
-                      ],
-                      temperature: 0.7,
-                      max_tokens: 1200,
-                      top_p: 0.9,
-                    }),
-                  });
-
-                  if (!fallbackResponse.ok) {
-                    throw new Error("Fallback model also failed: " + fallbackResponse.statusText);
-                  }
-
-                  return fallbackResponse;
-                }
-                throw error;
+Context from our Internal Database:
+- User Experience Level: ${detectedUserLevel}
+- Available Tools: ${relatedTools.length > 0
+                    ? relatedTools.map(t => `${t.name} (${t.category}): ${t.description}`).join('; ')
+                    : 'None directly matching'}
+- Guides: ${guides.length > 0
+                    ? guides.map(g => g.replace('.md', '')).join(', ')
+                    : 'None'}
+- Examples: ${examples.length > 0
+                    ? examples.map(e => e.replace('.md', '')).join(', ')
+                    : 'None'}`,
+                modelPreference: selectedModel,
+                provider: "lovable",
+                systemPrompt: enhancedSystemPrompt
               }
+            });
 
-              return new Response(JSON.stringify({ choices: [{ message: { content: data?.reply } }] }), { 
-                status: 200,
-                headers: { 'Content-Type': 'application/json' }
-              });
-            } catch (err) {
-              console.error("Edge function error:", err);
-              throw new Error(err.message || "Failed to process request");
+            if (error) {
+              console.error("Supabase function error:", error);
+              // If it's a connection error, try to use the free model directly
+              if (error.message.includes("Failed to send a request")) {
+                toast({
+                  title: "Connection Error",
+                  description: "Falling back to free model. Consider adding your API key in settings for better reliability.",
+                  duration: 5000,
+                });
+
+                // Fallback to free model with enhanced context
+                const fallbackResponse = await fetch("https://openrouter.ai/api/v1/chat/completions", {
+                  method: "POST",
+                  headers: {
+                    "Authorization": "Bearer " + import.meta.env.VITE_OPEN_ROUTER_API,
+                    "Content-Type": "application/json",
+                    "HTTP-Referer": "https://builderlab.programmify.org",
+                    "X-Title": "Builders Lab by Programmify",
+                  },
+                  body: JSON.stringify({
+                    model: "google/gemini-2.0-flash-exp:free",
+                    messages: [
+                      { role: "system", content: enhancedSystemPrompt },
+                      {
+                        role: "user", content: `Question: ${userMessage}
+
+Please provide a helpful, well-formatted response. Use Markdown for clarity.` }
+                    ],
+                    temperature: 0.7,
+                    max_tokens: 1200,
+                    top_p: 0.9,
+                  }),
+                });
+
+                if (!fallbackResponse.ok) {
+                  throw new Error("Fallback model also failed: " + fallbackResponse.statusText);
+                }
+
+                return fallbackResponse;
+              }
+              throw error;
             }
-          })()
+
+            return new Response(JSON.stringify({ choices: [{ message: { content: data?.reply } }] }), {
+              status: 200,
+              headers: { 'Content-Type': 'application/json' }
+            });
+          } catch (err) {
+            console.error("Edge function error:", err);
+            throw new Error(err.message || "Failed to process request");
+          }
+        })()
 
       if (!response.ok) {
         let errorMessage = `HTTP ${response.status}`;
-        
+
         try {
           const errorData = await response.json();
           if (errorData.error?.message) {
@@ -378,76 +397,54 @@ IMPORTANT: Use PLAIN TEXT ONLY - no markdown formatting of any kind. Never use *
             errorMessage = "Service unavailable. The AI provider is temporarily down. Please try again later.";
           }
         }
-        
+
         throw new Error(errorMessage);
       }
 
       const data = await response.json();
       let reply = data.choices[0].message.content;
-      
-      // Post-process the response to remove any markdown formatting that slipped through
-      reply = reply
-        // Remove bold formatting **text**
-        .replace(/\*\*(.*?)\*\*/g, '"$1"')
-        // Remove italic formatting *text* or _text_
-        .replace(/\*(.*?)\*/g, '"$1"')
-        .replace(/_(.*?)_/g, '"$1"')
-        // Remove headers #, ##, etc.
-        .replace(/^#+\s*(.*?)$/gm, '$1')
-        // Remove code blocks with ```language and ```
-        .replace(/```[\s\S]*?```/g, match => {
-          // Extract just the code inside the blocks and indent it
-          const code = match.replace(/```[\s\S]*?\n|```/g, '');
-          return code.split('\n').map(line => line ? `    ${line}` : '').join('\n');
-        })
-        // Remove inline code with `code`
-        .replace(/`(.*?)`/g, '"$1"')
-        // Remove links [text](url) but keep the text
-        .replace(/\[([^\]]+)\]\([^)]+\)/g, '"$1"')
-        // Remove image syntax ![alt](url) but keep alt text
-        .replace(/!\[([^\]]*)\]\([^)]+\)/g, '"$1"')
-        // Remove horizontal rules
-        .replace(/^\s*[-*_]{3,}\s*$/gm, '')
-        // Clean up extra whitespace that might result from markdown removal
-        .replace(/\n\s*\n\s*\n/g, '\n\n');
 
-      setMessages(prev => [...prev, { 
-        role: "assistant", 
+      // Post-process response if needed (currently passing through markdown)
+      // reply = reply.replace(...);
+
+      setMessages(prev => [...prev, {
+        role: "assistant",
         content: reply,
-        model: selectedModelKey
+        model: selectedModel
       }]);
-      
+
       // Reset retry count on successful message
       setRetryCount(0);
     } catch (error) {
       console.error("Chat error:", error);
-      
+
       let errorMessage = "Failed to send message. Please try again.";
       let errorTitle = "Error";
-      
+
       if (error instanceof Error) {
         const message = error.message.toLowerCase();
-        
+
         if (message.includes("provider returned error")) {
           errorTitle = "AI Provider Error";
           if (retryCount < 1 && selectedModel !== "auto") {
             // Auto-retry with a different model
             setRetryCount(prev => prev + 1);
-            setSelectedModel("auto");
-            
+            setRetryCount(prev => prev + 1);
+            setSelectedModel("deepseek");
+
             toast({
               title: "Model Unavailable",
               description: "Switched to Auto mode and retrying...",
               duration: 2000,
             });
-            
+
             // Auto-retry the message
             setTimeout(() => {
               sendMessage(userMessage);
             }, 1000);
             return; // Don't show error toast for auto-retry
           } else {
-            errorMessage = "The AI model is temporarily unavailable. Try switching to a different model (like 'Auto' or 'Gemini') or try again later.";
+            errorMessage = "The AI model is temporarily unavailable. Try switching to a different model or try again later.";
           }
         } else if (message.includes("rate limit")) {
           errorTitle = "Rate Limit";
@@ -465,7 +462,7 @@ IMPORTANT: Use PLAIN TEXT ONLY - no markdown formatting of any kind. Never use *
           errorMessage = error.message;
         }
       }
-      
+
       // Special handling for edge function errors
       if (error instanceof Error && error.message.includes("Edge Function")) {
         toast({
@@ -474,7 +471,7 @@ IMPORTANT: Use PLAIN TEXT ONLY - no markdown formatting of any kind. Never use *
           variant: "destructive",
           duration: 5000,
         });
-        
+
         // Automatically open settings if no API key is set
         if (!userApiKey) {
           setIsSettingsOpen(true);
@@ -544,11 +541,10 @@ IMPORTANT: Use PLAIN TEXT ONLY - no markdown formatting of any kind. Never use *
                         <Button
                           variant="ghost"
                           size="icon"
-                          className={`h-6 w-6 hover:bg-white/10 shrink-0 ${
-                            !userApiKey.trim() 
-                              ? "text-yellow-300 hover:text-yellow-200" 
-                              : "text-white/80 hover:text-white"
-                          }`}
+                          className={`h-6 w-6 hover:bg-white/10 shrink-0 ${!userApiKey.trim()
+                            ? "text-yellow-300 hover:text-yellow-200"
+                            : "text-white/80 hover:text-white"
+                            }`}
                         >
                           <Settings className="h-3 w-3" />
                         </Button>
@@ -572,9 +568,9 @@ IMPORTANT: Use PLAIN TEXT ONLY - no markdown formatting of any kind. Never use *
                             />
                             <p className="text-xs text-muted-foreground mt-1">
                               Get your free API key from{" "}
-                              <a 
-                                href="https://openrouter.ai/keys" 
-                                target="_blank" 
+                              <a
+                                href="https://openrouter.ai/keys"
+                                target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-blue-500 hover:underline"
                               >
@@ -605,33 +601,38 @@ IMPORTANT: Use PLAIN TEXT ONLY - no markdown formatting of any kind. Never use *
                     className={`flex ${message.role === "user" ? "justify-end" : "justify-start"}`}
                   >
                     <div
-                      className={`max-w-[80%] rounded-lg px-4 py-2 ${
-                        message.role === "user"
-                          ? "bg-accent-secondary text-white"
-                          : "bg-muted text-foreground"
-                      }`}
+                      className={`max-w-[80%] rounded-lg px-4 py-2 ${message.role === "user"
+                        ? "bg-accent-secondary text-white"
+                        : "bg-muted text-foreground"
+                        }`}
                     >
-                      <p className="text-sm whitespace-pre-wrap">{message.content}</p>
-                      {message.context && (
-                        <div className="mt-2 text-xs space-y-1">
-                          {message.context.relatedTools?.length > 0 && (
-                            <div className="flex items-center gap-1">
-                              <Settings className="h-3 w-3" />
-                              <span>Related Tools: {message.context.relatedTools.map(t => t.name).join(", ")}</span>
-                            </div>
-                          )}
-                          {message.context.relatedGuides?.length > 0 && (
-                            <div className="flex items-center gap-1">
-                              <BookOpen className="h-3 w-3" />
-                              <span>Related Guides: {message.context.relatedGuides.join(", ")}</span>
-                            </div>
-                          )}
-                          {message.context.relatedExamples?.length > 0 && (
-                            <div className="flex items-center gap-1">
-                              <FileCode className="h-3 w-3" />
-                              <span>Examples: {message.context.relatedExamples.join(", ")}</span>
-                            </div>
-                          )}
+                      {message.role === "user" ? (
+                        <p className="text-sm whitespace-pre-wrap">{message.content}</p>
+                      ) : (
+                        <div className="text-sm prose prose-invert max-w-none">
+                          <ReactMarkdown
+                            components={{
+                              pre: ({ node, ...props }) => (
+                                <div className="overflow-auto w-full my-2 bg-black/10 p-2 rounded-lg">
+                                  <pre {...props} />
+                                </div>
+                              ),
+                              code: ({ node, ...props }) => (
+                                <code className="bg-black/10 rounded px-1" {...props} />
+                              ),
+                              p: ({ node, ...props }) => (
+                                <p className="mb-2 last:mb-0" {...props} />
+                              ),
+                              ul: ({ node, ...props }) => (
+                                <ul className="list-disc pl-4 mb-2" {...props} />
+                              ),
+                              ol: ({ node, ...props }) => (
+                                <ol className="list-decimal pl-4 mb-2" {...props} />
+                              ),
+                            }}
+                          >
+                            {message.content}
+                          </ReactMarkdown>
                         </div>
                       )}
                       {message.role === "assistant" && message.model && (
@@ -670,8 +671,8 @@ IMPORTANT: Use PLAIN TEXT ONLY - no markdown formatting of any kind. Never use *
                     disabled={isLoading}
                     className="flex-1"
                   />
-                  <Button 
-                    type="submit" 
+                  <Button
+                    type="submit"
                     disabled={isLoading || !input.trim()}
                     size="icon"
                     className="bg-accent-secondary hover:bg-accent-secondary/90"
