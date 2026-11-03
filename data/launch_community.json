@@ -117,6 +117,19 @@
     "tutorial": "https://launchpedia.co"
   },
   {
+    "name": "MEDIAPRONET",
+    "description": "Curated directory of newly launched startups, SaaS tools and indie products.",
+    "link": "https://mediapronet.com",
+    "type": "Freemium",
+    "category": "Launch & Community Platforms",
+    "tags": [
+      "directory",
+      "launch"
+    ],
+    "popularity": "New",
+    "tutorial": "https://mediapronet.com/submit"
+  },
+  {
     "name": "Dev.to",
     "description": "Developer articles and community.",
     "link": "https://dev.to",
