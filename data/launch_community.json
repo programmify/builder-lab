@@ -168,5 +168,18 @@
     ],
     "popularity": "Growing",
     "tutorial": "https://distributionkit.com/"
+  },
+  {
+    "name": "SitePatent",
+    "description": "Directory of startups, tools and online products, organized by category and tech stack.",
+    "link": "https://sitepatent.com/",
+    "type": "Freemium",
+    "category": "Launch & Community Platforms",
+    "tags": [
+      "launch",
+      "directory"
+    ],
+    "popularity": "Niche",
+    "tutorial": "https://sitepatent.com/submit"
   }
 ]
